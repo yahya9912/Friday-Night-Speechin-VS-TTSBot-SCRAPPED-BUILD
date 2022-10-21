@@ -1,2 +1,2 @@
 # Friday-Night-Speechin-VS-TTS-Bot-DEV-BUILD
-creating your dad :troll:
+A mod created by Yahya, Eevbat, Goofgoof
