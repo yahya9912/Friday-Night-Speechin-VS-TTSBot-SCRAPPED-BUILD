@@ -1,0 +1,42 @@
+{
+	"followLerp": 0.04,
+	"dadOffset": [
+		0,
+		0
+	],
+	"defaultCamZoom": 1,
+	"bfOffset": [
+		0,
+		0
+	],
+	"gfOffset": [
+		0,
+		0
+	],
+	"sprites": [
+		{
+			"scrollFactor": [
+				0.95,
+				0.95
+			],
+			"name": "Girlfriend",
+			"type": "GF"
+		},
+		{
+			"scrollFactor": [
+				1,
+				1
+			],
+			"name": "Dad",
+			"type": "Dad"
+		},
+		{
+			"scrollFactor": [
+				1,
+				1
+			],
+			"name": "Boyfriend",
+			"type": "BF"
+		}
+	]
+}

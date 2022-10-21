@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="LJcool.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="LJ0000" x="1" y="1" width="227" height="164" frameX="0" frameY="-13" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0001" x="1" y="1" width="227" height="164" frameX="0" frameY="-13" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0002" x="230" y="1" width="203" height="170" frameX="-13" frameY="-7" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0003" x="230" y="1" width="203" height="170" frameX="-13" frameY="-7" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0004" x="1" y="173" width="195" height="174" frameX="-17" frameY="-3" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0005" x="1" y="173" width="195" height="174" frameX="-17" frameY="-3" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0006" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0007" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0008" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0009" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0010" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0011" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0012" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0013" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0014" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0015" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0016" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0017" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0018" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0019" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0020" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0021" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0022" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0023" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0024" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0025" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0026" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0027" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0028" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+	<SubTexture name="LJ0029" x="198" y="173" width="192" height="178" frameX="-18" frameY="0" frameWidth="227" frameHeight="178"/>
+</TextureAtlas>

@@ -1,0 +1,33 @@
+{
+	"titleBarName": "Discord",
+	"intro": {
+		"authors": [
+			"Yahya",
+			"Eev",
+			"TTS Bot",
+			"your mother"
+		],
+		"gameName": [
+			"Friday Night Funkin'",
+			"VS",
+			"Text To Speech Bot"
+		],
+		"newgrounds": "VS Hecker",
+		"bpm": 102,
+		"assoc": [
+			"In no associations",
+			"with"
+		],
+		"present": "the funnies"
+	},
+	"skinnableBFs": [],
+	"skinnableGFs": [],
+	"GFskins": [],
+	"keyNumbers": [
+		4
+	],
+	"BFskins": [],
+	"name": "Friday Night Speechin' VS TTS Bot",
+	"locked": false,
+	"description": "the funny bot"
+}

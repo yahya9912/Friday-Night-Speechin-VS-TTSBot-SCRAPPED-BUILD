@@ -1,0 +1,152 @@
+{
+	"arrowColors": [
+		"#000000",
+		"#FFFFFF",
+		"#FFFFFF",
+		"#2FAFFE"
+	],
+	"camOffset": {
+		"x": -240,
+		"y": 290
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#06A8FE",
+	"flipX": true,
+	"anims": [
+		{
+			"indices": null,
+			"x": -25,
+			"y": -382,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "deathLoop",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -75,
+			"y": -334,
+			"anim": "tts tf",
+			"loop": false,
+			"name": "singRIGHTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 480,
+			"y": -190,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "wtf",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 225,
+			"y": -285,
+			"anim": "tts down",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -57,
+			"y": -424,
+			"anim": "tts f",
+			"loop": false,
+			"name": "singLEFTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 188,
+			"y": 8,
+			"anim": "tts up",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 192,
+			"y": -260,
+			"anim": "tts idle",
+			"loop": false,
+			"name": "deathConfirm",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -2,
+			"y": -364,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "firstDeath",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 192,
+			"y": -260,
+			"anim": "tts idle",
+			"loop": true,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -85,
+			"y": -143,
+			"anim": "tts left",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 9,
+			"y": -385,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "singDOWNmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -2,
+			"y": -400,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "singUPmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 313,
+			"y": -290,
+			"anim": "tts right",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}

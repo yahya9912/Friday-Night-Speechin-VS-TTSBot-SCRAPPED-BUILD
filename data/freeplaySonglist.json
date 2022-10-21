@@ -1,0 +1,24 @@
+{
+	"songs": [
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Speechin'",
+			"char": "TTS Bot",
+			"bpm": 145,
+			"name": "speechin",
+			"color": "#2A2F47"
+		},
+		{
+			"bpm": 160,
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Hi I'm big LJ",
+			"char": "bf",
+			"name": "hello",
+			"color": "#2E293D"
+		}
+	]
+}
