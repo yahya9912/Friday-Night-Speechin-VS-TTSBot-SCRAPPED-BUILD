@@ -2,4 +2,5 @@
 
 How to use:
 
-[HAXE]	new ModClass("My Class File");
+[HAXE]	new ModClass("My Dad.exe");
+lollol
