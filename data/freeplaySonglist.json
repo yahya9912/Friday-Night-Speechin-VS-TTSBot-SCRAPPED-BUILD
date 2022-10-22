@@ -1,5 +1,6 @@
 {
 	"songs": [
+		
 		{
 			"difficulties": [
 				"Hard"
@@ -18,6 +19,16 @@
 			"displayName": "Hi I'm big LJ",
 			"char": "bf",
 			"name": "hello",
+			"color": "#2E293D"
+		},
+		{
+			"bpm": 150,
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Voiced Raged",
+			"char": "bf",
+			"name": "Voiced Raged",
 			"color": "#2E293D"
 		}
 	]

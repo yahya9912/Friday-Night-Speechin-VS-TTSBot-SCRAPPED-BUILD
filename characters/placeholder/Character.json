@@ -27,17 +27,8 @@
 		},
 		{
 			"indices": null,
-			"x": -70,
-			"y": -516,
-			"anim": "LJ",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": -70,
-			"y": -516,
+			"x": -285,
+			"y": -523,
 			"anim": "LJ",
 			"loop": false,
 			"name": "singRIGHT",
@@ -45,20 +36,29 @@
 		},
 		{
 			"indices": null,
-			"x": -71,
-			"y": -515,
+			"x": -72,
+			"y": -585,
 			"anim": "LJ",
 			"loop": false,
-			"name": "singUP",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -69,
-			"y": -516,
+			"x": 55,
+			"y": -511,
 			"anim": "LJ",
 			"loop": false,
 			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -64,
+			"y": -373,
+			"anim": "LJ",
+			"loop": false,
+			"name": "singUP",
 			"framerate": 24
 		}
 	],
