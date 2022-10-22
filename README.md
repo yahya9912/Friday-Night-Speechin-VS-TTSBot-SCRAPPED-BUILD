@@ -1,5 +1,7 @@
 # Friday Night Speechin' DEV BUILD
 
+**FOR DEV 1.0 Press Code and Download as Zip**
+
 A mod created by Yahya, Eevbat and @Diamantitos2
 Idea from:
 
