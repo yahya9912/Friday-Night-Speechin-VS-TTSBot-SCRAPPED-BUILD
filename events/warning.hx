@@ -13,17 +13,17 @@ function create(){
 function postUpdate(elapsed:Float){    
     new FlxTimer().start(1.0, function(tmr:FlxTimer)
     {
-        FlxTween.tween(worning, {x: 0}, 0.8,
+        FlxTween.tween(worning, {x: 0}, 1,
             {						
-                ease: FlxEase.quartInOut
+                ease: FlxEase.quadInOut
             }	
             );
     });
     new FlxTimer().start(3.5, function(tmr:FlxTimer)
     {
-        FlxTween.tween(worning, {x: -9999}, 0.6,
+        FlxTween.tween(worning, {x: -9999}, 1,
         {						
-            ease: FlxEase.smoothStepInOut,
+            ease: FlxEase.quadInOut,
             onComplete: function(twn:FlxTween) {
             worning.destroy();
         }	

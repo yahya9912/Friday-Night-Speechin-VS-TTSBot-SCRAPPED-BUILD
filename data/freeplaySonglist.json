@@ -1,5 +1,6 @@
 {
 	"songs": [
+		
 		{
 			"difficulties": [
 				"Hard"
@@ -27,6 +28,7 @@
 			],
 			"displayName": "Voiced Raged",
 			"char": "Raged TTS",
+			"char": "bf",
 			"name": "Voiced Raged",
 			"color": "#2E293D"
 		}
