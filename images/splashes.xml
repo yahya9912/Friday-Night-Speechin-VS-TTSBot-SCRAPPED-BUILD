@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="noteSplashes.png">
+	<!-- Created with Adobe Animate version 23.0.0.003 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="note splash blue 10000" x="0" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10001" x="434" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10002" x="868" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10003" x="1302" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10004" x="1736" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10005" x="2170" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10006" x="2604" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10007" x="3038" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10008" x="3472" y="0" width="424" height="422"/>
+	<SubTexture name="note splash blue 10009" x="0" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10010" x="434" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10011" x="868" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10012" x="1302" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10013" x="1736" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10014" x="2170" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10015" x="2604" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10016" x="3038" y="432" width="424" height="422"/>
+	<SubTexture name="note splash blue 10017" x="3472" y="432" width="424" height="422"/>
+</TextureAtlas>

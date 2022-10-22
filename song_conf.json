@@ -1,7 +1,11 @@
+{"songs":[{"scripts":["Friday-Night-Speechin-VS-TTS-Bot-DEV-BUILD:/events/warning"],"difficulties":[],"end_cutscene":null,"cutscene":null,"name":"speechin"},{"scripts":[],"difficulties":[],"end_cutscene":null,"cutscene":null,"name":"hello"},{"scripts":[],"difficulties":[],"end_cutscene":null,"cutscene":null,"name":"Voiced Raged"}]}
 {
 	"songs": [
 		{
-			"scripts": [],
+			"scripts": [
+				"Friday-Night-Speechin-VS-TTS-Bot-DEV-BUILD:/events/warning",
+				"Friday-Night-Speechin-VS-TTS-Bot-DEV-BUILD:/events/opening"
+			],
 			"difficulties": [],
 			"end_cutscene": null,
 			"cutscene": null,
@@ -13,6 +17,14 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "hello"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "Voiced Raged"
 		}
 	]
 }
+
