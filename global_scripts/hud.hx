@@ -12,4 +12,5 @@ function create() {
     barbot.cameras = [camHUD];
     barbot.color = color;
     PlayState.add(barbot);
+    bartop.alpha = 0.5;
 }

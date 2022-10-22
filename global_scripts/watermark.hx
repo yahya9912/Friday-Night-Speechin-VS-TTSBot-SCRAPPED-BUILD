@@ -1,7 +1,11 @@
+import flixel.text.FlxText;
 function createPost(){
-    var watermark = new FlxSprite(380,40).loadGraphic(Paths.image('Watermark'));
-    watermark.scrollFactor.set(0.0,0.0);
+    var watermark = new FlxText(PlayState.scoreTxt.x + 500, PlayState.scoreTxt.y + 26, 0, "DEV BUILD DO NOT SHARE");
+    watermark.setFormat(Paths.font("vcr.ttf"), 24);
+  //  watermark.alignment = 'CENTER';
+    watermark.scrollFactor.set();
     watermark.cameras = [camHUD];
     PlayState.add(watermark);
-    setGraphicSize(Width = -512, Height = -512);
+    watermark.setGraphicSize(Width = -512, Height = -512);
+    
 }
