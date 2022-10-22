@@ -19,6 +19,16 @@
 			"char": "bf",
 			"name": "hello",
 			"color": "#2E293D"
+		},
+		{
+			"bpm": 150,
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Voiced Raged",
+			"char": "Raged TTS",
+			"name": "Voiced Raged",
+			"color": "#2E293D"
 		}
 	]
 }
