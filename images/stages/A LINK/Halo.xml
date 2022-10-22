@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Halo.png">
+<SubTexture name="Halo HaloBump0000" x="0" y="0" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0001" x="2952" y="0" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0002" x="0" y="1968" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0003" x="2952" y="1968" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0004" x="2952" y="1968" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0005" x="0" y="3936" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0006" x="2952" y="3936" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0007" x="5904" y="0" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0008" x="5904" y="1968" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0009" x="5904" y="1968" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0010" x="5904" y="3936" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0011" x="0" y="5904" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0012" x="2952" y="5904" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0013" x="5904" y="5904" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0014" x="8856" y="0" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0015" x="8856" y="1968" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0016" x="8856" y="3936" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0017" x="8856" y="5904" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0018" x="0" y="7872" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0019" x="2952" y="7872" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+<SubTexture name="Halo HaloBump0020" x="5904" y="7872" width="2952" height="1968" frameX="-449" frameY="-101" frameWidth="3840" frameHeight="2160" />
+</TextureAtlas>
