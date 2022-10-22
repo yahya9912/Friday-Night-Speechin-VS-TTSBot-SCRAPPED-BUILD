@@ -31,7 +31,7 @@ function create() {
     omg.antialiasing = true;
     add(omg);
 
-    dx = new FlxSprite(-39.25, 203.45).loadGraphic(Paths.image('title/dx'));
+    dx = new FlxSprite(100, -200).loadGraphic(Paths.image('title/dx'));
     dx.updateHitbox();
     dx.antialiasing = true;
     add(dx);
