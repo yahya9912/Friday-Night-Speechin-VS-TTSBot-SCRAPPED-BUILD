@@ -1,0 +1,13 @@
+{
+    "antialiasing": true,
+    "scale": 0.6,
+    "useColorShader": false,
+    "animations": [
+        {
+            "name": "note splash blue",
+            "x": -103,
+            "y": -124,
+            "fps": 24
+        }
+    ]
+}
