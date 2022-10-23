@@ -23,7 +23,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "Voiced Raged"
+		},
+		{
+			"end_cutscene": null,
+			"cutscene": null,
+			"difficulties": [],
+			"scripts": [],
+			"name": "a-link"
 		}
 	]
 }
-
