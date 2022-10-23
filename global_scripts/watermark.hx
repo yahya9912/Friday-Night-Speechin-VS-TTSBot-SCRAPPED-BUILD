@@ -11,16 +11,4 @@ function createPost(){
         {
             watermark.y = PlayState.scoreTxt.y + 20;
         }
-    
-}
-
-var weewoo:Float = 0;
-
-function update(elapsed:Float) {
-
-  weewoo += 0.03;
-
-  watermark.y += Math.sin(weewoo) * 0.8;
-  watermark.angle += Math.cos(weewoo) * 0.1;
-
 }
