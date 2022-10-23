@@ -31,6 +31,17 @@
 			"char": "bf",
 			"name": "Voiced Raged",
 			"color": "#2E293D"
+		},
+		{
+			"bpm": 145,
+			"difficulties": [
+				"a-link"
+			],
+			"displayName": "A-link",
+			"char": "tts-3d",
+			"char": "bf",
+			"name": "a-link",
+			"color": "#2E293D"
 		}
 	]
 }
