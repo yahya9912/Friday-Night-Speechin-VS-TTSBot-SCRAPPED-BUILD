@@ -16,23 +16,23 @@
 			"x": 0,
 			"y": 0,
 			"anim": "BF idle dance",
-			"loop": false,
+			"loop": true,
 			"name": "idle",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -25,
-			"y": -56,
+			"x": 10,
+			"y": -49,
 			"anim": "BF NOTE DOWN",
-			"loop": false,
+			"loop": true,
 			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
 			"x": -34,
-			"y": -7,
+			"y": -6,
 			"anim": "BF NOTE LEFT",
 			"loop": false,
 			"name": "singRIGHT",
@@ -40,8 +40,8 @@
 		},
 		{
 			"indices": null,
-			"x": 44,
-			"y": -5,
+			"x": 13,
+			"y": -7,
 			"anim": "BF NOTE RIGHT",
 			"loop": false,
 			"name": "singLEFT",
@@ -50,7 +50,7 @@
 		{
 			"indices": null,
 			"x": 5,
-			"y": 28,
+			"y": 30,
 			"anim": "BF NOTE UP",
 			"loop": false,
 			"name": "singUP",

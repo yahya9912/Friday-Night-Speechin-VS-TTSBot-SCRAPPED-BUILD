@@ -25,10 +25,10 @@
 			"name": "Voiced Raged"
 		},
 		{
+			"scripts": [],
+			"difficulties": [],
 			"end_cutscene": null,
 			"cutscene": null,
-			"difficulties": [],
-			"scripts": [],
 			"name": "a-link"
 		}
 	]

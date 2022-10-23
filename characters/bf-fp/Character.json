@@ -60,7 +60,7 @@
 	"danceSteps": [
 		"idle"
 	],
-	"antialiasing": true,
+	"antialiasing": false,
 	"healthIconSteps": [
 		[
 			20,

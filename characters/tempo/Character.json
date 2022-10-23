@@ -18,21 +18,21 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": -86,
-			"y": -78,
-			"anim": "sad",
-			"loop": true,
-			"name": "sad",
-			"framerate": 120
-		},
-		{
-			"indices": null,
 			"x": -130,
 			"y": -142,
 			"anim": "idle",
 			"loop": false,
 			"name": "danceLeft",
 			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -86,
+			"y": -78,
+			"anim": "sad",
+			"loop": false,
+			"name": "sad",
+			"framerate": 120
 		},
 		{
 			"indices": null,
@@ -45,7 +45,8 @@
 		}
 	],
 	"danceSteps": [
-		"idle"
+		"danceLeft",
+		"danceRight"
 	],
 	"antialiasing": false,
 	"healthIconSteps": [
