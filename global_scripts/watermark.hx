@@ -7,5 +7,9 @@ function createPost(){
     watermark.cameras = [camHUD];
     PlayState.add(watermark);
     watermark.setGraphicSize(Width = -512, Height = -512);
+        if (PlayState.engineSettings.downscroll)
+        {
+            watermark.y = PlayState.scoreTxt.y + 20;
+        }
     
 }
