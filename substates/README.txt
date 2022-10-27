@@ -6,4 +6,4 @@ Example Tree:
 
 Substates can be opened this way:
 
-[HAXE]	openSubState(new ModSubState("My Custom Substate"));
+[HAXE]	openSubState(new ModSubState("My Father"));
