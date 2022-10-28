@@ -1,3 +1,4 @@
-function onDadHit(){
-FlxG.camera.shake(0.0145, 0.1);
+function update(){
+if (PlayState.health <= 0.2)
+      FlxG.camera.shake(.005,.1);
 }

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Flosh.png">
+<SubTexture name="Flosh0000" x="0" y="0" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0001" x="2058" y="0" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0002" x="0" y="1090" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0003" x="2058" y="1090" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0004" x="0" y="2180" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0005" x="2058" y="2180" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0006" x="4116" y="0" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+<SubTexture name="Flosh0007" x="4116" y="0" width="2058" height="1090" frameX="0" frameY="0" frameWidth="2048" frameHeight="1080" />
+</TextureAtlas>
