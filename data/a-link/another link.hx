@@ -1,3 +1,6 @@
+var trippyshader = new CustomShader(Paths.shader('vhs'));
+var time = 0;
+
 function onDadHit(note:Note){
     if(PlayState.health <= (4 / 100 * PlayState.maxHealth)){
         return;
@@ -11,3 +14,18 @@ function onDadHit(note:Note){
    
     }
 }
+function create()
+{
+     camGame.addShader(trippyshader);
+     
+
+}
+
+function update(elapsed){
+    time += elapsed;
+    if (PlayState.health <= 0.2)
+          FlxG.camera.shake(.005,.1);
+
+      trippyshader.shaderData.iTime.value = time;
+    }
+

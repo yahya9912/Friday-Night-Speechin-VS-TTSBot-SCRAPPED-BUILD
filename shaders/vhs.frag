@@ -1,11 +1,18 @@
 #pragma header
-
-uniform float range = 0.05;
-uniform float noiseQuality = 250.0;
-uniform float noiseIntensity = 0.0088;
-uniform float offsetIntensity = 0.02;
-uniform float colorOffsetIntensity = 1.3;
+vec2 uv = openfl_TextureCoordv.xy;
+vec2 fragCoord = openfl_TextureCoordv*openfl_TextureSize;
+vec2 iResolution = openfl_TextureSize;
 uniform float iTime;
+#define iChannel0 bitmap
+#define texture flixel_texture2D
+#define fragColor gl_FragColor
+#define mainImage main
+
+const float range = 0.00;
+const float noiseQuality = 250.0;
+const float noiseIntensity = 0.0010;
+const float offsetIntensity = 0.090;
+const float colorOffsetIntensity = 0.532;
 
 float rand(vec2 co)
 {
@@ -22,13 +29,13 @@ float verticalBar(float pos, float uvY, float offset)
     return x;
 }
 
-void main()
+void mainImage()
 {
-	vec2 uv = getCamPos(openfl_TextureCoordv).xy;
+	
     
     for (float i = 0.0; i < 0.71; i += 0.1313)
     {
-        float d = mod(0.5 * i, 1.7);
+        float d = mod(iTime * i, 1.7);
         float o = sin(1.0 - tan(iTime * 0.24 * i));
     	o *= offsetIntensity;
         uv.x += verticalBar(d, uv.y, o);
@@ -42,10 +49,12 @@ void main()
 
     vec2 offsetR = vec2(0.006 * sin(iTime), 0.0) * colorOffsetIntensity;
     vec2 offsetG = vec2(0.0073 * (cos(iTime * 0.97)), 0.0) * colorOffsetIntensity;
-    vec4 tex = textureCam(bitmap, uv);
-    tex.r = textureCam(bitmap, uv + offsetR).r;
-    tex.g = textureCam(bitmap, uv + offsetG).g;
-    tex.b = textureCam(bitmap, uv).b;
+    
+    float r = texture(iChannel0, uv + offsetR).r;
+    float g = texture(iChannel0, uv + offsetG).g;
+    float b = texture(iChannel0, uv).b;
+    float a = texture(iChannel0, uv).a;
 
-    gl_FragColor = tex;
+    vec4 tex = vec4(r, g, b, a);
+    fragColor = tex;
 }
