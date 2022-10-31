@@ -12,4 +12,6 @@ function create() {
     barbot.cameras = [camHUD];
     barbot.color = color;
     PlayState.add(barbot);
+
+    FlxG.mouse.visible = false;
 }

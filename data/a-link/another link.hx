@@ -22,7 +22,7 @@ function create()
 }
 
 function update(elapsed){
-    time += elapsed;
+    time++;
     if (PlayState.health <= 0.2)
           FlxG.camera.shake(.005,.1);
 
