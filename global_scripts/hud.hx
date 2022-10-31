@@ -13,5 +13,5 @@ function create() {
     barbot.color = color;
     PlayState.add(barbot);
 
-    FlxG.mouse.visible = false;
+   // FlxG.mouse.visible = false;
 }
