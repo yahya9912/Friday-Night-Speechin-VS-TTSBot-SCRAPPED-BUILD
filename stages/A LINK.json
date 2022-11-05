@@ -1,1 +1,148 @@
-{"followLerp":0.04,"defaultCamZoom":0.9,"dadOffset":[60,81],"sprites":[{"pos":[193,0],"src":"","shader":"","beatTween":null,"alpha":1,"scrollFactor":[0.95,0.95],"antialiasing":true,"name":"Girlfriend","animation":null,"type":"GF","scale":1},{"pos":[-607,-219],"src":"stages/A LINK/New/BG","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[1.6,1.6],"antialiasing":true,"name":"A Links","animation":null,"type":"Bitmap","scale":1},{"pos":[-597,-217],"src":"stages/A LINK/New/A Links","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[0.75,0.75],"antialiasing":true,"name":"A Links 2","animation":null,"type":"Bitmap","scale":1},{"pos":[160,181],"src":"","shader":"","beatTween":null,"alpha":1,"scrollFactor":[1,1],"antialiasing":true,"name":"Dad","animation":null,"type":"Dad","scale":1},{"pos":[621,370],"src":"","shader":"","beatTween":{"x":0,"y":0,"ease":"linear"},"alpha":1,"scrollFactor":[1,1],"antialiasing":true,"name":"Boyfriend","animation":null,"type":"BF","scale":1},{"pos":[-402,-256],"src":"stages/A LINK/New/Flosh","shader":null,"beatTween":{"x":0,"ease":"linear","y":0},"alpha":1,"scrollFactor":[0,0],"antialiasing":true,"name":"Flosh","animation":{"type":"OnBeatForce","fps":24,"name":"Flosh"},"type":"SparrowAtlas","scale":1}],"gfOffset":[-207,-130],"bfOffset":[-149,-80]}
+{
+    "followLerp": 0.07,
+    "defaultCamZoom": 0.9,
+    "gfOffset": [
+      20,
+      -444
+    ],
+    "dadOffset": [
+      376,
+      -293
+    ],
+    "sprites": [
+      {
+        "pos": [
+          420,
+          -314
+        ],
+        "src": "",
+        "shader": "",
+        "beatTween": null,
+        "alpha": 1,
+        "scrollFactor": [
+          0.95,
+          0.95
+        ],
+        "antialiasing": true,
+        "name": "Girlfriend",
+        "animation": null,
+        "type": "GF",
+        "scale": 1
+      },
+      {
+        "pos": [
+          -156,
+          -68
+        ],
+        "src": "stages/A LINK/Red",
+        "shader": null,
+        "beatTween": {
+          "ease": "linear",
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "scrollFactor": [
+          0,
+          0
+        ],
+        "antialiasing": false,
+        "name": "Red",
+        "animation": null,
+        "type": "Bitmap",
+        "scale": 0.8
+      },
+      {
+        "pos": [
+          -124,
+          -264
+        ],
+        "src": "stages/A LINK/A LINKS",
+        "shader": null,
+        "beatTween": {
+          "ease": "linear",
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "scrollFactor": [
+          0.5,
+          0.5
+        ],
+        "antialiasing": true,
+        "name": "A LINKS",
+        "animation": null,
+        "type": "Bitmap",
+        "scale": 0.8
+      },
+      {
+        "pos": [
+          476,
+          -193
+        ],
+        "src": "",
+        "shader": "",
+        "beatTween": null,
+        "alpha": 1,
+        "scrollFactor": [
+          1,
+          1
+        ],
+        "antialiasing": true,
+        "name": "Dad",
+        "animation": null,
+        "type": "Dad",
+        "scale": 1
+      },
+      {
+        "pos": [
+          947,
+          241
+        ],
+        "src": "",
+        "shader": "",
+        "beatTween": null,
+        "alpha": 1,
+        "scrollFactor": [
+          0.5,
+          0.5
+        ],
+        "antialiasing": true,
+        "name": "Boyfriend",
+        "animation": null,
+        "type": "BF",
+        "scale": 1
+      },
+      {
+        "pos": [
+          -522,
+          -257
+        ],
+        "src": "stages/A LINK/Halo",
+        "shader": null,
+        "beatTween": {
+          "ease": "linear",
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 0.9,
+        "scrollFactor": [
+          0,
+          0
+        ],
+        "antialiasing": true,
+        "name": "Halo",
+        "animation": {
+          "type": "OnBeatForce",
+          "fps": 24,
+          "name": "Halo HaloBump"
+        },
+        "type": "SparrowAtlas",
+        "scale": 0.6
+      }
+    ],
+    "bfOffset": [
+      177,
+      -209
+    ]
+  }
