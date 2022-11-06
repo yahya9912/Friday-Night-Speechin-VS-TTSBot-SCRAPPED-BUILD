@@ -22,7 +22,6 @@ var missingNoCamGame:ShaderFilter;
 var abliteration:FlxTween;
 function create() {
     abliteration = FlxTween.tween(this, {}, 0);
-    EngineSettings.botplay = true;
 }
 
 var canMISSING:Bool = false;
