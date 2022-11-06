@@ -4,7 +4,7 @@
     "flickerColor": "#6C87B3",
     "autoPos": true,
     "defaultBehaviour": true,
-    "autoCamPos": true,
+    "autoCamPos": false,
     "options": [
         {
             "name": "Story Mode",
