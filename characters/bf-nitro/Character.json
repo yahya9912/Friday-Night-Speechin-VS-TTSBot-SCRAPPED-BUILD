@@ -1,0 +1,143 @@
+{
+	"arrowColors": [
+		"#8D1BFE",
+		"#00A6FF",
+		"#05FA74",
+		"#FE3E8D"
+	],
+	"camOffset": {
+		"x": -100,
+		"y": 360
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#31B0D1",
+	"flipX": true,
+	"anims": [
+		{
+			"indices": null,
+			"x": 0,
+			"y": 0,
+			"anim": "BF Dead Loop",
+			"loop": false,
+			"name": "deathLoop",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -43,
+			"y": -332,
+			"anim": "RIT MISS instance ",
+			"loop": false,
+			"name": "singRIGHTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -7,
+			"y": -387,
+			"anim": "DOWN",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -9,
+			"y": -393,
+			"anim": "bf pre attack instance ",
+			"loop": false,
+			"name": "pre-attack",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 0,
+			"y": -344,
+			"anim": "LFT MISS instance ",
+			"loop": false,
+			"name": "singLEFTmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -44,
+			"y": -290,
+			"anim": "UP",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 29,
+			"y": -344,
+			"anim": "BF dies instance ",
+			"loop": false,
+			"name": "firstDeath",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 24,
+			"y": 56,
+			"anim": "BF Dead confirm",
+			"loop": false,
+			"name": "deathConfirm",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -19,
+			"y": -340,
+			"anim": "BF idle dance",
+			"loop": true,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -6,
+			"y": -347,
+			"anim": "RIGHT",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -47,
+			"y": -340,
+			"anim": "U MISS instance ",
+			"loop": false,
+			"name": "singUPmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 19,
+			"y": -341,
+			"anim": "LEFT",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}
