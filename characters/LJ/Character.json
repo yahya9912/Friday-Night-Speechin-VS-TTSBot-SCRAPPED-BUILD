@@ -1,0 +1,98 @@
+{
+	"arrowColors": null,
+	"camOffset": {
+		"x": 90,
+		"y": -220
+	},
+	"globalOffset": {
+		"x": 10,
+		"y": 480
+	},
+	"healthbarColor": "#000000",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": [
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"x": 0,
+			"y": 0,
+			"anim": "LJ Idle",
+			"loop": false,
+			"name": "danceRight",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -10,
+			"y": 140,
+			"anim": "LJ Down",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 36
+		},
+		{
+			"indices": null,
+			"x": -28,
+			"y": 303,
+			"anim": "LJ RIght",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 36
+		},
+		{
+			"indices": null,
+			"x": -53,
+			"y": 332,
+			"anim": "LJ Left",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 36
+		},
+		{
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4
+			],
+			"x": 0,
+			"y": 0,
+			"anim": "LJ Idle",
+			"loop": false,
+			"name": "danceLeft",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 851,
+			"y": 669,
+			"anim": "LJ Up",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 36
+		}
+	],
+	"danceSteps": [
+		"danceLeft",
+		"danceRight"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 1
+}
