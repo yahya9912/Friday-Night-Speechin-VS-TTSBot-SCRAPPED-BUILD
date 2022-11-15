@@ -30,6 +30,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "a-link"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "stuck-a-lot"
 		}
 	]
 }
