@@ -29,34 +29,25 @@
 			"indices": null,
 			"x": -43,
 			"y": -332,
-			"anim": "RIT MISS instance ",
+			"anim": "RIT MISS",
 			"loop": false,
 			"name": "singRIGHTmiss",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -7,
-			"y": -387,
-			"anim": "DOWN",
+			"x": -8,
+			"y": -400,
+			"anim": "BF NOTE DOWN",
 			"loop": false,
 			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -9,
-			"y": -393,
-			"anim": "bf pre attack instance ",
-			"loop": false,
-			"name": "pre-attack",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": 0,
 			"y": -344,
-			"anim": "LFT MISS instance ",
+			"anim": "LFT MISS",
 			"loop": false,
 			"name": "singLEFTmiss",
 			"framerate": 24
@@ -64,17 +55,26 @@
 		{
 			"indices": null,
 			"x": -44,
-			"y": -290,
-			"anim": "UP",
+			"y": -310,
+			"anim": "BF NOTE UP",
 			"loop": false,
 			"name": "singUP",
 			"framerate": 24
 		},
 		{
 			"indices": null,
+			"x": -20,
+			"y": -347,
+			"anim": "BF hit",
+			"loop": false,
+			"name": "hit",
+			"framerate": 24
+		},
+		{
+			"indices": null,
 			"x": 29,
 			"y": -344,
-			"anim": "BF dies instance ",
+			"anim": "BF dies",
 			"loop": false,
 			"name": "firstDeath",
 			"framerate": 24
@@ -93,15 +93,24 @@
 			"x": -19,
 			"y": -340,
 			"anim": "BF idle dance",
-			"loop": true,
+			"loop": false,
 			"name": "idle",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -6,
-			"y": -347,
-			"anim": "RIGHT",
+			"x": -16,
+			"y": -379,
+			"anim": "DON MISS",
+			"loop": false,
+			"name": "singDOWNmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -27,
+			"y": -344,
+			"anim": "BF NOTE RIGHT",
 			"loop": false,
 			"name": "singRIGHT",
 			"framerate": 24
@@ -110,16 +119,16 @@
 			"indices": null,
 			"x": -47,
 			"y": -340,
-			"anim": "U MISS instance ",
+			"anim": "U MISS",
 			"loop": false,
 			"name": "singUPmiss",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 19,
-			"y": -341,
-			"anim": "LEFT",
+			"x": 4,
+			"y": -348,
+			"anim": "BF NOTE LEFT",
 			"loop": false,
 			"name": "singLEFT",
 			"framerate": 24
