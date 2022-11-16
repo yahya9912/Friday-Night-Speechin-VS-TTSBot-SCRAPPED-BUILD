@@ -1,44 +1,65 @@
 {
 	"songs": [
 		{
+			"difficulties": [
+				"Hard"
+			],
 			"displayName": "Speechin'",
-			"difficulties": [
-				"Hard"
-			],
 			"char": "TTS Bot",
-			"color": "#2A2F47",
+			"bpm": 145,
 			"name": "speechin",
-			"bpm": 145
+			"color": "#2A2F47"
 		},
 		{
+			"difficulties": [
+				"Hard"
+			],
 			"displayName": "Hi I'm big LJ",
-			"difficulties": [
-				"Hard"
-			],
 			"char": "Placeholder",
-			"color": "#2E293D",
+			"bpm": 160,
 			"name": "hello",
-			"bpm": 160
+			"color": "#2E293D"
 		},
 		{
-			"displayName": "Voiced Raged",
 			"difficulties": [
 				"Hard"
 			],
+			"displayName": "Voiced Raged",
 			"char": "BF angi",
-			"color": "#2E293D",
+			"bpm": 150,
 			"name": "Voiced Raged",
-			"bpm": 150
+			"color": "#2E293D"
 		},
 		{
-			"displayName": "A Link",
 			"difficulties": [
 				"a-link"
 			],
+			"displayName": "A Link",
 			"char": "tts-3d",
-			"color": "#2E293D",
+			"bpm": 145,
 			"name": "a-link",
-			"bpm": 145
+			"color": "#2E293D"
+		},
+		{
+			"difficulties": [
+				"Normal"
+			],
+			"displayName": "Stuck A Lot",
+			"char": "placeholder",
+			"bpm": 110,
+			"name": "stuck-a-lot",
+			"color": "#0E3800"
+		},
+		{
+			"displayName": "VC",
+			"difficulties": [
+				"Hard",
+				"Nitro"
+			],
+			"char": "TTS Bot",
+			"color": "#31323A",
+			"name": "voice-chat",
+			"bpm": 180
 		}
 	]
 }
