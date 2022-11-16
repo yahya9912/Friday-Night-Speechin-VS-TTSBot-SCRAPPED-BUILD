@@ -1,5 +1,10 @@
 {
-	"arrowColors": null,
+	"arrowColors": [
+		"#16E95B",
+		"#0FC002",
+		"#12FA05",
+		"#33DE0D"
+	],
 	"camOffset": {
 		"x": 90,
 		"y": -220
@@ -11,6 +16,24 @@
 	"healthbarColor": "#000000",
 	"flipX": false,
 	"anims": [
+		{
+			"indices": null,
+			"x": -28,
+			"y": 303,
+			"anim": "LJ RIght",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 36
+		},
+		{
+			"indices": null,
+			"x": -10,
+			"y": 140,
+			"anim": "LJ Down",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 36
+		},
 		{
 			"indices": [
 				5,
@@ -29,29 +52,11 @@
 		},
 		{
 			"indices": null,
-			"x": -10,
-			"y": 140,
-			"anim": "LJ Down",
+			"x": 851,
+			"y": 669,
+			"anim": "LJ Up",
 			"loop": false,
-			"name": "singDOWN",
-			"framerate": 36
-		},
-		{
-			"indices": null,
-			"x": -28,
-			"y": 303,
-			"anim": "LJ RIght",
-			"loop": false,
-			"name": "singRIGHT",
-			"framerate": 36
-		},
-		{
-			"indices": null,
-			"x": -53,
-			"y": 332,
-			"anim": "LJ Left",
-			"loop": false,
-			"name": "singLEFT",
+			"name": "singUP",
 			"framerate": 36
 		},
 		{
@@ -71,11 +76,11 @@
 		},
 		{
 			"indices": null,
-			"x": 851,
-			"y": 669,
-			"anim": "LJ Up",
+			"x": -53,
+			"y": 332,
+			"anim": "LJ Left",
 			"loop": false,
-			"name": "singUP",
+			"name": "singLEFT",
 			"framerate": 36
 		}
 	],
