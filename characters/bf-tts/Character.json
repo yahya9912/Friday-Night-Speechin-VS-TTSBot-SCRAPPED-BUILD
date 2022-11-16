@@ -13,18 +13,9 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": -3,
-			"y": 0,
-			"anim": "BF idle shaking",
-			"loop": true,
-			"name": "scared",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": -22,
 			"y": -49,
-			"anim": "BF NOTE DOWN0",
+			"anim": "BF NOTE DOWN instance ",
 			"loop": false,
 			"name": "singDOWN",
 			"framerate": 24
@@ -42,7 +33,7 @@
 			"indices": null,
 			"x": -45,
 			"y": 31,
-			"anim": "BF NOTE UP0",
+			"anim": "BF NOTE UP instance ",
 			"loop": false,
 			"name": "singUP",
 			"framerate": 24
@@ -78,7 +69,7 @@
 			"indices": null,
 			"x": -42,
 			"y": -2,
-			"anim": "BF NOTE RIGHT0",
+			"anim": "BF NOTE RIGHT instance ",
 			"loop": false,
 			"name": "singRIGHT",
 			"framerate": 24
@@ -105,7 +96,7 @@
 			"indices": null,
 			"x": 5,
 			"y": -5,
-			"anim": "BF NOTE LEFT0",
+			"anim": "BF NOTE LEFT instance",
 			"loop": false,
 			"name": "singLEFT",
 			"framerate": 24
