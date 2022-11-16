@@ -13,7 +13,7 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": -4,
+			"x": -3,
 			"y": 0,
 			"anim": "BF idle shaking",
 			"loop": true,
