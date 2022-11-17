@@ -1,0 +1,175 @@
+{
+    "credits" : [
+        {
+            "name" : "Yahya",
+            "role" : "Main Director, Modder",
+            "icon" : "credits/totally not yahya",
+            "urls" : [
+                {
+                    "name" : "Youtube",
+                    "url" : ""
+                },
+                {
+                    "name" : "Twitter",
+                    "url" : ""
+                }
+            ]
+        },
+        {
+            "name" : "Eev bat",
+            "role" : "Director, composer, also a nice friend",
+            "icon" : "credits/eevbat",
+            "urls" : [
+                {
+                    "name" : "Their YouTube go sub to them or else I have your IP correctly",
+                    "url" : "https://www.youtube.com/channel/UC_oe2WlDJec-5NBMbot2kaA"
+                }
+            ]
+        },
+        {
+            "name" : "Diamantitios",
+            "role" : "Ass-istant Director, Made a lot of cool things to the mod, thank you",
+            "icon" : "credits/diamantitos",
+            "urls" : [
+                {
+                    "name" : "Youtube",
+                    "url" : "https://www.youtube.com/channel/UCeaI170sSwwcnm8Z2kDwKvQ"
+                },
+                {
+                    "name" : "Twitter",
+                    "url" : "https://twitter.com/D2OFFICIAL3"
+                }
+            ]
+        },
+        {
+            "name" : "WOCKY",
+            "role" : "animator, made the bf hand and half of angry bf",
+            "icon" : "credits/wocky",
+            "urls" : [
+                {
+                    "name" : "Youtube",
+                    "url" : "https://www.youtube.com/c/Zynux"
+                },
+                {
+                    "name" : "Twitter",
+                    "url" : "https://twitter.com/ZynuxFNF"
+                }
+            ]
+        },
+        {
+            "name" : "LJ",
+            "role" : "L                  J moment",
+            "icon" : "credits/lj cool",
+            "urls" : [
+                {
+                    "name" : "Youtube",
+                    "url" : "https://www.youtube.com/channel/UCHiwgCXuIj9SL0fUe-7EQ2w"
+                },
+                {
+                    "name" : "Twitter",
+                    "url" : "https://www.youtube.com/channel/UCHiwgCXuIj9SL0fUe-7EQ2w"
+                }
+            ]
+        },
+        {
+            "name" : "Car",
+            "role" : "Composer of 'Speechin' 'Hello' ",
+            "icon" : "credits/car",
+            "urls" : [
+                {
+                    "name" : "Twitter",
+                    "url" : "https://twitter.com/carhihihi"
+                },
+                {
+                    "name" : "YouTube",
+                    "url" : "https://www.youtube.com/channel/UCa54L32bvP81E3K3FrTc62Q"
+                }
+            ]
+        },
+        {
+            "name" : "Ooum",
+            "role" : "Vocals for 'Fallen'",
+            "icon" : "credits/Ooum",
+            "urls" : [
+                {
+                    "name" : "Social Media",
+                    "url" : "https://giantcadastral.carrd.co/"
+                }
+            ]
+        },
+        {
+            "name" : "Punkett",
+            "role" : "Composer of 'Final Round'",
+            "icon" : "credits/Punkett",
+            "urls" : [
+                {
+                    "name" : "Twitter",
+                    "url" : "https://www.twitter.com/_punkett"
+                }
+            ]
+        },
+        {
+            "name" : "Kyutens",
+            "role" : "Composer of the menu",
+            "icon" : "credits/Kyutens",
+            "urls" : [
+                {
+                    "name" : "Social Media",
+                    "url" : "https://linktr.ee/kyutens"
+                }
+            ]
+        },
+        {
+            "name" : "Mr. Mosh",
+            "role" : "Main Artist",
+            "icon" : "credits/mosh",
+            "urls" : [
+                {
+                    "name" : "Twitch",
+                    "url" : "https://www.twitch.tv/the_moshy"
+                },
+                {
+                    "name" :"Twitter",
+                    "url" : "https://twitter.com/Mostachin1"
+                }
+            ]
+        },
+        {
+            "name" : "Anki",
+            "role" : "Sprite Artist and Animator, Icons",
+            "icon" : "credits/Ankinluu",
+            "urls" : [
+                {
+                    "name" : "Twitch",
+                    "url" : "https://www.twitch.tv/the_moshy"
+                },
+                {
+                    "name" :"Twitter",
+                    "url" : "https://twitter.com/ankinluu_"
+                }
+            ]
+        },
+        {
+            "name" : "Mistful Crimson Morning",
+            "role" : "FUCK YOU TWITTER, the funny squidward mod made Voiced Raged",
+            "icon" : "credits/mcm",
+            "urls" : [
+                {
+                    "name" :"No links",
+                    "url" : ""
+                }
+            ]
+        },
+        {
+            "name" : "Gnome",
+            "role" : "Creator of the original TTS Bot, without them, this banger mod wouldn't even exist, Thank you Gnome for this Amazing bot",
+            "icon" : "credits/davidgnome",
+            "urls" : [
+                {
+                    "name" : "Github",
+                    "url" : "https://github.com/GnomedDev"
+                }
+            ]
+        }
+    ]
+}
