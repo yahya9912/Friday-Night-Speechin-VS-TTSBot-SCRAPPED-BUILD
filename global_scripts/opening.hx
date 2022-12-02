@@ -21,7 +21,7 @@ function onGuiPopup() {
 function postUpdate(elapsed:Float){    
     new FlxTimer().start(1.0, function(tmr:FlxTimer)
     {
-        FlxTween.tween(openers, {x: -64}, 1,
+        FlxTween.tween(openers, {x: -5}, 1,
             {						
                 ease: FlxEase.quadInOut
             }	
