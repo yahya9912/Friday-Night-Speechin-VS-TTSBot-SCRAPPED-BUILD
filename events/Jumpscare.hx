@@ -1,6 +1,6 @@
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
-
+//code by W0CKY lmfaoaoaoaoao
 function scare(value) {
     var length:Float = Std.parseFloat(value);
     var newJumpscare:FlxSprite;
@@ -11,9 +11,9 @@ function scare(value) {
   //  newJumpscare.scale.scale(1.175);
     newJumpscare.scrollFactor.set();
    // newJumpscare.screenCenter();
-    newJumpscare.alpha = 1;
     PlayState.add(newJumpscare);
    FlxG.sound.play(Paths.sound('shart'), 100);
+   
 
     new FlxTimer().start(value ,function(tmr:FlxTimer)
         {
@@ -31,6 +31,8 @@ function scare(value) {
 }
 
 function postUpdate(elapsed:Float){  
+
+
 
     if (!EngineSettings.downscroll){  
     Window.frameRate = FlxG.random.int(30, 60);
