@@ -29,7 +29,7 @@
 		"bpm": 104
 	},
 	"skinnableBFs": [
-		"bf tts"
+		"bf-tts"
 	],
 	"description": "the funny bot",
 	"titleBarName": "Discord",
