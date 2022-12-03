@@ -60,6 +60,16 @@
 			"color": "#31323A",
 			"name": "voice-chat",
 			"bpm": 180
+		},
+		{
+			"displayName": "Monochrome",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "tts bot",
+			"color": "#030202",
+			"name": "Monochrome",
+			"bpm": 160
 		}
 	]
 }

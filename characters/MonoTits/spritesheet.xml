@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Muted TTS.png">
+<SubTexture name="Muted TTS idle0000" x="701" y="1145" width="455" height="511" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS idle0001" x="701" y="1145" width="455" height="511" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS idle0002" x="701" y="1145" width="455" height="511" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS left0000" x="1365" y="0" width="682" height="539" frameX="-243" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS left0001" x="0" y="605" width="721" height="540" frameX="-204" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS left0002" x="0" y="1145" width="701" height="537" frameX="-224" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS left0003" x="1365" y="539" width="682" height="538" frameX="-243" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS left0004" x="1365" y="539" width="682" height="538" frameX="-243" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS left0005" x="1365" y="539" width="682" height="538" frameX="-243" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS down0000" x="0" y="0" width="455" height="605" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS down0001" x="455" y="0" width="455" height="575" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS down0002" x="910" y="0" width="455" height="551" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS down0003" x="721" y="605" width="455" height="530" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS down0004" x="721" y="605" width="455" height="530" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS down0005" x="721" y="605" width="455" height="530" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS up0000" x="913" y="1682" width="455" height="467" frameX="-470" frameY="-15" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS up0001" x="1823" y="1682" width="455" height="442" frameX="-470" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS up0002" x="1368" y="1682" width="455" height="450" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS up0003" x="458" y="1682" width="455" height="498" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS up0004" x="458" y="1682" width="455" height="498" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS up0005" x="458" y="1682" width="455" height="498" frameX="-470" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0000" x="1156" y="1145" width="426" height="510" frameX="-653" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0001" x="0" y="1682" width="458" height="509" frameX="-661" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0002" x="1582" y="1145" width="445" height="510" frameX="-658" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0003" x="2047" y="0" width="426" height="510" frameX="-653" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0004" x="2047" y="0" width="426" height="510" frameX="-653" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0005" x="2047" y="0" width="426" height="510" frameX="-653" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Muted TTS right0006" x="2047" y="0" width="426" height="510" frameX="-653" frameY="-91" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>
