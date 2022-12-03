@@ -12,7 +12,7 @@ function scare(value) {
     newJumpscare.scrollFactor.set();
    // newJumpscare.screenCenter();
     PlayState.add(newJumpscare);
-   FlxG.sound.play(Paths.sound('shart'), 100);
+ //  FlxG.sound.play(Paths.sound('shart'), 100);
    
 
     new FlxTimer().start(value ,function(tmr:FlxTimer)
