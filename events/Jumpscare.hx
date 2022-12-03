@@ -34,10 +34,10 @@ function postUpdate(elapsed:Float){
 
 
 
-    if (!EngineSettings.downscroll){  
+  /* if (!EngineSettings.downscroll){  
     Window.frameRate = FlxG.random.int(30, 60);
-    trace('yo pc as LLLL');
-    }
+    trace('yo pc as LLLL')
+    }*/
 }
 function onDadHit(event:NoteHitEvent) {
 
