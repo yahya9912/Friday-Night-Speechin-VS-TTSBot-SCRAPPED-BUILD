@@ -41,5 +41,5 @@ function postUpdate(elapsed:Float){
 }
 function onDadHit(event:NoteHitEvent) {
 
-    scare(0.01);
+ //   scare(0.01);
 }
