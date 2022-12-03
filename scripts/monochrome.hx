@@ -12,7 +12,11 @@ function create() {
 }
 
 function onGuiPopup() {
+    PlayState.healthBar.visible = false;
+    PlayState.healthBarBG.visible = false;
     if (EngineSettings.botplay == true) {
         PlayState_.destroy;
+
     }
 }
+

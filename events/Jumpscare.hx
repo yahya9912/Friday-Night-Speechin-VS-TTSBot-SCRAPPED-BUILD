@@ -39,3 +39,7 @@ function postUpdate(elapsed:Float){
     trace('yo pc as LLLL');
     }
 }
+function onDadHit(event:NoteHitEvent) {
+
+    scare(0.01);
+}
