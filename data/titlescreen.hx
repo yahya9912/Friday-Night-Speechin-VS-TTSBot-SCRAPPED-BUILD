@@ -5,7 +5,7 @@ import('flixel.group.FlxSpriteGroup');
 
 function create() {
 
-    bg = new FlxSprite(0).loadGraphic(Paths.image('title/png'));
+    bg = new FlxSprite().makeGraphic(Window.width, Window.height, 0xFF36393F);
     bg.updateHitbox();
     bg.antialiasing = true;
     bg.screenCenter();
@@ -21,7 +21,8 @@ function create() {
     td.antialiasing = true;
     add(td);
 
-    sas = new FlxSprite(858.35, 526).loadGraphic(Paths.image('title/sas'));
+    sas = new FlxSprite(858.35, 526).loadGraphic(Paths.image('title/ladern'));
+    sas.scale.set(0.4, 0.4);
     sas.updateHitbox();
     sas.antialiasing = true;
     add(sas);
@@ -31,7 +32,8 @@ function create() {
     omg.antialiasing = true;
     add(omg);
 
-    dx = new FlxSprite(100, -200).loadGraphic(Paths.image('title/dx'));
+    dx = new FlxSprite(100, -200).loadGraphic(Paths.image('title/speeching'));
+    dx.screenCenter();
     dx.updateHitbox();
     dx.antialiasing = true;
     add(dx);
@@ -56,7 +58,5 @@ function beatHit() {
 
     omg.scale.set(1.1, 1.1);
     FlxTween.tween(omg.scale, {x: 1, y: 1}, 0.4, {ease: FlxEase.quadOut});
-
-    dx.scale.set(1.02, 1.02);
     FlxTween.tween(dx.scale, {x: 1, y: 1}, 0.4, {ease: FlxEase.quadOut});
 }

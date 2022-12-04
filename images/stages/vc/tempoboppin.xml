@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tempo.png">
+	<!-- Created with Adobe Animate version 23.0.0.403 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="5" y="5" width="457" height="446"/>
+	<SubTexture name="idle0001" x="467" y="5" width="452" height="446" frameX="-3" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0002" x="924" y="5" width="450" height="446" frameX="-4" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0003" x="1379" y="5" width="448" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0004" x="1832" y="5" width="448" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0005" x="2285" y="5" width="448" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0006" x="2738" y="5" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0007" x="3190" y="5" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0008" x="3642" y="5" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0009" x="5" y="456" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0010" x="5" y="456" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0011" x="5" y="456" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+	<SubTexture name="idle0012" x="5" y="456" width="447" height="446" frameX="-5" frameY="0" frameWidth="457" frameHeight="446"/>
+</TextureAtlas>
