@@ -17,7 +17,7 @@ function scare(value) {
 
     new FlxTimer().start(value ,function(tmr:FlxTimer)
         {
-            FlxTween.tween(newJumpscare, {alpha: 0}, 0.4, { ease: FlxEase.quadInOut,  onComplete: function(twn:FlxTween) {newJumpscare.destroy();}});
+            FlxTween.tween(newJumpscare, {alpha: 0}, 0.01, { ease: FlxEase.quadInOut,  onComplete: function(twn:FlxTween) {newJumpscare.destroy();}});
 
         });
        /* if (curStep != null){  
