@@ -10,7 +10,7 @@ function create() {
         EngineSettings.middleScroll = true;
     }
     
-    healthTxt = new FlxText(0, Window.height * 0.8, 0, "HEALTH:");
+    healthTxt = new FlxText(0, Window.height * 0.8, 0, "HEALTH: ?");
     healthTxt.setFormat(Paths.font("vcr.ttf"), 24);
     healthTxt.cameras = [camHUD];
     PlayState.add(healthTxt);
@@ -30,7 +30,7 @@ function onGuiPopup() {
 }
 
 function onPlayerHit(){
-    healthTxt.text = "HEALTH: ?" + Std.int(health * 50);
+    healthTxt.text = "HEALTH: " + Std.int(health * 50);
     if (rating = 'sick')
     health = FlxG.random.float(1,2);
     else
