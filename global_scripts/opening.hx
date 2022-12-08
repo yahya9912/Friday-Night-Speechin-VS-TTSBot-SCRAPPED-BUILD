@@ -2,7 +2,7 @@
 var songName = PlayState.song.song.toLowerCase();
 var openers:FlxSprite;
 var tween:FlxTween;
-
+// HELP I DONT KNOW LE CODE
 function create() {
     openers = new FlxSprite(0, 0).loadGraphic(Paths.image('openers/' + songName));
     openers.scale.scale(0.6);
