@@ -21,22 +21,22 @@ function create() {
     td.antialiasing = true;
     add(td);
 
-    sas = new FlxSprite(858.35, 526).loadGraphic(Paths.image('title/ladern'));
-    sas.scale.set(0.4, 0.4);
-    sas.updateHitbox();
-    sas.antialiasing = true;
-    add(sas);
+    landon = new FlxSprite(858.35, 526).loadGraphic(Paths.image('title/ladern'));
+    landon.scale.set(0.4, 0.4);
+    landon.updateHitbox();
+    landon.antialiasing = true;
+    add(landon);
 
     omg = new FlxSprite(476.05, 19.2).loadGraphic(Paths.image('title/omg'));
     omg.updateHitbox();
     omg.antialiasing = true;
     add(omg);
 
-    dx = new FlxSprite(100, -200).loadGraphic(Paths.image('title/speeching'));
-    dx.screenCenter();
-    dx.updateHitbox();
-    dx.antialiasing = true;
-    add(dx);
+    logo = new FlxSprite(100, -200).loadGraphic(Paths.image('title/speeching'));
+    logo.screenCenter();
+    logo.updateHitbox();
+    logo.antialiasing = true;
+    add(logo);
 
 }
 
@@ -46,8 +46,8 @@ function update(elapsed:Float) {
 
   weewoo += 0.03;
 
-  dx.y += Math.sin(weewoo) * 0.8;
-  dx.angle += Math.cos(weewoo) * 0.1;
+  logo.y += Math.sin(weewoo) * 0.8;
+  logo.angle += Math.cos(weewoo) * 0.1;
 
 }
 
@@ -56,7 +56,7 @@ function beatHit() {
     FlxG.camera.zoom = 1.03;
     FlxTween.tween(FlxG.camera, {zoom: 1}, 0.4, {ease: FlxEase.quadOut});
 
-    omg.scale.set(1.1, 1.1);
-    FlxTween.tween(omg.scale, {x: 1, y: 1}, 0.4, {ease: FlxEase.quadOut});
-    FlxTween.tween(dx.scale, {x: 1, y: 1}, 0.4, {ease: FlxEase.quadOut});
+    landon.scale.set(1.1, 1.1);
+    FlxTween.tween(landon.scale, {x: 1, y: 1}, 0.4, {ease: FlxEase.quadOut});
+    FlxTween.tween(logo.scale, {x: 1, y: 1}, 0.4, {ease: FlxEase.quadOut});
 }
