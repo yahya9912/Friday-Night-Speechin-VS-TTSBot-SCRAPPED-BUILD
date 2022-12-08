@@ -27,6 +27,7 @@
 		},
 		{
 			"indices": null,
+<<<<<<< HEAD
 			"x": 133,
 			"y": -370,
 			"anim": "tts wtf",
@@ -36,6 +37,8 @@
 		},
 		{
 			"indices": null,
+=======
+>>>>>>> dc43813b7049c20432c34b779d36aae433d682a5
 			"x": -11,
 			"y": -245,
 			"anim": "tts down",
@@ -45,6 +48,18 @@
 		},
 		{
 			"indices": null,
+<<<<<<< HEAD
+=======
+			"x": 133,
+			"y": -370,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "wtf",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+>>>>>>> dc43813b7049c20432c34b779d36aae433d682a5
 			"x": 53,
 			"y": -21,
 			"anim": "tts up",
@@ -103,5 +118,9 @@
 			1
 		]
 	],
+<<<<<<< HEAD
 	"scale": 1
+=======
+	"scale": 0.9
+>>>>>>> dc43813b7049c20432c34b779d36aae433d682a5
 }
