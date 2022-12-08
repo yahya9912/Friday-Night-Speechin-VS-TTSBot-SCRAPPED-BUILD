@@ -1,0 +1,107 @@
+{
+	"arrowColors": [
+		"#FEC72A",
+		"#FFFFFF",
+		"#000000",
+		"#FDC321"
+	],
+	"camOffset": {
+		"x": 100,
+		"y": 280
+	},
+	"globalOffset": {
+		"x": 0,
+		"y": 0
+	},
+	"healthbarColor": "#FEBC34",
+	"flipX": false,
+	"anims": [
+		{
+			"indices": null,
+			"x": 15,
+			"y": -173,
+			"anim": "Now it's time",
+			"loop": false,
+			"name": "idle-alt",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -11,
+			"y": -245,
+			"anim": "tts down",
+			"loop": false,
+			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 133,
+			"y": -370,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "wtf",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 53,
+			"y": -21,
+			"anim": "tts up",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -8,
+			"y": -267,
+			"anim": "tts idle",
+			"loop": true,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -4,
+			"y": -256,
+			"anim": "tts right",
+			"loop": false,
+			"name": "singRIGHT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 55,
+			"y": -119,
+			"anim": "tts left",
+			"loop": false,
+			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 999,
+			"y": 999,
+			"anim": "tts f",
+			"loop": true,
+			"name": "leave",
+			"framerate": 24
+		}
+	],
+	"danceSteps": [
+		"idle"
+	],
+	"antialiasing": true,
+	"healthIconSteps": [
+		[
+			20,
+			0
+		],
+		[
+			0,
+			1
+		]
+	],
+	"scale": 0.9
+}

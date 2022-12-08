@@ -6,8 +6,7 @@ var tween:FlxTween;
 
 function create() {
     openers = new FlxSprite(0, 0).loadGraphic(Paths.image('openers/' + songName));
-    openers.setGraphicSize(Std.int(openers.width * 0.6));
-    openers.updateHitbox();
+    openers.scale.scale(0.6);
     openers.cameras = [PlayState.camHUD];
     openers.x = (FlxG.width / 2 - FlxG.width / 2) - openers.width + 10;
 }

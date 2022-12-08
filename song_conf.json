@@ -39,7 +39,9 @@
 			"name": "stuck-a-lot"
 		},
 		{
-			"scripts": [],
+			"scripts": [
+				"Friday-Night-Speechin-VS-TTS-Bot-DEV-BUILD:/scripts/monochrome"
+			],
 			"difficulties": [],
 			"end_cutscene": null,
 			"cutscene": null,

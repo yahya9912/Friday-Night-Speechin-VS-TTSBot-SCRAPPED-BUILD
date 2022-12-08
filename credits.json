@@ -48,11 +48,11 @@
             "urls" : [
                 {
                     "name" : "Youtube",
-                    "url" : "https://www.youtube.com/c/Zynux"
+                    "url" : "https://www.youtube.com/@Snoni"
                 },
                 {
                     "name" : "Twitter",
-                    "url" : "https://twitter.com/ZynuxFNF"
+                    "url" : "https://twitter.com/AshWhenReal"
                 }
             ]
         },
@@ -87,13 +87,13 @@
             ]
         },
         {
-            "name" : "Ooum",
-            "role" : "Vocals for 'Fallen'",
+            "name" : "Viz",
+            "role" : "Charter for Monochrome",
             "icon" : "credits/Ooum",
             "urls" : [
                 {
                     "name" : "Social Media",
-                    "url" : "https://giantcadastral.carrd.co/"
+                    "url" : "https://www.example.com/"
                 }
             ]
         },
