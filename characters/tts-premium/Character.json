@@ -27,20 +27,20 @@
 		},
 		{
 			"indices": null,
-			"x": 133,
-			"y": -370,
-			"anim": "tts wtf",
-			"loop": false,
-			"name": "wtf",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": -11,
 			"y": -245,
 			"anim": "tts down",
 			"loop": false,
 			"name": "singDOWN",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 133,
+			"y": -370,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "wtf",
 			"framerate": 24
 		},
 		{
@@ -103,5 +103,5 @@
 			1
 		]
 	],
-	"scale": 1
+	"scale": 0.9
 }
