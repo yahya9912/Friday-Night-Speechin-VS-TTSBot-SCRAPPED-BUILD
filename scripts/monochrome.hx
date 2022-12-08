@@ -10,7 +10,7 @@ function create() {
         EngineSettings.middleScroll = true;
     }
     
-    healthTxt = new FlxText(0, Window.height * 0.8, 0, "HEALTH: ?");
+    healthTxt = new FlxText(580, Window.height * 0.2, 0, "HEALTH: ?");
     healthTxt.setFormat(Paths.font("vcr.ttf"), 24);
     healthTxt.cameras = [camHUD];
     PlayState.add(healthTxt);
