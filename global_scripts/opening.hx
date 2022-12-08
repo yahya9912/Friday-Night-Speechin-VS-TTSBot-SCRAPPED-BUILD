@@ -13,7 +13,7 @@ function create() {
 
 function onGuiPopup() {
     add(openers);
-    FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) + 10}, 1, {ease: FlxEase.quadInOut, onComplete: function () {
+    FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) + 10}, 1, {ease: FlxEase.backInOut, onComplete: function () {
         new FlxTimer().start(1, function(tmr:FlxTimer) {
             FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) - openers.width + 10}, 1, {ease: FlxEase.backIn});
         });
