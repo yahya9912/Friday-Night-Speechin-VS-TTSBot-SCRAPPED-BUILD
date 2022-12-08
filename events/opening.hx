@@ -1,46 +1,22 @@
 //a
-import flixel.tweens.FlxTween;
-import flixel.tweens.FlxEase;
 var songName = PlayState.song.song.toLowerCase();
 var openers:FlxSprite;
 var tween:FlxTween;
 
 
-function create(){
-    openers = new FlxSprite(0, (PlayState.guiSize.y / 2) - 20);
-    var tex = Paths.getSparrowAtlas('openers/' + songName);
-    openers.frames = tex;
-    openers.animation.addByPrefix('speechin', "speechin", 24);
-    
-    
-    /*openers.setGraphicSize(Std.int(openers.width*.85));
+function create() {
+    openers = new FlxSprite(0, 0).loadGraphic(Paths.image('openers/' + songName));
+    openers.setGraphicSize(Std.int(openers.width * 0.6));
     openers.updateHitbox();
-    add(openers);*/
-
-    openers.antialiasing = true;
-    openers.cameras = [PlayState.camHUD]; 
+    openers.cameras = [PlayState.camHUD];
+    openers.x = (FlxG.width / 2 - FlxG.width / 2) - openers.width + 10;
 }
 
 function onGuiPopup() {
-    openers.animation.play(songName, false);
     add(openers);
+    FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) + 10}, 1, {ease: FlxEase.quadInOut, onComplete: function () {
+        new FlxTimer().start(1, function(tmr:FlxTimer) {
+            FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) - openers.width + 10}, 1, {ease: FlxEase.backIn});
+        });
+    }});
 }
-
-/*function postUpdate(val:Int){
-    FlxTween.tween(openers, {x: -25, alpha: 1}, 1, {
-        ease: FlxEase.quartInOut,
-        startDelay: 0,
-        onComplete: function(twn:FlxTween)
-        {
-            FlxTween.tween(openers, {x: -openers.width, alpha: 0}, 1, {
-                ease: FlxEase.quartInOut,
-                startDelay: 1,
-                onComplete: function(twn:FlxTween)
-                {
-                    openers.destroy();
-                    camfreeze = false;
-                }
-            });
-        }
-    });
-}*/
