@@ -15,7 +15,7 @@
 			"indices": null,
 			"x": -22,
 			"y": -49,
-			"anim": "BF NOTE DOWN instance ",
+			"anim": "BF NOTE DOWN",
 			"loop": false,
 			"name": "singDOWN",
 			"framerate": 24
@@ -33,7 +33,7 @@
 			"indices": null,
 			"x": -45,
 			"y": 31,
-			"anim": "BF NOTE UP instance ",
+			"anim": "BF NOTE UP",
 			"loop": false,
 			"name": "singUP",
 			"framerate": 24
@@ -69,7 +69,7 @@
 			"indices": null,
 			"x": -42,
 			"y": -2,
-			"anim": "BF NOTE RIGHT instance ",
+			"anim": "BF NOTE RIGHT",
 			"loop": false,
 			"name": "singRIGHT",
 			"framerate": 24
@@ -96,7 +96,7 @@
 			"indices": null,
 			"x": 5,
 			"y": -5,
-			"anim": "BF NOTE LEFT instance",
+			"anim": "BF NOTE LEFT",
 			"loop": false,
 			"name": "singLEFT",
 			"framerate": 24
