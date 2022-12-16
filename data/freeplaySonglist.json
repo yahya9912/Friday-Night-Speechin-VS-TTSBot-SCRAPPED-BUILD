@@ -12,13 +12,14 @@
 		},
 		{
 			"difficulties": [
-				"Hard"
+				"Hard",
+				"Nitro"
 			],
-			"displayName": "Hi I'm big LJ",
-			"char": "Placeholder",
+			"displayName": "Hello I'm itsLJCool",
+			"char": "LJ",
 			"bpm": 160,
 			"name": "hello",
-			"color": "#2E293D"
+			"color": "#2A2F47"
 		},
 		{
 			"difficulties": [
@@ -28,7 +29,7 @@
 			"char": "BF angi",
 			"bpm": 150,
 			"name": "Voiced Raged",
-			"color": "#2E293D"
+			"color": "#2A2F47"
 		},
 		{
 			"difficulties": [
@@ -38,14 +39,14 @@
 			"char": "tts-3d",
 			"bpm": 145,
 			"name": "a-link",
-			"color": "#2E293D"
+			"color": "#2A2F47"
 		},
 		{
 			"difficulties": [
 				"Normal"
 			],
 			"displayName": "Stuck A Lot",
-			"char": "placeholder",
+			"char": "LJ",
 			"bpm": 110,
 			"name": "stuck-a-lot",
 			"color": "#0E3800"
@@ -66,7 +67,7 @@
 			"difficulties": [
 				"Hard"
 			],
-			"char": "tts bot",
+			"char": "monotits",
 			"color": "#030202",
 			"name": "Monochrome",
 			"bpm": 160

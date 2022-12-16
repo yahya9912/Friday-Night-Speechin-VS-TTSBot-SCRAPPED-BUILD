@@ -1,25 +1,25 @@
 {
 	"arrowColors": [
-		"#FEC72A",
+		"#FEBF3E",
 		"#FFFFFF",
-		"#000000",
-		"#FDC321"
+		"#FFFFFF",
+		"#000000"
 	],
 	"camOffset": {
-		"x": 100,
-		"y": 280
+		"x": 0,
+		"y": 290
 	},
 	"globalOffset": {
 		"x": 0,
 		"y": 0
 	},
-	"healthbarColor": "#FEBC34",
+	"healthbarColor": "#FFAC00",
 	"flipX": false,
 	"anims": [
 		{
 			"indices": null,
-			"x": 15,
-			"y": -173,
+			"x": 29,
+			"y": -176,
 			"anim": "Now it's time",
 			"loop": false,
 			"name": "idle-alt",
@@ -27,20 +27,17 @@
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-			"x": 133,
-			"y": -370,
-			"anim": "tts wtf",
+			"x": 11,
+			"y": -257,
+			"anim": "tts idle",
 			"loop": false,
-			"name": "wtf",
+			"name": "idle",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-=======
->>>>>>> dc43813b7049c20432c34b779d36aae433d682a5
-			"x": -11,
-			"y": -245,
+			"x": 9,
+			"y": -261,
 			"anim": "tts down",
 			"loop": false,
 			"name": "singDOWN",
@@ -48,38 +45,8 @@
 		},
 		{
 			"indices": null,
-<<<<<<< HEAD
-=======
-			"x": 133,
-			"y": -370,
-			"anim": "tts wtf",
-			"loop": false,
-			"name": "wtf",
-			"framerate": 24
-		},
-		{
-			"indices": null,
->>>>>>> dc43813b7049c20432c34b779d36aae433d682a5
-			"x": 53,
-			"y": -21,
-			"anim": "tts up",
-			"loop": false,
-			"name": "singUP",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": -8,
-			"y": -267,
-			"anim": "tts idle",
-			"loop": true,
-			"name": "idle",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": -4,
-			"y": -256,
+			"x": -17,
+			"y": -255,
 			"anim": "tts right",
 			"loop": false,
 			"name": "singRIGHT",
@@ -87,20 +54,20 @@
 		},
 		{
 			"indices": null,
-			"x": 55,
-			"y": -119,
-			"anim": "tts left",
+			"x": 76,
+			"y": -27,
+			"anim": "tts up",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singUP",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 999,
-			"y": 999,
-			"anim": "tts f",
-			"loop": true,
-			"name": "leave",
+			"x": 71,
+			"y": -113,
+			"anim": "tts left",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],
@@ -118,9 +85,5 @@
 			1
 		]
 	],
-<<<<<<< HEAD
 	"scale": 1
-=======
-	"scale": 0.9
->>>>>>> dc43813b7049c20432c34b779d36aae433d682a5
 }

@@ -60,6 +60,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "voice-chat-nitro"
+		},
+		{
+			"end_cutscene": null,
+			"cutscene": null,
+			"difficulties": [],
+			"scripts": [],
+			"name": "hello-nitro"
 		}
 	]
 }
