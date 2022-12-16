@@ -30,10 +30,11 @@ function onGuiPopup() {
 }
 
 function onPlayerHit(){
+    
     healthTxt.text = "HEALTH: " + Std.int(health * 50);
     if (rating = 'sick')
     health = FlxG.random.float(1,2);
     else
-        {health = FlxG.random.float(1,2);}
+        {health = FlxG.random.float(0.1,1);}
 }
 
