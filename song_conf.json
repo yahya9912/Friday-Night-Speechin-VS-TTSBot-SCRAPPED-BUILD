@@ -62,10 +62,10 @@
 			"name": "voice-chat-nitro"
 		},
 		{
+			"scripts": [],
+			"difficulties": [],
 			"end_cutscene": null,
 			"cutscene": null,
-			"difficulties": [],
-			"scripts": [],
 			"name": "hello-nitro"
 		}
 	]
