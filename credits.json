@@ -2,7 +2,7 @@
     "credits" : [
         {
             "name" : "Yahya",
-            "role" : "Main Director, Modder",
+            "role" : "Main Director, Made all the TTS sprites... except monotits.",
             "icon" : "credits/totally not yahya",
             "urls" : [
                 {
@@ -11,24 +11,24 @@
                 },
                 {
                     "name" : "Twitter",
-                    "url" : ""
+                    "url" : "https://twitter.com/T3Yahya"
                 }
             ]
         },
         {
             "name" : "Eev bat",
-            "role" : "Director, composer, also a nice friend",
+            "role" : "Director, composer, also a nice person! :]",
             "icon" : "credits/eevbat",
             "urls" : [
                 {
-                    "name" : "Their YouTube go sub to them or else I have your IP correctly",
+                    "name" : "Their YouTube go sub to them or I will go to your house",
                     "url" : "https://www.youtube.com/channel/UC_oe2WlDJec-5NBMbot2kaA"
                 }
             ]
         },
         {
             "name" : "Diamantitios",
-            "role" : "Ass-istant Director, Made a lot of cool things to the mod, thank you",
+            "role" : "Director, Main Composer, and a lot of cool things he did, Respect for ya Diaman!",
             "icon" : "credits/diamantitos",
             "urls" : [
                 {
@@ -98,39 +98,39 @@
             ]
         },
         {
-            "name" : "Punkett",
-            "role" : "Composer of 'Final Round'",
+            "name" : "Tricky But Not",
+            "role" : "Composer of 'Triple Devs', also this is VS TTS not VS Devs dum dum.",
             "icon" : "credits/Punkett",
             "urls" : [
                 {
                     "name" : "Twitter",
-                    "url" : "https://www.twitter.com/_punkett"
+                    "url" : "https://twitter.com/NOTTHEMANLOL"
                 }
             ]
         },
         {
-            "name" : "Kyutens",
-            "role" : "Composer of the menu",
-            "icon" : "credits/Kyutens",
+            "name" : "Aight !",
+            "role" : "Composer of the menu, and Yahya just edited the flp like wtf dude :skull:",
+            "icon" : "credits/aight",
             "urls" : [
                 {
-                    "name" : "Social Media",
-                    "url" : "https://linktr.ee/kyutens"
+                    "name" : "the credits are wip please don't touch it thank you",
+                    "url" : ""
                 }
             ]
         },
         {
-            "name" : "Mr. Mosh",
-            "role" : "Main Artist",
+            "name" : "I hate you",
+            "role" : "for accessing",
             "icon" : "credits/mosh",
             "urls" : [
                 {
-                    "name" : "Twitch",
-                    "url" : "https://www.twitch.tv/the_moshy"
+                    "name" : "the credits",
+                    "url" : ""
                 },
                 {
                     "name" :"Twitter",
-                    "url" : "https://twitter.com/Mostachin1"
+                    "url" : ""
                 }
             ]
         },
