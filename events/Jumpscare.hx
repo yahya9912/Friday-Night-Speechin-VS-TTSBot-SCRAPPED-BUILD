@@ -1,6 +1,7 @@
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 //code by W0CKY lmfaoaoaoaoao
+//Fixed by Diaman cause it had a slightly delay when dissapears
 function scare(value) {
     var length:Float = Std.parseFloat(value);
     var newJumpscare:FlxSprite;
