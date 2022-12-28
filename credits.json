@@ -170,6 +170,41 @@
                     "url" : "https://github.com/GnomedDev"
                 }
             ]
+        },
+                {
+            "name" : "SIG7Pro",
+            "role" : "Did barely anything for this mod because he forgot about the dev server being a thing. Might put silly little secret images or something. He also added himself to the credits.json file.",
+            "icon" : "credits/blank",
+            "urls" : [
+                {
+                    "name" : "Pixilart",
+                    "url" : "https://pixilart.com/SIG7/"
+                },
+                {
+                    "name" : "Pixilart(Alt 1)",
+                    "url" : "https://pixilart.com/SIG7Ivan/"
+                },
+                {
+                    "name" : "Pixilart(Alt 2)",
+                    "url" : "https://pixilart.com/SIG7Woops/"
+                },
+                {
+                    "name" : "Newgrounds",
+                    "url" : "https://sig7ivanpoopy.newgrounds.com/"
+                },
+		{
+				   "name": "YouTube",
+					"url": "https://www.youtube.com/channel/UCrvuobIpXNRM0Sfbe567Rcw"
+		},
+                {
+                    "name" : "Twitter",
+                    "url" : "https://twitter.com/SIG7Regainex"
+                }
+                {
+                    "name" : "His FNF' mod's Twitter. Say hi!",
+                    "url" : "https://twitter.com/FNFElectro"
+                }
+            ]
         }
     ]
 }
