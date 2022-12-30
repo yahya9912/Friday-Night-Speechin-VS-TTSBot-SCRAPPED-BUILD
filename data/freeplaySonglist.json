@@ -71,6 +71,16 @@
 			"color": "#030202",
 			"name": "Monochrome",
 			"bpm": 160
+		},
+		{
+			"displayName": "Poker Night",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "bf",
+			"color": "#FFFFFF",
+			"name": "poker-night",
+			"bpm": 117
 		}
 	]
 }

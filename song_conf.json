@@ -67,6 +67,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "hello-nitro"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "poker-night"
 		}
 	]
 }
