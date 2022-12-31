@@ -13,17 +13,17 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": -22,
-			"y": -49,
-			"anim": "BF NOTE DOWN",
+			"x": -26,
+			"y": -50,
+			"anim": "BF NOTE DOWN instance ",
 			"loop": false,
 			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -38,
-			"y": 20,
+			"x": -43,
+			"y": -16,
 			"anim": "BF NOTE RIGHT MISS",
 			"loop": false,
 			"name": "singRIGHTmiss",
@@ -31,17 +31,17 @@
 		},
 		{
 			"indices": null,
-			"x": -45,
-			"y": 31,
-			"anim": "BF NOTE UP",
+			"x": -46,
+			"y": 28,
+			"anim": "BF NOTE UP instance ",
 			"loop": false,
 			"name": "singUP",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -11,
-			"y": 19,
+			"x": -15,
+			"y": -14,
 			"anim": "BF NOTE LEFT MISS",
 			"loop": false,
 			"name": "singLEFTmiss",
@@ -49,8 +49,8 @@
 		},
 		{
 			"indices": null,
-			"x": 7,
-			"y": 4,
+			"x": -5,
+			"y": 6,
 			"anim": "BF HEY",
 			"loop": false,
 			"name": "hey",
@@ -67,20 +67,29 @@
 		},
 		{
 			"indices": null,
-			"x": -42,
-			"y": -2,
-			"anim": "BF NOTE RIGHT",
+			"x": -41,
+			"y": -5,
+			"anim": "BF NOTE RIGHT instance ",
 			"loop": false,
 			"name": "singRIGHT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -30,
-			"y": -22,
+			"x": -28,
+			"y": -21,
 			"anim": "BF NOTE DOWN MISS",
 			"loop": false,
 			"name": "singDOWNmiss",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 4,
+			"y": -7,
+			"anim": "BF NOTE LEFT instance ",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		},
 		{
@@ -94,11 +103,11 @@
 		},
 		{
 			"indices": null,
-			"x": 5,
-			"y": -5,
-			"anim": "BF NOTE LEFT",
+			"x": -7,
+			"y": -11,
+			"anim": "boyfriend dodge instance ",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "dodge",
 			"framerate": 24
 		}
 	],

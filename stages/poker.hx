@@ -379,9 +379,10 @@ function create() {
 	lordX.x -= 600;
 	lordX.y += 150;
 
-    hypno = new Character(750, 135, mod + ":" + "bf-nitro");
+    hypno = new Character(900, 135, mod + ":" + "sansIndie");
     hypno.visible = true;
 	PlayState.dads[2] = hypno;
+	hypno.flipX = true;
 
     mx = new Character(-110, 20, mod + ":" + "LJ");
     mx.visible = true;

@@ -9,7 +9,6 @@ function create() {
 	stage = loadStage('shitno');
 	PlayState.gf.visible = false;
 	PlayState.dad.alpha = 0.0001;
-	EngineSettings.botplay = true;
 
 	SANS = new Boyfriend(PlayState.boyfriend.x, PlayState.boyfriend.y, mod + ":sansIndie");
 	boyfriends.push(SANS);
