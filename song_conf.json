@@ -74,6 +74,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "poker-night"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "shit-vc"
 		}
 	]
 }

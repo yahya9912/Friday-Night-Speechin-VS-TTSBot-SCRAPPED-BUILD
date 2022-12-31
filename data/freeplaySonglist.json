@@ -1,86 +1,96 @@
 {
 	"songs": [
 		{
-			"difficulties": [
-				"Hard"
-			],
 			"displayName": "Speechin'",
+			"difficulties": [
+				"Hard"
+			],
 			"char": "TTS Bot",
-			"bpm": 145,
+			"color": "#2A2F47",
 			"name": "speechin",
-			"color": "#2A2F47"
+			"bpm": 145
 		},
 		{
-			"difficulties": [
-				"Hard",
-				"Nitro"
-			],
 			"displayName": "Hello I'm itsLJCool",
-			"char": "LJ",
-			"bpm": 160,
-			"name": "hello",
-			"color": "#2A2F47"
-		},
-		{
-			"difficulties": [
-				"Hard"
-			],
-			"displayName": "Voiced Raged",
-			"char": "BF angi",
-			"bpm": 150,
-			"name": "Voiced Raged",
-			"color": "#2A2F47"
-		},
-		{
-			"difficulties": [
-				"a-link"
-			],
-			"displayName": "A Link",
-			"char": "tts-3d",
-			"bpm": 145,
-			"name": "a-link",
-			"color": "#2A2F47"
-		},
-		{
-			"difficulties": [
-				"Normal"
-			],
-			"displayName": "Stuck A Lot",
-			"char": "LJ",
-			"bpm": 110,
-			"name": "stuck-a-lot",
-			"color": "#0E3800"
-		},
-		{
-			"displayName": "VC",
 			"difficulties": [
 				"Hard",
 				"Nitro"
 			],
-			"char": "TTS Bot",
-			"color": "#31323A",
-			"name": "voice-chat",
-			"bpm": 180
-		},
-		{
-			"displayName": "Monochrome",
-			"difficulties": [
-				"Hard"
-			],
-			"char": "monotits",
-			"color": "#030202",
-			"name": "Monochrome",
+			"char": "LJ",
+			"color": "#2A2F47",
+			"name": "hello",
 			"bpm": 160
 		},
 		{
-			"displayName": "Poker Night",
+			"displayName": "Voiced Raged",
 			"difficulties": [
 				"Hard"
 			],
+			"char": "BF angi",
+			"color": "#2A2F47",
+			"name": "Voiced Raged",
+			"bpm": 150
+		},
+		{
+			"displayName": "A Link",
+			"difficulties": [
+				"a-link"
+			],
+			"char": "tts-3d",
+			"color": "#2A2F47",
+			"name": "a-link",
+			"bpm": 145
+		},
+		{
+			"displayName": "Stuck A Lot",
+			"difficulties": [
+				"Normal"
+			],
+			"char": "LJ",
+			"color": "#0E3800",
+			"name": "stuck-a-lot",
+			"bpm": 110
+		},
+		{
+			"difficulties": [
+				"Hard",
+				"Nitro"
+			],
+			"displayName": "VC",
+			"char": "TTS Bot",
+			"bpm": 180,
+			"name": "voice-chat",
+			"color": "#31323A"
+		},
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Monochrome",
+			"char": "monotits",
+			"bpm": 160,
+			"name": "Monochrome",
+			"color": "#030202"
+		},
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Poker Night",
 			"char": "bf",
-			"color": "#FFFFFF",
+			"bpm": 117,
 			"name": "poker-night",
-			"bpm": 117
+			"color": "#FFFFFF"
+		},
+		{
+			"bpm": 180,
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "What A Shit VC Channel",
+			"char": "bf",
+			"name": "shit-vc",
+			"color": "#FFFFFF"
 		}
 	]
 }
