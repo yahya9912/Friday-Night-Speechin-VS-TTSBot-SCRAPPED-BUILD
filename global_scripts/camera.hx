@@ -5,10 +5,10 @@ var engineVer = Reflect.getProperty(Main, "engineVer");
 if (!StringTools.startsWith(engineVer, "1.")) {
 function createPost() {
 for(char in [PlayState.boyfriend, PlayState.dad]) {
-char.addCameraOffset('singLEFT', -40, 0);
-char.addCameraOffset('singRIGHT', 40, 0);
-char.addCameraOffset('singUP', 0, -40);
-char.addCameraOffset('singDOWN', 0, 40);
+char.addCameraOffset('singLEFT', -20, 0);
+char.addCameraOffset('singRIGHT', 20, 0);
+char.addCameraOffset('singUP', 0, -20);
+char.addCameraOffset('singDOWN', 0, 20);
 char.addCameraOffset('singLEFT-alt', -20, 0);
 char.addCameraOffset('singRIGHT-alt', 20, 0);
 char.addCameraOffset('singUP-alt', 0, -20);

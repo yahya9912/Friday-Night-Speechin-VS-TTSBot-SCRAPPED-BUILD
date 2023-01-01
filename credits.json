@@ -2,7 +2,7 @@
     "credits" : [
         {
             "name" : "Yahya",
-            "role" : "Main Director, Made all the TTS sprites... except monotits.",
+            "role" : "Main Director, did some stuff and Made all the TTS sprites... except monotits.",
             "icon" : "credits/totally not yahya",
             "urls" : [
                 {
@@ -28,7 +28,7 @@
         },
         {
             "name" : "Diamantitios",
-            "role" : "Director, Main Composer, and a lot of cool things he did, Respect for ya Diaman!",
+            "role" : "Director, Main Composer, and other cool things he did, Respect for ya Diaman!",
             "icon" : "credits/diamantitos",
             "urls" : [
                 {
@@ -43,7 +43,7 @@
         },
         {
             "name" : "WOCKY",
-            "role" : "animator, made the bf hand and half of angry bf",
+            "role" : "Animator, made the bf hand and half of angry bf sprites.",
             "icon" : "credits/wocky",
             "urls" : [
                 {
@@ -58,7 +58,7 @@
         },
         {
             "name" : "LJ",
-            "role" : "L                  J moment",
+            "role" : "Coder for titleState and Pasta Night, LJ Moment",
             "icon" : "credits/lj cool",
             "urls" : [
                 {
@@ -67,7 +67,11 @@
                 },
                 {
                     "name" : "Twitter",
-                    "url" : "https://www.youtube.com/channel/UCHiwgCXuIj9SL0fUe-7EQ2w"
+                    "url" : "https://twitter.com/ItsLJcool"
+                },
+                {
+                    "name" : "Youtube Shorts :troll:",
+                    "url" : "https://www.youtube.com/channel/UCEZFFpiMjXnypeLohQN-HLw"
                 }
             ]
         },
@@ -122,7 +126,7 @@
         {
             "name" : "I hate you",
             "role" : "for accessing",
-            "icon" : "credits/mosh",
+            "icon" : "the/credits",
             "urls" : [
                 {
                     "name" : "the credits",
@@ -135,27 +139,12 @@
             ]
         },
         {
-            "name" : "Anki",
-            "role" : "Sprite Artist and Animator, Icons",
-            "icon" : "credits/Ankinluu",
-            "urls" : [
-                {
-                    "name" : "Twitch",
-                    "url" : "https://www.twitch.tv/the_moshy"
-                },
-                {
-                    "name" :"Twitter",
-                    "url" : "https://twitter.com/ankinluu_"
-                }
-            ]
-        },
-        {
             "name" : "Mistful Crimson Morning",
-            "role" : "FUCK YOU TWITTER, the funny squidward mod made Voiced Raged",
+            "role" : "the funny squidward mod made Voiced Raged, which is actually Race Rage",
             "icon" : "credits/mcm",
             "urls" : [
                 {
-                    "name" :"No links",
+                    "name" :"No links fuck you",
                     "url" : ""
                 }
             ]
@@ -199,7 +188,7 @@
                 {
                     "name" : "Twitter",
                     "url" : "https://twitter.com/SIG7Regainex"
-                }
+                },
                 {
                     "name" : "His FNF' mod's Twitter. Say hi!",
                     "url" : "https://twitter.com/FNFElectro"
