@@ -6,8 +6,8 @@
 		"#00DE00"
 	],
 	"camOffset": {
-		"x": 140,
-		"y": 40
+		"x": 95,
+		"y": -89
 	},
 	"globalOffset": {
 		"x": 10,
@@ -27,15 +27,6 @@
 		},
 		{
 			"indices": null,
-			"x": -101,
-			"y": -48,
-			"anim": "LJRightPose instance ",
-			"loop": false,
-			"name": "singRIGHT",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": -112,
 			"y": -59,
 			"anim": "LJDownPose instance ",
@@ -45,11 +36,11 @@
 		},
 		{
 			"indices": null,
-			"x": -71,
-			"y": -63,
-			"anim": "LJLeftPose instance ",
+			"x": -101,
+			"y": -48,
+			"anim": "LJRightPose instance ",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singRIGHT",
 			"framerate": 24
 		},
 		{
@@ -59,6 +50,15 @@
 			"anim": "LJUpPose instance ",
 			"loop": false,
 			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -71,
+			"y": -63,
+			"anim": "LJLeftPose instance ",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],
