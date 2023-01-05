@@ -1,13 +1,13 @@
 {
 	"arrowColors": [
-		"#16E95B",
-		"#0FC002",
-		"#12FA05",
-		"#33DE0D"
+		"#00E900",
+		"#00C700",
+		"#00FA00",
+		"#00DE00"
 	],
 	"camOffset": {
-		"x": 110,
-		"y": -10
+		"x": 140,
+		"y": 40
 	},
 	"globalOffset": {
 		"x": 10,
@@ -18,75 +18,52 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": -28,
-			"y": 303,
-			"anim": "LJ RIght",
+			"x": -79,
+			"y": -58,
+			"anim": "LJIdle instance ",
+			"loop": false,
+			"name": "idle",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -101,
+			"y": -48,
+			"anim": "LJRightPose instance ",
 			"loop": false,
 			"name": "singRIGHT",
-			"framerate": 36
+			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -10,
-			"y": 140,
-			"anim": "LJ Down",
+			"x": -112,
+			"y": -59,
+			"anim": "LJDownPose instance ",
 			"loop": false,
 			"name": "singDOWN",
-			"framerate": 36
-		},
-		{
-			"indices": [
-				5,
-				6,
-				7,
-				8,
-				9,
-				10
-			],
-			"x": 0,
-			"y": 0,
-			"anim": "LJ Idle",
-			"loop": false,
-			"name": "danceRight",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 851,
-			"y": 669,
-			"anim": "LJ Up",
-			"loop": false,
-			"name": "singUP",
-			"framerate": 36
-		},
-		{
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4
-			],
-			"x": 0,
-			"y": 0,
-			"anim": "LJ Idle",
-			"loop": false,
-			"name": "danceLeft",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": -53,
-			"y": 332,
-			"anim": "LJ Left",
+			"x": -71,
+			"y": -63,
+			"anim": "LJLeftPose instance ",
 			"loop": false,
 			"name": "singLEFT",
-			"framerate": 3
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -90,
+			"y": -37,
+			"anim": "LJUpPose instance ",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
 		}
 	],
 	"danceSteps": [
-		"danceLeft",
-		"danceRight"
+		"idle"
 	],
 	"antialiasing": true,
 	"healthIconSteps": [
@@ -99,5 +76,5 @@
 			1
 		]
 	],
-	"scale": 1
+	"scale": 2
 }
