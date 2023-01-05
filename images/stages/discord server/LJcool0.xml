@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="LJcool.png">
-	<!-- Created with Adobe Animate version 21.0.3.38773 -->
-	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="LJ0000" x="1" y="1" width="227" height="164" frameX="0" frameY="-13" frameWidth="227" frameHeight="178"/>
 	<SubTexture name="LJ0001" x="1" y="1" width="227" height="164" frameX="0" frameY="-13" frameWidth="227" frameHeight="178"/>
 	<SubTexture name="LJ0002" x="230" y="1" width="203" height="170" frameX="-13" frameY="-7" frameWidth="227" frameHeight="178"/>
