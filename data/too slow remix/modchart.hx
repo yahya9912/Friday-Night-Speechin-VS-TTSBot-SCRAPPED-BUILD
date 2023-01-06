@@ -15,6 +15,8 @@ function beatHit(curBeat){
             defaultCamZoom += 0.2;
         case 286:
             defaultCamZoom -= 0.4;
+        case 422:
+             defaultCamZoom += 0.4;
     }
        
 }
