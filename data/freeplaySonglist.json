@@ -91,6 +91,16 @@
 			"char": "bf",
 			"name": "shit-vc",
 			"color": "#FFFFFF"
+		},
+		{
+			"bpm": 180,
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Too Slow Remix Cover Thingy",
+			"char": "bf",
+			"name": "too slow remix",
+			"color": "#FFFFFF"
 		}
 	]
 }
