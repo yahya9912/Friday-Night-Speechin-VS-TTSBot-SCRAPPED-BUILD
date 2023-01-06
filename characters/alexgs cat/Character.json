@@ -6,8 +6,8 @@
 		"#F97C39"
 	],
 	"camOffset": {
-		"x": -70,
-		"y": 180
+		"x": -50,
+		"y": 210
 	},
 	"globalOffset": {
 		"x": 0,
@@ -27,15 +27,6 @@
 		},
 		{
 			"indices": null,
-			"x": 55,
-			"y": -389,
-			"anim": "spooky DOWN note",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": -21,
 			"y": -249,
 			"anim": "spooky sing right",
@@ -45,11 +36,11 @@
 		},
 		{
 			"indices": null,
-			"x": 158,
-			"y": -244,
-			"anim": "note sing left",
+			"x": 55,
+			"y": -389,
+			"anim": "spooky DOWN note",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -59,6 +50,15 @@
 			"anim": "spooky UP NOTE",
 			"loop": false,
 			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 158,
+			"y": -244,
+			"anim": "note sing left",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],
