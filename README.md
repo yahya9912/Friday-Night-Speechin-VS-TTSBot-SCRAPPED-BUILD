@@ -2,7 +2,7 @@
 
 **FOR DEV 1.0 Press Code and Download as Zip, or clone to your mods folder!**
 
-A mod made by Yahya, Eevbat and Diamantitos.
+A mod made by Yahya, Vulvee/Eevbat  and Diamantitos.
 --
 Original idea from:
 
