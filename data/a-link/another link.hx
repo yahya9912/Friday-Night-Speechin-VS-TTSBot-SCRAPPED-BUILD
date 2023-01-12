@@ -11,18 +11,18 @@ function onDadHit(note:Note){
         if (note.isSustainNote) {
             PlayState.currentSustains.push({time: Conductor.songPosition, healthVal: -note.sustainHealth * (global["lampChange"] == true ? 2 : 1)});
         } else {
-            if (PlayState.health > 0.25)
+            if (PlayState.health > 0.35)
                 PlayState.health -= (1 / 100 * PlayState.maxHealth) * (global["lampChange"] == true ? 2 : 1);
 	 }
    
     }
+    constantMissNo.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
 }
 var missingNo:ShaderFilter;
 var missingNoCamGame:ShaderFilter;
 var abliteration:FlxTween;
 function create() {
     abliteration = FlxTween.tween(this, {}, 0);
-    EngineSettings.botplay = true;
 }
 
 var canMISSING:Bool = false;
@@ -113,6 +113,5 @@ function update(elapsed){
         missingNo.data.binaryIntensity.value = [1 / FlxG.random.int(1, 4)];
     else
         missingNo.data.binaryIntensity.value = [1000];
-    constantMissNo.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
 }
 
