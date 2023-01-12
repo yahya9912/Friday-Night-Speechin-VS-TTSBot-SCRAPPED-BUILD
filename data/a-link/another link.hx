@@ -11,7 +11,7 @@ function onDadHit(note:Note){
         if (note.isSustainNote) {
             PlayState.currentSustains.push({time: Conductor.songPosition, healthVal: -note.sustainHealth * (global["lampChange"] == true ? 2 : 1)});
         } else {
-            if (PlayState.health > 0.35)
+            if (PlayState.health > 0.25)
                 PlayState.health -= (1 / 100 * PlayState.maxHealth) * (global["lampChange"] == true ? 2 : 1);
 	 }
    
@@ -25,8 +25,27 @@ function create() {
     abliteration = FlxTween.tween(this, {}, 0);
 }
 
+function onPlayerHit(note:Note) {
+    if (PlayState.health <= 0.25) return;
+    if (funnyLoseHealth) PlayState.health -= (note.isSustainNote) ? 0.03125/2 : 0.125/2;
+}
+
+function onGenerateStaticArrows() {
+    for (e in PlayState.cpuStrums.members) {
+        e.visible = false;
+    }
+}
+
 var canMISSING:Bool = false;
+
+var funnyLoseHealth:Bool = false;
 function beatHit(curBeat) {
+    if (curBeat % 2 == 0) funnyLoseHealth = FlxG.random.bool(10);
+    trace(funnyLoseHealth);
+    for (note in PlayState.notes) {
+        if (!note.mustPress) note.visible = false;
+    }
+
     var chance = FlxG.random.bool(20);
     if ((PlayState.dad.animation.curAnim.name == "idle" && PlayState.dad.animation.curAnim.name != null) || chance) {
     if ((curBeat % FlxG.random.int(1, 5)) || chance && curBeat % FlxG.random.int(2, 5))
@@ -76,6 +95,7 @@ function updatePost() {
         PlayState.timerNow.text = "???";
         PlayState.timerFinal.text = "???";
     }
+    if (FlxG.keys.justPressed.M) PlayState.health = 2;
 }
 
 function createPost() {
@@ -107,13 +127,4 @@ function update(elapsed){
         missingNo.data.binaryIntensity.value = [1 / FlxG.random.int(1, 4)];
     else
         missingNo.data.binaryIntensity.value = [1000];
-}
-
-if (EngineSettings.middleScroll == false) {
-    function update(elapsed:Float){
-      PlayState.cpuStrums.members[0].alpha = 0;
-      PlayState.cpuStrums.members[1].alpha = 0;
-      PlayState.cpuStrums.members[2].alpha = 0;
-      PlayState.cpuStrums.members[3].alpha = 0;
-}
 }
