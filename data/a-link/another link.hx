@@ -22,6 +22,7 @@ var missingNoCamGame:ShaderFilter;
 var abliteration:FlxTween;
 function create() {
     abliteration = FlxTween.tween(this, {}, 0);
+    EngineSettings.botplay = true;
 }
 
 var canMISSING:Bool = false;
@@ -32,6 +33,25 @@ function beatHit(curBeat) {
         canMISSING = true;
     else
         canMISSING = false;
+    }
+
+    if (curBeat == 226) {
+        for (e in PlayState.playerStrums.members) {
+            e.shader = constantMissNo;
+        }
+        PlayState.camHUD.filtersEnabled = false;
+    }
+
+    if (curBeat >= 224 && curBeat < 226)
+        constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(2.5,5)];
+    else 
+        constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
+
+    if (curBeat == 128) {
+        PlayState.timerNow.shader = constantMissNo;
+        PlayState.timerFinal.shader = constantMissNo;
+        PlayState.camHUD.setFilters([new ShaderFilter(constantMissNoLess)]);
+        PlayState.camHUD.filtersEnabled = true;
     }
 
     // if (FlxG.random.bool(1)) {
@@ -51,6 +71,13 @@ function beatHit(curBeat) {
     // }
 }
 
+function updatePost() {
+    if (curBeat >= 128 && curBeat < 200) {
+        PlayState.timerNow.text = "???";
+        PlayState.timerFinal.text = "???";
+    }
+}
+
 function createPost() {
     trippyshader = new CustomShader(mod + ":vhs");
 	PlayState.camGame.setFilters([new ShaderFilter(trippyshader)]);
@@ -64,10 +91,16 @@ function createPost() {
 	// missingNo.data.time.value = [9];
 	// missingNo.data.prob.value = [50];
     PlayState.camGame.filtersEnabled = true;
+    
+    constantMissNo = new CustomShader(mod + ":MISSINGNO!!");
+    constantMissNo.data.binaryIntensity.value = [1000];
+
+    constantMissNoLess = new CustomShader(mod + ":MISSINGNO!!");
+    constantMissNoLess.data.binaryIntensity.value = [1000];
 }
 
 function onGenerateStaticArrows() {
-    for(e in PlayState.cpuStrums) {
+    for(e in PlayState.cpuStrums.members) {
         e.shader = missingNo;
     }
 }
@@ -80,5 +113,6 @@ function update(elapsed){
         missingNo.data.binaryIntensity.value = [1 / FlxG.random.int(1, 4)];
     else
         missingNo.data.binaryIntensity.value = [1000];
+    constantMissNo.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
 }
 
