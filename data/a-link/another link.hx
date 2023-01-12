@@ -79,7 +79,7 @@ function updatePost() {
 }
 
 function createPost() {
-    trippyshader = new CustomShader(mod + ":vhs");
+    trippyshader = new CustomShader(mod + ":old");
 	PlayState.camGame.setFilters([new ShaderFilter(trippyshader)]);
 	trippyshader.data.iTime.value = [0.002];
     
@@ -115,3 +115,11 @@ function update(elapsed){
         missingNo.data.binaryIntensity.value = [1000];
 }
 
+if (EngineSettings.middleScroll == false) {
+    function update(elapsed:Float){
+      PlayState.cpuStrums.members[0].alpha = 0;
+      PlayState.cpuStrums.members[1].alpha = 0;
+      PlayState.cpuStrums.members[2].alpha = 0;
+      PlayState.cpuStrums.members[3].alpha = 0;
+}
+}
