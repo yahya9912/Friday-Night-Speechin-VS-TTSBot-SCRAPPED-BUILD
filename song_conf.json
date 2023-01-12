@@ -88,6 +88,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "too slow remix"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "speechin-nitro"
 		}
 	]
 }
