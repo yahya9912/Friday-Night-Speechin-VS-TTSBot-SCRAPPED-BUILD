@@ -15,7 +15,7 @@ function createPost() {
 	if (FileSystem.exists(path))
 		lyrics = Paths.parseJson(path);
 	else {
-		trace("Lyrics for " + PlayState.song.song.toLowerCase() + " doesn't exist.")
+		trace("Lyrics for " + PlayState.song.song.toLowerCase() + " doesn't exist.");
 		lyrics = [];
 	}
 	trace(lyrics);
