@@ -1,21 +1,23 @@
 //import AlphabetOptimized;
+import sys.FileSystem;
 
 var lyrics:Array<Dynamic> = null;
 var lyricText:AlphabetOptimized = null;
-var path:String = PlayState.SONG.song + '/lyrics';
-
 function createPost() {
+	
+	if (CoolUtil.difficultyString().toLowerCase() == 'nitro') var path:String = "data/" + PlayState.song.song + '/lyrics-nitro.json';
+	else var path:String = "data/" + PlayState.song.song + '/lyrics.json';
 	lyricText = new AlphabetOptimized(0, 0, '', false, .5);
 	lyricText.outline = true;
 	lyricText.cameras = [PlayState.camHUD];
 	PlayState.add(lyricText);
-	LyricText.font = vcr.ttf;
-	if (!Assets.exists(Paths.json(path))) { // uh oh!! no lyrics!!
-		trace('no lyrics.json file for ' + PlayState.SONG.song);
+	lyricText.font = "vcr.ttf";
+	if (FileSystem.exists(path))
+		lyrics = Paths.parseJson(path);
+	else {
+		trace("Lyrics for " + PlayState.song.song.toLowerCase() + " doesn't exist.")
 		lyrics = [];
-		return;
 	}
-	lyrics = Paths.parseJson(path);
 	trace(lyrics);
 }
 

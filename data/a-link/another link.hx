@@ -99,12 +99,6 @@ function createPost() {
     constantMissNoLess.data.binaryIntensity.value = [1000];
 }
 
-function onGenerateStaticArrows() {
-    for(e in PlayState.cpuStrums.members) {
-        e.shader = missingNo;
-    }
-}
-
 function update(elapsed){
     time++;
     if (PlayState.health <= 0.2)

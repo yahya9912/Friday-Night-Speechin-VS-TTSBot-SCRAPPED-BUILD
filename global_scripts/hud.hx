@@ -1,16 +1,18 @@
-var color:FlxColor = 0xFF000000;
+//a
 
 function create() {
-    var bartop = new FlxSprite(-50,-10).makeGraphic(1380,100);
-    bartop.scrollFactor.set(0.0,0.0);
+    var bartop = new FlxSprite().makeGraphic(FlxG.width*2,100, 0xFF000000);
+    bartop.scrollFactor.set();
     bartop.cameras = [camHUD];
-    bartop.color = color;
+    bartop.screenCenter();
+    bartop.y = (FlxG.height/2-FlxG.height/2);
     PlayState.add(bartop);
 
-    var barbot = new FlxSprite(-50,630).makeGraphic(1380,100);
-    barbot.scrollFactor.set(0.0,0.0);
+    var barbot = new FlxSprite().makeGraphic(FlxG.width*2,100, 0xFF000000);
+    barbot.scrollFactor.set();
     barbot.cameras = [camHUD];
-    barbot.color = color;
+    barbot.screenCenter();
+    barbot.y = FlxG.height - barbot.height;
     PlayState.add(barbot);
     // FlxG.mouse.visible = false;
 }
