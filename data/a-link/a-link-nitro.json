@@ -1,0 +1,16 @@
+{
+	"song": {
+		"speed": 1,
+		"player1": "bf",
+		"player2": "dad",
+		"notes": [],
+		"validScore": true,
+		"bpm": 100,
+		"needsVoices": true,
+		"keyNumber": 4,
+		"song": "a-link",
+		"noteTypes": [
+			"Friday Night Funkin':Default Note"
+		]
+	}
+}
