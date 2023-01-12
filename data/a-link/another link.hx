@@ -41,7 +41,6 @@ var canMISSING:Bool = false;
 var funnyLoseHealth:Bool = false;
 function beatHit(curBeat) {
     if (curBeat % 2 == 0) funnyLoseHealth = FlxG.random.bool(10);
-    trace(funnyLoseHealth);
     for (note in PlayState.notes) {
         if (!note.mustPress) note.visible = false;
     }
@@ -95,7 +94,6 @@ function updatePost() {
         PlayState.timerNow.text = "???";
         PlayState.timerFinal.text = "???";
     }
-    if (FlxG.keys.justPressed.M) PlayState.health = 2;
 }
 
 function createPost() {
