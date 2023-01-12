@@ -16,19 +16,19 @@
             ]
         },
         {
-            "name" : "Eev bat",
+            "name" : "Vulvee",
             "role" : "Director, composer, also a nice person! :]",
             "icon" : "credits/eevbat",
             "urls" : [
                 {
-                    "name" : "Their YouTube go sub to them or I will go to your house",
+                    "name" : "Their YouTube go sub to them or I'm coming to your house",
                     "url" : "https://www.youtube.com/channel/UC_oe2WlDJec-5NBMbot2kaA"
                 }
             ]
         },
         {
             "name" : "Diamantitios",
-            "role" : "Director, Main Composer, and other cool things he did, Respect for ya Diaman!",
+            "role" : "Director, Main Composer, and other cool things he did, ¡ORGULLO MEXICANO, CABRONES!",
             "icon" : "credits/diamantitos",
             "urls" : [
                 {
@@ -42,8 +42,8 @@
             ]
         },
         {
-            "name" : "WOCKY",
-            "role" : "Animator, made the bf hand and half of angry bf sprites.",
+            "name" : "W0CKY",
+            "role" : "Animator, made BF hand and half of angy BF sprites.",
             "icon" : "credits/wocky",
             "urls" : [
                 {
@@ -58,7 +58,7 @@
         },
         {
             "name" : "LJ",
-            "role" : "Coder for titleState and Pasta Night, LJ Moment",
+            "role" : "Coded most stuff :0, LJ Moment",
             "icon" : "credits/lj cool",
             "urls" : [
                 {
@@ -77,7 +77,7 @@
         },
         {
             "name" : "Car",
-            "role" : "Composer of 'Speechin' and'Hello' ",
+            "role" : "Original Composer of 'Speechin' and'Hello' ",
             "icon" : "credits/car",
             "urls" : [
                 {
@@ -93,7 +93,7 @@
         {
             "name" : "Viz",
             "role" : "Charter for Monochrome",
-            "icon" : "credits/Ooum",
+            "icon" : "credits/viz",
             "urls" : [
                 {
                     "name" : "Social Media",
@@ -124,12 +124,12 @@
             ]
         },
         {
-            "name" : "I hate you",
-            "role" : "for accessing",
-            "icon" : "the/credits",
+            "name" : "Alexg",
+            "role" : "Composer of Too Slow Remix :]",
+            "icon" : "credits/alex",
             "urls" : [
                 {
-                    "name" : "the credits",
+                    "name" : "wip lmao",
                     "url" : ""
                 },
                 {
@@ -139,8 +139,43 @@
             ]
         },
         {
+    "name" : "SIG7Pro",
+    "role" : "Did barely anything for this mod because he forgot about the dev server being a thing. Might put silly little secret images or something. He also added himself to the credits.json file.",
+    "icon" : "credits/blank",
+    "urls" : [
+        {
+            "name" : "Pixilart",
+            "url" : "https://pixilart.com/SIG7/"
+        },
+        {
+            "name" : "Pixilart(Alt 1)",
+            "url" : "https://pixilart.com/SIG7Ivan/"
+        },
+        {
+            "name" : "Pixilart(Alt 2)",
+            "url" : "https://pixilart.com/SIG7Woops/"
+        },
+        {
+            "name" : "Newgrounds",
+            "url" : "https://sig7ivanpoopy.newgrounds.com/"
+        },
+          {
+           "name": "YouTube",
+            "url": "https://www.youtube.com/channel/UCrvuobIpXNRM0Sfbe567Rcw"
+        },
+        {
+            "name" : "Twitter",
+            "url" : "https://twitter.com/SIG7Regainex"
+        },
+        {
+            "name" : "His FNF' mod's Twitter. Say hi!",
+            "url" : "https://twitter.com/FNFElectro"
+        }
+    ]
+},
+        {
             "name" : "Mistful Crimson Morning",
-            "role" : "the funny squidward mod made Voiced Raged, which is actually Race Rage",
+            "role" : "the funny squidward mod made Voiced Raged, which is actually Road Rage",
             "icon" : "credits/mcm",
             "urls" : [
                 {
@@ -151,47 +186,12 @@
         },
         {
             "name" : "Gnome",
-            "role" : "Creator of the original TTS Bot, without them, this banger mod wouldn't even exist, Thank you Gnome for this Amazing bot",
+            "role" : "Creator of the original TTS Bot, without them, this mod wouldn't even exist, Thank you Gnome for this Amazing bot",
             "icon" : "credits/davidgnome",
             "urls" : [
                 {
                     "name" : "Github",
                     "url" : "https://github.com/GnomedDev"
-                }
-            ]
-        },
-                {
-            "name" : "SIG7Pro",
-            "role" : "Did barely anything for this mod because he forgot about the dev server being a thing. Might put silly little secret images or something. He also added himself to the credits.json file.",
-            "icon" : "credits/blank",
-            "urls" : [
-                {
-                    "name" : "Pixilart",
-                    "url" : "https://pixilart.com/SIG7/"
-                },
-                {
-                    "name" : "Pixilart(Alt 1)",
-                    "url" : "https://pixilart.com/SIG7Ivan/"
-                },
-                {
-                    "name" : "Pixilart(Alt 2)",
-                    "url" : "https://pixilart.com/SIG7Woops/"
-                },
-                {
-                    "name" : "Newgrounds",
-                    "url" : "https://sig7ivanpoopy.newgrounds.com/"
-                },
-		{
-				   "name": "YouTube",
-					"url": "https://www.youtube.com/channel/UCrvuobIpXNRM0Sfbe567Rcw"
-		},
-                {
-                    "name" : "Twitter",
-                    "url" : "https://twitter.com/SIG7Regainex"
-                },
-                {
-                    "name" : "His FNF' mod's Twitter. Say hi!",
-                    "url" : "https://twitter.com/FNFElectro"
                 }
             ]
         }

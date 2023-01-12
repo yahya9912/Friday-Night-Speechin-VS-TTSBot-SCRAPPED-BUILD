@@ -1,106 +1,107 @@
 {
 	"songs": [
 		{
-			"displayName": "Speechin'",
-			"difficulties": [
-				"Hard"
-			],
-			"char": "TTS Bot",
-			"color": "#2A2F47",
-			"name": "speechin",
-			"bpm": 145
-		},
-		{
-			"displayName": "Hello I'm itsLJCool",
 			"difficulties": [
 				"Hard",
 				"Nitro"
 			],
-			"char": "LJ",
-			"color": "#2A2F47",
-			"name": "hello",
-			"bpm": 160
+			"displayName": "Speechin'",
+			"char": "TTS Bot",
+			"bpm": 145,
+			"name": "speechin",
+			"color": "#2A2F47"
 		},
 		{
-			"displayName": "Voiced Raged",
+			"difficulties": [
+				"Hard",
+				"Nitro"
+			],
+			"displayName": "Hello",
+			"char": "LJ",
+			"bpm": 160,
+			"name": "hello",
+			"color": "#2A2F47"
+		},
+		{
 			"difficulties": [
 				"Hard"
 			],
+			"displayName": "Voiced Raged",
 			"char": "BF angi",
-			"color": "#2A2F47",
+			"bpm": 150,
 			"name": "Voiced Raged",
-			"bpm": 150
+			"color": "#2A2F47"
 		},
 		{
-			"displayName": "A Link",
 			"difficulties": [
 				"a-link"
 			],
+			"displayName": "A Link",
 			"char": "tts-3d",
-			"color": "#2A2F47",
+			"bpm": 145,
 			"name": "a-link",
-			"bpm": 145
+			"color": "#2A2F47"
 		},
 		{
-			"displayName": "Stuck A Lot",
 			"difficulties": [
 				"Normal"
 			],
+			"displayName": "Stuck A Lot",
 			"char": "LJ",
-			"color": "#0E3800",
+			"bpm": 110,
 			"name": "stuck-a-lot",
-			"bpm": 110
+			"color": "#0E3800"
 		},
 		{
+			"displayName": "VC",
 			"difficulties": [
 				"Hard",
 				"Nitro"
 			],
-			"displayName": "VC",
 			"char": "TTS Bot",
-			"bpm": 180,
+			"color": "#31323A",
 			"name": "voice-chat",
-			"color": "#31323A"
+			"bpm": 180
 		},
 		{
-			"difficulties": [
-				"Hard"
-			],
 			"displayName": "Monochrome",
+			"difficulties": [
+				"Hard"
+			],
 			"char": "monotits",
-			"bpm": 160,
+			"color": "#030202",
 			"name": "Monochrome",
-			"color": "#030202"
+			"bpm": 160
 		},
 		{
-			"difficulties": [
-				"Hard"
-			],
 			"displayName": "Poker Night",
+			"difficulties": [
+				"Hard"
+			],
 			"char": "bf",
-			"bpm": 117,
+			"color": "#FFFFFF",
 			"name": "poker-night",
-			"color": "#FFFFFF"
+			"bpm": 117
 		},
 		{
-			"bpm": 180,
+			"displayName": "Shit-VC",
 			"difficulties": [
 				"Hard"
 			],
-			"displayName": "What A Shit VC Channel",
 			"char": "bf",
+			"color": "#FFFFFF",
 			"name": "shit-vc",
-			"color": "#FFFFFF"
+			"bpm": 180
 		},
 		{
-			"bpm": 180,
+			"displayName": "Too Slow",
 			"difficulties": [
 				"Hard"
 			],
-			"displayName": "Too Slow Remix Cover Thingy",
 			"char": "bf",
+			"color": "#FFFFFF",
 			"name": "too slow remix",
-			"color": "#FFFFFF"
+			"bpm": 180
 		}
 	]
 }

@@ -18,15 +18,6 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": 29,
-			"y": -176,
-			"anim": "Now it's time",
-			"loop": false,
-			"name": "idle-alt",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": 11,
 			"y": -257,
 			"anim": "tts idle",
@@ -36,11 +27,11 @@
 		},
 		{
 			"indices": null,
-			"x": 9,
-			"y": -261,
-			"anim": "tts down",
+			"x": 29,
+			"y": -176,
+			"anim": "Now it's time",
 			"loop": false,
-			"name": "singDOWN",
+			"name": "idle-alt",
 			"framerate": 24
 		},
 		{
@@ -54,11 +45,11 @@
 		},
 		{
 			"indices": null,
-			"x": 76,
-			"y": -27,
-			"anim": "tts up",
+			"x": 9,
+			"y": -261,
+			"anim": "tts down",
 			"loop": false,
-			"name": "singUP",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -68,6 +59,24 @@
 			"anim": "tts left",
 			"loop": false,
 			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 76,
+			"y": -27,
+			"anim": "tts up",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": -999,
+			"y": 999,
+			"anim": "tts tf",
+			"loop": false,
+			"name": "leave",
 			"framerate": 24
 		}
 	],
