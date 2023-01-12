@@ -5,17 +5,19 @@ var lyrics:Array<Dynamic> = null;
 var lyricText:AlphabetOptimized = null;
 function createPost() {
 	
-	if (CoolUtil.difficultyString().toLowerCase() == 'nitro') var path:String = "data/" + PlayState.song.song + '/lyrics-nitro.json';
-	else var path:String = "data/" + PlayState.song.song + '/lyrics.json';
+	if (CoolUtil.difficultyString().toLowerCase() == 'nitro') var path:String = PlayState.SONG.song + '/lyrics-nitro';
+	else var path:String = PlayState.SONG.song + '/lyrics';
 	lyricText = new AlphabetOptimized(0, 0, '', false, .5);
 	lyricText.outline = true;
 	lyricText.cameras = [PlayState.camHUD];
 	PlayState.add(lyricText);
-	lyricText.font = "vcr.ttf";
-	if (FileSystem.exists(path))
+	if (Assets.exists(Paths.json(path))) {
+		trace(path);
 		lyrics = Paths.parseJson(path);
+	}
 	else {
-		trace("Lyrics for " + PlayState.song.song.toLowerCase() + " doesn't exist.");
+		trace(path);
+		trace("Lyrics for " + PlayState.SONG.song.toLowerCase() + " doesn't exist.");
 		lyrics = [];
 	}
 	trace(lyrics);
