@@ -27,6 +27,7 @@ function create() {
 }
 
 function onPlayerHit(note:Note) {
+    constantMissNo.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
     if (PlayState.health <= 0.25) return;
     if (funnyLoseHealth) PlayState.health -= (note.isSustainNote) ? 0.03125/2 : 0.125/2;
 }
@@ -64,7 +65,7 @@ function beatHit(curBeat) {
     if (curBeat >= 224 && curBeat < 226)
         constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(2.5,5)];
     else 
-        constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
+        constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 0.75)];
 
     if (curBeat == 128) {
         PlayState.timerNow.shader = constantMissNo;
@@ -128,17 +129,9 @@ function update(elapsed){
     
     
     for (e in PlayState.cpuStrums.members) {
-        e.alpha = 0.5 + Math.sin((Conductor.songPosition / 500));
+        e.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
     }
     for (note in PlayState.notes) {
-        if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 500);
+        if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
     }
 }
-
-function onGuiPopup()
-    {
-        for (strum in PlayState.cpuStrums.members)
-            {
-                strum.alpha = 0;
-            }
-    }
