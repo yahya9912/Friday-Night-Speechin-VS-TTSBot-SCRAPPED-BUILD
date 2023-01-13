@@ -134,3 +134,11 @@ function update(elapsed){
         if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 500);
     }
 }
+
+function onGuiPopup()
+    {
+        for (strum in PlayState.cpuStrums.members)
+            {
+                strum.alpha = 0;
+            }
+    }

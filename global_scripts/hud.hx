@@ -1,18 +1,16 @@
-//a
+var color:FlxColor = 0xFF000000;
 
 function create() {
-    var bartop = new FlxSprite().makeGraphic(FlxG.width*2,100, 0xFF000000);
-    bartop.scrollFactor.set();
+    var bartop = new FlxSprite(-50,-10).makeGraphic(1380,100);
+    bartop.scrollFactor.set(0.0,0.0);
     bartop.cameras = [camHUD];
-    bartop.screenCenter();
-    bartop.y = (FlxG.height/2-FlxG.height/2);
+    bartop.color = color;
     PlayState.add(bartop);
 
-    var barbot = new FlxSprite().makeGraphic(FlxG.width*2,100, 0xFF000000);
-    barbot.scrollFactor.set();
+    var barbot = new FlxSprite(-50,630).makeGraphic(1380,100);
+    barbot.scrollFactor.set(0.0,0.0);
     barbot.cameras = [camHUD];
-    barbot.screenCenter();
-    barbot.y = FlxG.height - barbot.height;
+    barbot.color = color;
     PlayState.add(barbot);
     // FlxG.mouse.visible = false;
 }
