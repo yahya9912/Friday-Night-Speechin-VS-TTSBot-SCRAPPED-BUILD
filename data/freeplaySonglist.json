@@ -61,7 +61,7 @@
 			"displayName": "VC",
 			"char": "TTS Bot",
 			"bpm": 180,
-			"name": "voice-chat",
+			"name": "vc",
 			"color": "#31323A"
 		},
 		{
