@@ -8,6 +8,7 @@ function onDadHit(note:Note){
         return;
     }
     else{
+        if (funnyLoseHealth) PlayState.health += (note.isSustainNote) ? 0.03125/2 : 0.125/2;
         if (note.isSustainNote) {
             PlayState.currentSustains.push({time: Conductor.songPosition, healthVal: -note.sustainHealth * (global["lampChange"] == true ? 2 : 1)});
         } else {
@@ -32,7 +33,7 @@ function onPlayerHit(note:Note) {
 
 function onGenerateStaticArrows() {
     for (e in PlayState.cpuStrums.members) {
-        e.visible = false;
+        e.alpha = 0;
     }
 }
 
@@ -40,9 +41,9 @@ var canMISSING:Bool = false;
 
 var funnyLoseHealth:Bool = false;
 function beatHit(curBeat) {
-    if (curBeat % 2 == 0) funnyLoseHealth = FlxG.random.bool(10);
+    if (curBeat % 4 == 0) funnyLoseHealth = FlxG.random.bool(10);
     for (note in PlayState.notes) {
-        if (!note.mustPress) note.visible = false;
+        if (!note.mustPress) note.alpha = 0.0001;
     }
 
     var chance = FlxG.random.bool(20);
@@ -118,11 +119,18 @@ function createPost() {
 }
 
 function update(elapsed){
-    time++;
     if (PlayState.health <= 0.2)
           FlxG.camera.shake(.005,.1);
     if (canMISSING)
         missingNo.data.binaryIntensity.value = [1 / FlxG.random.int(1, 4)];
     else
         missingNo.data.binaryIntensity.value = [1000];
+    
+    
+    for (e in PlayState.cpuStrums.members) {
+        e.alpha = 0.5 + Math.sin((Conductor.songPosition / 500));
+    }
+    for (note in PlayState.notes) {
+        if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 500);
+    }
 }

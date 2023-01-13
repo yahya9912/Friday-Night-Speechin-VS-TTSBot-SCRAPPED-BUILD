@@ -16,14 +16,26 @@ function create() {
     openers.x = (FlxG.width / 2 - FlxG.width / 2) - openers.width- 150;
 }
 
-function onGuiPopup() {
+function musicstart() {
     add(openers);
+    if (PlayState.song.song.toLowerCase() == "shit-vc") return;
     FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2)}, 1, {ease: FlxEase.quadInOut, onComplete: function () {
         new FlxTimer().start(1, function(tmr:FlxTimer) {
             FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) - openers.width - 150}, 1, {ease: FlxEase.backIn});
         });
     }});
 }
+
+function beatHit() {
+    if (curBeat == 32 && PlayState.song.song.toLowerCase() == "shit-vc") {
+        FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2)}, 1, {ease: FlxEase.quadInOut, onComplete: function () {
+            new FlxTimer().start(1, function(tmr:FlxTimer) {
+                FlxTween.tween(openers, {x: (FlxG.width / 2 - FlxG.width / 2) - openers.width - 150}, 1, {ease: FlxEase.backIn});
+            });
+        }});
+    }
+}
+
 function getFrames(image:FlxSprite, names:Array<String>, looping:Array<Bool>) { // changes the Dialgoue Box image, causes a sec of lag tho
     availableAnims = [];
     var numbers = ["0","1","2","3","4","5","6","7","8","9"];
