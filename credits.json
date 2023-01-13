@@ -28,7 +28,7 @@
         },
         {
             "name" : "Diamantitios",
-            "role" : "Director, Main Composer, and other cool things he did, ¡ORGULLO MEXICANO, CABRONES!",
+            "role" : "Director, Main Composer, and the team minority, ¡ORGULLO MEXICANO, CABRONES!",
             "icon" : "credits/diamantitos",
             "urls" : [
                 {
@@ -43,7 +43,7 @@
         },
         {
             "name" : "W0CKY",
-            "role" : "Animator, made BF hand and half of angy BF sprites.",
+            "role" : "Animator, coded half of the mod, made BF hand and half of angy BF sprites.",
             "icon" : "credits/wocky",
             "urls" : [
                 {
@@ -52,7 +52,7 @@
                 },
                 {
                     "name" : "Twitter",
-                    "url" : "https://twitter.com/AshWhenReal"
+                    "url" : "https://twitter.com/wockerman420"
                 }
             ]
         },

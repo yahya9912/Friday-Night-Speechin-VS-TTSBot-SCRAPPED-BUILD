@@ -115,11 +115,10 @@ function update(elapsed){
         missingNo.data.binaryIntensity.value = [1000];
 }
 
-if (EngineSettings.middleScroll == false) {
-    function update(elapsed:Float){
-      PlayState.cpuStrums.members[0].alpha = 0;
-      PlayState.cpuStrums.members[1].alpha = 0;
-      PlayState.cpuStrums.members[2].alpha = 0;
-      PlayState.cpuStrums.members[3].alpha = 0;
-}
-}
+function onGuiPopup()
+    {
+        for (strum in PlayState.cpuStrums.members)
+            {
+                strum.alpha = 0;
+            }
+    }
