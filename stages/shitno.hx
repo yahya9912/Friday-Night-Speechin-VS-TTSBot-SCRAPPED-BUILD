@@ -52,9 +52,7 @@ var yourMother2:Array<Int> = [726, 848, 960, 1072];
 function onGenerateStaticArrows() {
 	PlayState.camGame.alpha = 0.0001;
     PlayState.camHUD.alpha = 0;
-	for (e in PlayState.playerStrums.members) {
-		e.alpha = 0;
-	}
+	for (e in PlayState.playerStrums.members) e.alpha = 0;
 	for (i in PlayState.cpuStrums.members) i.alpha = 0;
 }
 
@@ -65,6 +63,7 @@ function onPsychEvent(arg, ?param1, ?param2) {
 		case "Fade In Intro":
 			FlxTween.tween(PlayState.camGame, {alpha: 1.0}, 2.5, {ease: FlxEase.quadInOut});
 			cameraTweenStuff(-0.3, 5.0);
+			PlayState.scripts.executeFunc("doOpener");
 		case "HUD Fade":
 			var val1 = param1;
 			if (Math.isNaN(val1) || val1 <= 0 || val1 == '')
