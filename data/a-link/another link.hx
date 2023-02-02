@@ -4,10 +4,8 @@ var trippyshader:ShaderFilter;
 var time = 0;
 
 function onDadHit(note:Note){
-    if(PlayState.health <= (4 / 100 * PlayState.maxHealth)){
-        return;
-    }
-    else{
+    if (PlayState.health <= (4 / 100 * PlayState.maxHealth)) return;
+    else {
         if (funnyLoseHealth) PlayState.health += (note.isSustainNote) ? 0.03125/2 : 0.125/2;
         if (note.isSustainNote) {
             PlayState.currentSustains.push({time: Conductor.songPosition, healthVal: -note.sustainHealth * (global["lampChange"] == true ? 2 : 1)});
@@ -21,11 +19,6 @@ function onDadHit(note:Note){
 }
 var missingNo:ShaderFilter;
 var missingNoCamGame:ShaderFilter;
-var abliteration:FlxTween;
-function create() {
-    abliteration = FlxTween.tween(this, {}, 0);
-}
-
 function onPlayerHit(note:Note) {
     constantMissNo.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 1)];
     if (PlayState.health <= 0.25) return;
@@ -33,13 +26,10 @@ function onPlayerHit(note:Note) {
 }
 
 function onGenerateStaticArrows() {
-    for (e in PlayState.cpuStrums.members) {
-        e.alpha = 0;
-    }
+    for (e in PlayState.cpuStrums.members) e.alpha = 0;
 }
 
 var canMISSING:Bool = false;
-
 var funnyLoseHealth:Bool = false;
 function beatHit(curBeat) {
     if (curBeat % 4 == 0) funnyLoseHealth = FlxG.random.bool(10);
@@ -54,24 +44,21 @@ function beatHit(curBeat) {
     else
         canMISSING = false;
     }
-
-    if (curBeat == 226) {
-        for (e in PlayState.playerStrums.members) {
-            e.shader = constantMissNo;
-        }
-        PlayState.camHUD.filtersEnabled = false;
-    }
-
     if (curBeat >= 224 && curBeat < 226)
         constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(2.5,5)];
     else 
         constantMissNoLess.data.binaryIntensity.value = [1 / FlxG.random.float(0.25, 0.75)];
-
-    if (curBeat == 128) {
-        PlayState.timerNow.shader = constantMissNo;
-        PlayState.timerFinal.shader = constantMissNo;
-        PlayState.camHUD.setFilters([new ShaderFilter(constantMissNoLess)]);
-        PlayState.camHUD.filtersEnabled = true;
+    switch(curBeat) {
+        case 128:
+            PlayState.timerNow.shader = constantMissNo;
+            PlayState.timerFinal.shader = constantMissNo;
+            PlayState.camHUD.setFilters([new ShaderFilter(constantMissNoLess)]);
+            PlayState.camHUD.filtersEnabled = true;
+        case 226:
+            for (e in PlayState.playerStrums.members) {
+                e.shader = constantMissNo;
+            }
+            PlayState.camHUD.filtersEnabled = false;
     }
 
     // if (FlxG.random.bool(1)) {
@@ -92,7 +79,7 @@ function beatHit(curBeat) {
 }
 
 function updatePost() {
-    if (curBeat >= 128 && curBeat < 200) {
+    if (curBeat >= 128 && curBeat < 208) {
         PlayState.timerNow.text = "???";
         PlayState.timerFinal.text = "???";
     }
@@ -120,17 +107,14 @@ function createPost() {
 }
 
 function update(elapsed){
-    if (PlayState.health <= 0.2)
-          FlxG.camera.shake(.005,.1);
+    if (PlayState.health <= 0.2) FlxG.camera.shake(.005,.1);
     if (canMISSING)
         missingNo.data.binaryIntensity.value = [1 / FlxG.random.int(1, 4)];
     else
         missingNo.data.binaryIntensity.value = [1000];
     
     
-    for (e in PlayState.cpuStrums.members) {
-        e.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
-    }
+    for (e in PlayState.cpuStrums.members) e.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
     for (note in PlayState.notes) {
         if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
     }

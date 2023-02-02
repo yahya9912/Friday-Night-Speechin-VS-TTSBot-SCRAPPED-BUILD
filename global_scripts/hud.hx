@@ -14,10 +14,11 @@ function create() {
 
     // LJ is going to fix yourr damn code AGAIN!!!
     for (i in 0...2) {
-        var bar:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 100);
+        var bar:FlxSprite = new FlxSprite().makeGraphic(FlxG.width*2, 100, 0xFF000000);
         bar.scrollFactor.set();
+        bar.screenCenter();
         bar.cameras = [PlayState.camHUD];
-        bar.y = (i == 0) ? FlxG.height + bar.height/2 : (FlxG.height/2+FlxG.height/2) - bar.height/2;
+        bar.y = (i == 0) ? FlxG.height - bar.height : (FlxG.height/2-FlxG.height/2) - bar.height/2;
         add(bar);
         bars.push(bar);
     }
@@ -26,3 +27,4 @@ function create() {
 function ljMoment(toggle:Bool) {
     for (e in bars) e.visible = toggle;
 }
+// LJ MOMENT

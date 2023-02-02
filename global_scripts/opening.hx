@@ -27,7 +27,7 @@ function create() {
 
 function musicstart() {
     if (PlayState.song.song.toLowerCase() == "shit-vc") return;
-    doOpener()
+    doOpener();
 }
 function doOpener() {
     if (openers == null) return; // just in case someone does an unfunny thing
