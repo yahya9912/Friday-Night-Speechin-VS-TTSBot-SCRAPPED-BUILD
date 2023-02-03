@@ -31,7 +31,6 @@ function onPsychEvent(event:String, ?value1:Dynamic, ?value2:Dynamic) {
             PlayState.dad.x += 550;
             PlayState.dad.y += 100;
             defaultCamZoom = 1.2;
-            boyfriends.push(boyfriendFP);
             boyfriendFP.alpha = 1;
             PlayState.camGame.filtersEnabled = true;
             new FlxTimer().start(.5, function(tmr:FlxTimer) {
@@ -43,6 +42,9 @@ function onPsychEvent(event:String, ?value1:Dynamic, ?value2:Dynamic) {
                 PlayState.playerStrums.members[i].x = middleScroll[i];
                 PlayState.cpuStrums.members[i].alpha = 0.0001;
             }
+        case "Hide Hud":
+            FlxTween.tween(camHUD, {alpha: 0}, 1, {ease: FlxEase.quadOut});
+            FlxTween.tween(boyfriendFP, {alpha: 0}, 0.5, {ease: FlxEase.expoIn});
     }
 }
 
@@ -51,6 +53,7 @@ function createPost() {
     boyfriendFP = new Boyfriend(PlayState.boyfriend.x+400, PlayState.boyfriend.y+400, mod + ":bf-fp");
     boyfriendFP.alpha = 0.0001;
     add(boyfriendFP);
+    boyfriends.push(boyfriendFP);
     
     funnyAbliteration = new CustomShader(mod + ":daFunnyChrom");
     funnyAbliteration.data.amount.value = [0.5];
@@ -68,7 +71,10 @@ function beatHit(curBeat) {
 
 function uhIdk() {
     defaultCamZoom = 0.6;
-    FlxTween.tween(camHUD, {zoom: 1}, 1, {ease: FlxEase.expoIn});
+}
+
+function ending() {
+    defaultCamZoom = 0.5;
 }
 
 function backNormal() {
@@ -80,7 +86,7 @@ function backNormal() {
     PlayState.gf.alpha = 1;
     PlayState.dad.setPosition(oldDadXY[0], oldDadXY[1]);
     defaultCamZoom = 0.5;
-    boyfriendFP.visible = false;
+    boyfriendFP.alpha = 0.0001;
     PlayState.camGame.filtersEnabled = false;
     PlayState.camGame.alpha = 0.0001;
     camHUD.alpha = 0.0001;

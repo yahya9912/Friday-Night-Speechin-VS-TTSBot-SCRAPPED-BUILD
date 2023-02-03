@@ -32,9 +32,8 @@ function onGenerateStaticArrows() {
 var canMISSING:Bool = false;
 var funnyLoseHealth:Bool = false;
 function beatHit(curBeat) {
-    if (curBeat % 4 == 0) funnyLoseHealth = FlxG.random.bool(10);
-    for (note in PlayState.notes) {
-        if (!note.mustPress) note.alpha = 0.0001;
+    if (curBeat % 4 == 0) {
+        funnyLoseHealth = FlxG.random.bool(10);
     }
 
     var chance = FlxG.random.bool(20);
@@ -60,6 +59,12 @@ function beatHit(curBeat) {
             }
             PlayState.camHUD.filtersEnabled = false;
     }
+    if (beatShaderCool) {
+        funnyAbliteration.data.amount.value = [beatStartVal];
+        FlxTween.num(funnyAbliteration.data.amount.value[0], beatToVal, beatTime, {ease: FlxEase.linear}, function(v:Float) {
+            funnyAbliteration.data.amount.value[0] = v;
+        });
+    }
 
     // if (FlxG.random.bool(1)) {
     //     canMISSING = true;
@@ -78,6 +83,37 @@ function beatHit(curBeat) {
     // }
 }
 
+var killMe:FlxTween;
+function shaderGO(valueStart:Float = 2.0, valueTo:Float = 0.5, time:Float = 0.25) {
+    if (killMe != null) killMe.cancel();
+    funnyAbliteration.data.amount.value = [valueStart];
+    killMe = FlxTween.num(funnyAbliteration.data.amount.value[0], valueTo, time, {ease: FlxEase.linear}, function(v:Float) {
+        funnyAbliteration.data.amount.value[0] = v;
+    });
+}
+var beatShaderCool:Bool = false;
+var beatStartVal:Float = 0.0;
+var beatToVal:Float = 0.0;
+var beatTime:Float = 0.0;
+function toggleShaderBeat(?startVal:Float, ?toVal:Float, ?time:Float, ?forceToggle:String) {
+    if (forceToggle == "true") forceToggle = true;
+    else if (forceToggle == "false") forceToggle = false;
+    beatStartVal = startVal;
+    beatToVal = toVal;
+    beatTime = time;
+    trace(forceToggle);
+    if (forceToggle == null) beatShaderCool = !beatShaderCool;
+    else beatShaderCool = forceToggle;
+}
+function camZoom(valueTo:Float, time:Float = 1, tween:Bool) {
+    if (tween) {
+    FlxTween.num(FlxG.camera.zoom, valueTo, time, {ease: FlxEase.linear}, function(v:Float) {
+        FlxG.camera.zoom = v;
+        trace(FlxG.camera.zoom);
+    });
+    } else FlxG.camera.zoom = valueTo;
+}
+
 function updatePost() {
     if (curBeat >= 128 && curBeat < 208) {
         PlayState.timerNow.text = "???";
@@ -86,8 +122,8 @@ function updatePost() {
 }
 
 function createPost() {
+    EngineSettings.botplay = true;
     trippyshader = new CustomShader(mod + ":old");
-	PlayState.camGame.setFilters([new ShaderFilter(trippyshader)]);
 	trippyshader.data.iTime.value = [0.002];
     
     missingNo = new CustomShader(mod + ":MISSINGNO!!");
@@ -97,6 +133,10 @@ function createPost() {
 	// missingNo.data.intensityChromatic.value = [1000];
 	// missingNo.data.time.value = [9];
 	// missingNo.data.prob.value = [50];
+    
+    funnyAbliteration = new CustomShader(mod + ":daFunnyChrom");
+    funnyAbliteration.data.amount.value = [0.5];
+	PlayState.camGame.setFilters([new ShaderFilter(trippyshader), new ShaderFilter(funnyAbliteration)]);
     PlayState.camGame.filtersEnabled = true;
     
     constantMissNo = new CustomShader(mod + ":MISSINGNO!!");
