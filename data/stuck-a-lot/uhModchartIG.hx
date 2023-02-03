@@ -4,8 +4,6 @@ import CustomShader;
 function update() {
     if (FlxG.keys.justPressed.B) EngineSettings.botplay = !EngineSettings.botplay;
     if (inThingy) PlayState.camFollow.x -= 100;
-    if (!musicStarted) return;
-    PlayState.camFollow.y -= 200;
 }
 var isAlrMiddleScroll = EngineSettings.middleScroll;
 var middleScroll:Array<Int> = [416, 528, 640, 752];
