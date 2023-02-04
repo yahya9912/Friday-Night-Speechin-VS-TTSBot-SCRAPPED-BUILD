@@ -159,12 +159,6 @@ function update(elapsed){
         missingNo.data.binaryIntensity.value = [1 / FlxG.random.int(1, 4)];
     else
         missingNo.data.binaryIntensity.value = [1000];
-    
-    
-    for (e in PlayState.cpuStrums.members) e.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
-    for (note in PlayState.notes) {
-        if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
-    }
 }
 
 function create() {
