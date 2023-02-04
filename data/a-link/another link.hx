@@ -166,3 +166,10 @@ function update(elapsed){
         if (!note.mustPress) note.alpha = 0.5 + Math.sin(Conductor.songPosition / 300) / 2;
     }
 }
+
+function create() {
+    PlayState.gf.visible = false;
+    if (EngineSettings.middleScroll == false) {
+        EngineSettings.middleScroll = true;
+    }
+}
