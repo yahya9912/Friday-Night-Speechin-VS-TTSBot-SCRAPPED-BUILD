@@ -3,7 +3,7 @@
 uniform vec2 iResolution; 
 uniform float iTime;
 
-#define time iTime
+// #define time iTime
 
 #define PI 3.14159265
 

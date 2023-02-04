@@ -60,8 +60,9 @@ function beatHit(curBeat) {
             PlayState.camHUD.filtersEnabled = false;
     }
     if (beatShaderCool) {
+        if (killMe2 != null) killMe2.cancel();
         funnyAbliteration.data.amount.value = [beatStartVal];
-        FlxTween.num(funnyAbliteration.data.amount.value[0], beatToVal, beatTime, {ease: FlxEase.linear}, function(v:Float) {
+        killMe2 = FlxTween.num(funnyAbliteration.data.amount.value[0], beatToVal, beatTime, {ease: FlxEase.linear}, function(v:Float) {
             funnyAbliteration.data.amount.value[0] = v;
         });
     }
@@ -84,12 +85,18 @@ function beatHit(curBeat) {
 }
 
 var killMe:FlxTween;
+var killMe2:FlxTween;
 function shaderGO(valueStart:Float = 2.0, valueTo:Float = 0.5, time:Float = 0.25) {
     if (killMe != null) killMe.cancel();
     funnyAbliteration.data.amount.value = [valueStart];
     killMe = FlxTween.num(funnyAbliteration.data.amount.value[0], valueTo, time, {ease: FlxEase.linear}, function(v:Float) {
         funnyAbliteration.data.amount.value[0] = v;
     });
+}
+function bgStuff(?force) {
+	if (force == "true") force = true;
+	else force = false;
+    PlayState.scripts.executeFunc("toggleBGbeat", [force]);
 }
 var beatShaderCool:Bool = false;
 var beatStartVal:Float = 0.0;
@@ -101,11 +108,11 @@ function toggleShaderBeat(?startVal:Float, ?toVal:Float, ?time:Float, ?forceTogg
     beatStartVal = startVal;
     beatToVal = toVal;
     beatTime = time;
-    trace(forceToggle);
     if (forceToggle == null) beatShaderCool = !beatShaderCool;
     else beatShaderCool = forceToggle;
 }
 function camZoom(valueTo:Float, time:Float = 1, tween:Bool) {
+    return;
     if (tween) {
     FlxTween.num(FlxG.camera.zoom, valueTo, time, {ease: FlxEase.linear}, function(v:Float) {
         FlxG.camera.zoom = v;
@@ -122,7 +129,6 @@ function updatePost() {
 }
 
 function createPost() {
-    EngineSettings.botplay = true;
     trippyshader = new CustomShader(mod + ":old");
 	trippyshader.data.iTime.value = [0.002];
     
@@ -136,6 +142,7 @@ function createPost() {
     
     funnyAbliteration = new CustomShader(mod + ":daFunnyChrom");
     funnyAbliteration.data.amount.value = [0.5];
+    
 	PlayState.camGame.setFilters([new ShaderFilter(trippyshader), new ShaderFilter(funnyAbliteration)]);
     PlayState.camGame.filtersEnabled = true;
     

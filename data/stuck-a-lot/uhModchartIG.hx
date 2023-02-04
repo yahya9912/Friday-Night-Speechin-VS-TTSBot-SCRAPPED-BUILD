@@ -2,7 +2,6 @@
 import openfl.filters.ShaderFilter;
 import CustomShader;
 function update() {
-    if (FlxG.keys.justPressed.B) EngineSettings.botplay = !EngineSettings.botplay;
     if (inThingy) PlayState.camFollow.x -= 100;
 }
 var isAlrMiddleScroll = EngineSettings.middleScroll;
@@ -94,8 +93,8 @@ function backNormal() {
     FlxTween.tween(camGame, {alpha: 1}, 1, {ease: FlxEase.expoIn});
     if (isAlrMiddleScroll) return;
     for (i in 0...PlayState.playerStrums.members.length) {
-        PlayState.playerStrums.members[i].x = middleScroll[i];
-        PlayState.cpuStrums.members[i].alpha = 0.0001;
+        PlayState.playerStrums.members[i].x = normal[i];
+        PlayState.cpuStrums.members[i].alpha = 1;
     }
 }
 
