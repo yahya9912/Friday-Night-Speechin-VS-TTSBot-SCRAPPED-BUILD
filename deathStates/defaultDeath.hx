@@ -343,35 +343,40 @@ function pushRNGchat() {
     chats.push(uh);
     if (rngIcon == 2 && FlxG.random.bool(99)) {
         new FlxTimer().start(FlxG.random.float(1,3), function() {
-            uh[1].text = "Original Message Was Removed";
-            uh[1].font = Paths.font("DiscordFonts/GG_SANS_NORMAL_ITALIC");
-            uh[2].destroy();
-            if (uh[5] != null) {
-                uh[5].destroy();
-                uh[6].destroy();
-                uh[7].destroy();
-            }
-            if (uh[3] != null) uh[3].destroy();
-            remove(uh[1]);
-            var heightStuff:Int = uh[1].height + 55;
-            var widthStuff:Int = uh[1].width + 250;
-            if (uh[3] != null) {
-                heightStuff += uh[3].height;
-                widthStuff += uh[3].width;
-            }
-            var rect = new Rectangle(0, 0, widthStuff, heightStuff);
-            var daChatBox:FlxUI9SliceSprite = new FlxUI9SliceSprite(barGeneral.x,0, (Paths.image('SquareShit')), rect, [20, 20, 460, 460]);
-            daChatBox.antialiasing = true;
-            daChatBox.updateHitbox();
-            daChatBox.y = uh[0].y;
-            daChatBox.color = uh[0].color;
-            add(daChatBox);
-            uh[0].destroy();
-            uh[0] = daChatBox;
-            add(uh[1]);
+            deleteUserMessage(uh);
         });
     }
 }
+
+function deleteUserMessage(uh) {
+    uh[1].text = "Original Message Was Removed";
+    uh[1].font = Paths.font("DiscordFonts/GG_SANS_NORMAL_ITALIC");
+    uh[2].destroy();
+    if (uh[5] != null) {
+        uh[5].destroy();
+        uh[6].destroy();
+        uh[7].destroy();
+    }
+    if (uh[3] != null) uh[3].destroy();
+    remove(uh[1]);
+    var heightStuff:Int = uh[1].height + 55;
+    var widthStuff:Int = uh[1].width + 250;
+    if (uh[3] != null) {
+        heightStuff += uh[3].height;
+        widthStuff += uh[3].width;
+    }
+    var rect = new Rectangle(0, 0, widthStuff, heightStuff);
+    var daChatBox:FlxUI9SliceSprite = new FlxUI9SliceSprite(barGeneral.x,0, (Paths.image('SquareShit')), rect, [20, 20, 460, 460]);
+    daChatBox.antialiasing = true;
+    daChatBox.updateHitbox();
+    daChatBox.y = uh[0].y;
+    daChatBox.color = uh[0].color;
+    add(daChatBox);
+    uh[0].destroy();
+    uh[0] = daChatBox;
+    add(uh[1]);
+}
+
 function getFrames(image:FlxSprite, names:Array<String>, looping:Array<Bool>) { // me when LJ (Myself) steals his own code that was stolen :troll:
     availableAnims = [];
     var numbers = ["0","1","2","3","4","5","6","7","8","9"];
@@ -482,6 +487,12 @@ function onEnd() {
             mrBeast.updateHitbox();
             mrBeast.screenCenter();
             add(mrBeast);
+        case "/ban", "/kill":
+            for (item in chats) {
+                trace(item);
+                deleteUserMessage(item);
+            }
+            FlxG.camera.follow(camFollow, "lockon", 0.0035);
     }
 }
 
@@ -496,7 +507,6 @@ function shakeDatMan(spr, values) {
     });
     if (funny) insert(FlxG.random.int(2,members.indexOf(character)+5), spr);
 }
-
 var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, inside the {r} is a specific image but if its just {r}, random
     ["Im Going2killevery1startingwithU", "LJ Has too many songs in the mod. You Agree?", "Hey where is my cover?",
     "I am squidward, I am suicidal", "uwu", "wwwww", "Why do you persist?"], // alexg
