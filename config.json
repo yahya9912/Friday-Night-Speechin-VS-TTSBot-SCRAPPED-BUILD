@@ -1,38 +1,38 @@
 {
-	"skinnableGFs": [],
 	"discordRpc": "1048733362900193300",
+	"skinnableGFs": [],
+	"BFskins": [],
 	"downloadLink": null,
 	"locked": false,
-	"BFskins": [],
-	"name": "Friday Night Speechin' VS TTS Bot",
 	"keyNumbers": [
 		4
 	],
+	"name": "Friday Night Speechin' VS TTS Bot",
+	"description": "the funny bot",
+	"skinnableBFs": [
+		"bf-tts"
+	],
 	"intro": {
-		"newgrounds": "VS Hecker",
 		"authors": [
 			"Yahya",
 			"Eev",
 			"TTS Bot",
 			"your mother"
 		],
-		"assoc": [
-			"In no associations",
-			"with"
-		],
+		"newgrounds": "VS Hecker",
 		"gameName": [
 			"Friday Night Funkin'",
 			"VS",
 			"Text To Speech Bot"
 		],
-		"present": "the funnies",
-		"bpm": 104
+		"assoc": [
+			"In no associations",
+			"with"
+		],
+		"bpm": 104,
+		"present": "the funnies"
 	},
-	"skinnableBFs": [
-		"bf-tts"
-	],
-	"description": "the funny bot",
 	"titleBarName": "Discord",
-	"downloadLinkAlt": null,
-	"GFskins": []
+	"GFskins": [],
+	"downloadLinkAlt": null
 }

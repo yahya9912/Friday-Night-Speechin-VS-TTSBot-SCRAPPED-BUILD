@@ -88,9 +88,11 @@ function createPost() {
         bgItem.y = descPaused.y + descPaused.height + 25;
         bgItem.ID = i;
         FlxMouseEventManager.add(bgItem, function(){}, function(){onSelect();}, function(){
-            moused = true;
-            discordSel = bgItem.ID;
-            newChangeSel(0);
+            trace(moused);
+            if (moused) {
+                discordSel = bgItem.ID;
+                newChangeSel(0);
+            }
         });
         daMenuItems.push(bgItem);
         add(bgItem);
@@ -122,7 +124,6 @@ function onSelect() {
 
 function newChangeSel(bruh:Int = 0) {
     discordSel = CoolUtil.wrapInt(discordSel+bruh, 0, daMenuItems.length);
-    moused = false;
     for (item in daMenuItems) {
         if (item.ID != discordSel) {
             item.color = 0xFFFFFFFF; continue;
@@ -134,8 +135,16 @@ function newChangeSel(bruh:Int = 0) {
 var keys = FlxG.keys;
 function update() {
 
-    if (keys.justPressed.S || keys.justPressed.DOWN) newChangeSel(-1);
-    if (keys.justPressed.W || keys.justPressed.UP) newChangeSel(1);
+    if (keys.justPressed.S || keys.justPressed.DOWN) {
+        moused = false;
+        newChangeSel(-1);
+    }
+    if (keys.justPressed.W || keys.justPressed.UP) {
+        moused = false;
+        newChangeSel(1);
+    }
+
+    if (FlxG.mouse.justMoved) moused = true;
 
     state.levelInfo.x = 0 - 40;
     state.levelInfo.y = FlxG.height - state.levelInfo.height;

@@ -180,7 +180,7 @@ var randomFonts:Array<String> = [
     "GG_SANS_NORMAL_ITALIC",
     "GG_SANS_SEMIBOLD"
 ];
-var scales:Array<Int> = [0.35,0.17,0.17,0.6,0.17,0.17,0.35,0.17,0.6,0.17,0.45,0.27,0.17];
+var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.17,0.17,0.35,0.17,0.55,0.17,0.45,0.27,0.17];
 function pushRNGchat() {
     var rngIcon = FlxG.random.int(0,whoChats.length-1);
     var icon:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/" + whoChats[rngIcon].split(".")[0]));
@@ -212,27 +212,30 @@ function pushRNGchat() {
             continue;
         }
         var RNG:Array<Array<Dynamic>> = [
-            ["INDIE CROCKS",false], ["LJdependency",false], ["ZANDCHAD",false], ["normal",false], ["MRBEATS",true],
-            ["meme", true]
+            ["INDIE CROCKS",null,false], ["LJdependency",null,false], ["ZANDCHAD",null,false], ["normal",null,false], ["MRBEATS",null,true],
+            ["meme",null,true], ["the_voices", 2, true], ["yceEditor", null, false], ["orWasI", null, false]
         ];
         switch(repl) {
             case "{i}":
-                sprite = addSprite(RNG[0][0], RNG[0][1]);
+                sprite = addSprite(RNG[0][0], RNG[0][1], RNG[0][2]);
                 daText += split[0]+split[1];
             case "{lj}":
-                sprite = addSprite(RNG[1][0], RNG[1][1]);
+                sprite = addSprite(RNG[1][0], RNG[1][1], RNG[1][2]);
                 daText += split[0]+split[1];
             case "{zc}":
-                sprite = addSprite(RNG[2][0], RNG[2][1]);
+                sprite = addSprite(RNG[2][0], RNG[2][1], RNG[2][2]);
                 daText += split[0]+split[1];
             case "{n}":
-                sprite = addSprite(RNG[3][0], RNG[3][1]);
+                sprite = addSprite(RNG[3][0], RNG[3][1], RNG[3][2]);
                 daText += split[0]+split[1];
             case "{mrB}":
-                sprite = addSprite(RNG[4][0], RNG[4][1]);
+                sprite = addSprite(RNG[4][0], RNG[4][1], RNG[4][2]);
                 daText += split[0]+split[1];
             case "{m}":
-                sprite = addSprite(RNG[5][0], RNG[5][1]);
+                sprite = addSprite(RNG[5][0], RNG[5][1], true);
+                daText += split[0]+split[1];
+            case "{f}":
+                sprite = addSprite(RNG[6][0], RNG[6][1], RNG[6][2]);
                 daText += split[0]+split[1];
             case "{r}":
                 var rand = FlxG.random.int(0,RNG.length-1);
@@ -417,17 +420,18 @@ function update(elapsed) {
 
 var replaceStuff:Array<String> = [
     "{r}",// random
-    "{i}", "{n}", "{zc}", "{lj}", "{e}", "{1}", "{mrB}", "{}", "{m}"
+    "{i}", "{n}", "{zc}", "{lj}", "{e}", "{1}", "{mrB}", "{}", "{m}", "{f}"
 ];
 
-function addSprite(sprPath:String, framed:Bool) {
+function addSprite(sprPath:String, scale:Float, framed:Bool) {
+    if (scale == null) scale = 0.5;
     var sprite = new FlxSprite(); // i would but .loadGraphic() here but it can possibly an XML too so...
     if (!framed) sprite.loadGraphic(Paths.image("deathStuff/images/" + sprPath));
     else {
         sprite.frames = Paths.getSparrowAtlas("deathStuff/images/" + sprPath);
         getFrames(sprite, ["image"], [true]);
     }
-    sprite.scale.set(0.5,0.5);
+    sprite.scale.set(scale,scale);
     sprite.updateHitbox();
     return sprite;
 }
@@ -507,7 +511,7 @@ function onEnd() {
             ljHuh.x = (FlxG.width/2-FlxG.width/2) - ljHuh.width*2-100;
             add(ljHuh);
             FlxTween.tween(ljHuh, {x: FlxG.width/2 - ljHuh.width},6);
-        case "discordping":
+        case "discordping", "ping":
             loopForeverRNG(function () {
                 FlxG.sound.play(Paths.sound('scrollMenu'), 0.5);
             }, FlxG.random.float(0.015, 0.1));
@@ -549,6 +553,18 @@ function onEnd() {
             camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y - 100);
         case "omgxander":
             //a
+        case "lol", "lollololollol":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/lollololollol'), 0.8);
+        case "1987":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/1987'), 0.8);
+        case "jesusringtone", 'whyalexg':
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/fuckYouAlexg'), 0.8);
+        case "whopperchrome", "whopper":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/WhopperChrome'), 1);
     }
 }
 
@@ -577,6 +593,7 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     "I am squidward, I am suicidal", "uwu", "wwwww", "Why do you persist?"], // alexg
     ["Got Ban'd", "Skill Issue", "Go play Osu!", "Haha, Perdio", "Jaja que puto"], // Diamontitos
     ["Drowning Drowning Sinking Sinking", "IM NOT UNDER 13!!", "Psych Engine !!", "I love indie cocks- wait what"], // ew Brandon
+    ["{f}"], // foxel
     ["Hi, Im ItsLJcool", "Indie Crocs {i}", "LJ Dependency!! {lj}"], // ITSLJCOOL
     ["lollololollol", "no"], // MasterArt
     ["Now Playing: Death State by Diamantitos"], // Tempo
@@ -601,4 +618,4 @@ var rngText:Array<String> = [
     "Yea we know this death state is cool, now Leave.", "A-LINK", "{r}", "@{e} where the fuck are we?", "hahah look at this random image: {r}",
     "From: #LJ Meme Rant {m}", "If you type some random message, something might happen !!", "hint: Z isn't a hidden word you can type",
     "MR BEAST!! {mrB}"
-]
+];

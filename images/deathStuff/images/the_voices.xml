@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="the voices.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="the voices0000" x="0" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0001" x="0" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0002" x="86" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0003" x="86" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0004" x="172" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0005" x="172" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0006" x="258" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0007" x="258" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0008" x="344" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0009" x="344" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0010" x="430" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0011" x="430" y="0" width="81" height="97"/>
+	<SubTexture name="the voices0012" x="0" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0013" x="0" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0014" x="86" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0015" x="86" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0016" x="172" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0017" x="172" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0018" x="258" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0019" x="258" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0020" x="344" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0021" x="344" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0022" x="430" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0023" x="430" y="102" width="81" height="97"/>
+	<SubTexture name="the voices0024" x="0" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0025" x="0" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0026" x="86" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0027" x="86" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0028" x="172" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0029" x="172" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0030" x="258" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0031" x="258" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0032" x="344" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0033" x="344" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0034" x="430" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0035" x="430" y="204" width="81" height="97"/>
+	<SubTexture name="the voices0036" x="0" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0037" x="0" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0038" x="86" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0039" x="86" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0040" x="86" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0041" x="86" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0042" x="86" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0043" x="86" y="306" width="81" height="97"/>
+	<SubTexture name="the voices0044" x="86" y="306" width="81" height="97"/>
+</TextureAtlas>
