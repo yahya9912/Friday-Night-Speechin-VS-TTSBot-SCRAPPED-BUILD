@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="meme.png"><SubTexture name="meme gif0000" x="0" y="0" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0001" x="360" y="0" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0002" x="0" y="204" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0003" x="360" y="204" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0004" x="0" y="408" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0005" x="360" y="408" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0006" x="720" y="0" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0007" x="720" y="204" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0008" x="720" y="408" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0009" x="0" y="612" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0010" x="360" y="612" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0011" x="720" y="612" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0012" x="0" y="816" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0013" x="360" y="816" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0014" x="720" y="816" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0015" x="1080" y="0" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0016" x="1080" y="204" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0017" x="1080" y="408" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0018" x="1080" y="612" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0019" x="1080" y="816" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0020" x="0" y="1020" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0021" x="360" y="1020" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0022" x="720" y="1020" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0023" x="1080" y="1020" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+<SubTexture name="meme gif0024" x="0" y="1224" width="360" height="204" frameX="0" frameY="0" frameWidth="360" frameHeight="204" />
+</TextureAtlas>

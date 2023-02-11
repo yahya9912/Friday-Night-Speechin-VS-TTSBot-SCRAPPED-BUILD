@@ -1,7 +1,11 @@
 //a // how dare you fucking capitalize the Sacret a !!
+import GameOverSubstate;
 var songName = PlayState.song.song.toLowerCase();
 var openers:Dynamic;
 var tween:FlxTween;
+GameOverSubstate.gameOverMusic = "gameOver";
+GameOverSubstate.retrySFX = "gameOverEnd";
+GameOverSubstate.scriptName = mod + ":deathStates/defaultDeath";
 function create() {
     var path = 'openers/' + songName;
     if (!Assets.exists(Paths.getSparrowAtlas(path))) {
