@@ -6,6 +6,7 @@ import haxe.io.Path;
 import flixel.addons.ui.FlxInputText;
 import flixel.addons.ui.FlxUIButton;
 import flixel.input.mouse.FlxMouseEventManager;
+import openfl.filters.ShaderFilter;
 
 var banText:FlxText;
 var userWhoBanned:FlxText;
@@ -179,7 +180,7 @@ var randomFonts:Array<String> = [
     "GG_SANS_NORMAL_ITALIC",
     "GG_SANS_SEMIBOLD"
 ];
-var scales:Array<Int> = [0.35,0.17,0.17,0.6,0.17,0.17,0.35,0.17,0.17,0.45,0.27,0.17];
+var scales:Array<Int> = [0.35,0.17,0.17,0.6,0.17,0.17,0.35,0.17,0.6,0.17,0.45,0.27,0.17];
 function pushRNGchat() {
     var rngIcon = FlxG.random.int(0,whoChats.length-1);
     var icon:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/" + whoChats[rngIcon].split(".")[0]));
@@ -411,6 +412,7 @@ function update(elapsed) {
         isTyping.alpha = 0.001;
     }
     if (FlxG.keys.justPressed.UP && save.data.prevMessage != null) type.text = save.data.prevMessage;
+    if (missingShader) missingNo.data.binaryIntensity.value = [FlxG.random.float(5, 10)];
 }
 
 var replaceStuff:Array<String> = [
@@ -438,7 +440,7 @@ function onEnd() {
     save.data.prevMessage = type.text;
     FlxG.camera.follow(camFollow, "lockon", 0.1);
     camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y);
-    FlxTween.tween(FlxG.camera, {zoom: 1}, 1.5, {ease: FlxEase.quadOut});
+    camZoom = FlxTween.tween(FlxG.camera, {zoom: 1}, 1.5, {ease: FlxEase.quadOut});
     switch(type.text.toLowerCase()) {
         case "mrwhite", "walter", "waldah":
             FlxG.sound.music.fadeOut(0.1, 0.2);
@@ -493,11 +495,73 @@ function onEnd() {
                 deleteUserMessage(item);
             }
             FlxG.camera.follow(camFollow, "lockon", 0.0035);
+        case ":-:", "ljhuh":
+            camZoom.cancel();
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/MOAI'), 0.8);
+            var ljHuh:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/ITSLJCOOL"));
+            ljHuh.scrollFactor.set();
+            ljHuh.scale.set(2,2);
+            ljHuh.updateHitbox();
+            ljHuh.screenCenter();
+            ljHuh.x = (FlxG.width/2-FlxG.width/2) - ljHuh.width*2-100;
+            add(ljHuh);
+            FlxTween.tween(ljHuh, {x: FlxG.width/2 - ljHuh.width},6);
+        case "discordping":
+            loopForeverRNG(function () {
+                FlxG.sound.play(Paths.sound('scrollMenu'), 0.5);
+            }, FlxG.random.float(0.015, 0.1));
+        case "myears":
+            loopForeverRNG(function () {
+                var rngSFX = FileSystem.readDirectory(Paths.get_modsPath()+"/"+mod+"/sounds");
+                var rng = FlxG.random.int(0,rngSFX.length-1);
+                if (Path.extension(rngSFX[rng]) == "") return;
+                FlxG.sound.play(Paths.sound(rngSFX[rng].split(".")[0]), 0.5);
+            }, FlxG.random.float(0.015, 0.1));
+        case "missingno":
+            missingNo = new CustomShader(mod + ":MISSINGNO!!");
+            missingNo.data.binaryIntensity.value = [1000];
+            FlxG.camera.setFilters([new ShaderFilter(missingNo)]);
+            FlxG.camera.filtersEnabled = true;
+            missingShader = true;
+        case "huh", "hur", "formeandyou":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/huh'), 0.8);
+        case "gus", "pollos", "lospollos","gustavo":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/losPollosHermanos'), 0.8);
+        case "whoimpostor?", "whoimpostor", "who":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/whoimpostor'), 0.8);
+        case "wixard":
+            camZoom.cancel();
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/wozard'), 0.8);
+            var wizHat:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/images/wizHat"));
+            // wizHat.scrollFactor.set();
+            wizHat.scale.set(0.5,0.5);
+            wizHat.updateHitbox();
+            wizHat.screenCenter();
+            wizHat.y = character.y - 1000;
+            wizHat.x = character.x + 50;
+            add(wizHat);
+            FlxTween.tween(wizHat, {y: character.y - character.height + 50}, 1.5, {ease: FlxEase.quadOut});
+            camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y - 100);
+        case "omgxander":
+            //a
     }
 }
 
+var missingNo:ShaderFilter;
+var missingShader:Bool = false;
+function loopForeverRNG(func:Void->Void, time:Float) {
+    new FlxTimer().start(time, function () {
+        func();
+        loopForeverRNG(func,time);
+    });
+}
+
 function shakeDatMan(spr, values) {
-    trace(-values);
     var funny = FlxG.random.bool(15);
     if (funny) remove(spr);
     spr.x += FlxG.random.float(-values, values);
@@ -505,7 +569,8 @@ function shakeDatMan(spr, values) {
     new FlxTimer().start(0.015, function() {
         shakeDatMan(spr,values);
     });
-    if (funny) insert(FlxG.random.int(2,members.indexOf(character)+5), spr);
+    if (funny) insert(FlxG.random.int(2,14), spr);
+    if (!spr.isOnScreen(FlxG.camera)) spr.screenCenter();
 }
 var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, inside the {r} is a specific image but if its just {r}, random
     ["Im Going2killevery1startingwithU", "LJ Has too many songs in the mod. You Agree?", "Hey where is my cover?",
@@ -517,6 +582,8 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     ["Now Playing: Death State by Diamantitos"], // Tempo
     ["Lebron James?!?!"], // Tiky
     ["A-LINK", "Have You Bought TTS Premium Yet?"], // TTS
+    ["lmao u prolly use arrow keys", "damn that was, actually no that wasn't even that close lmao",
+    "ima hop in vc just to laugh at you", "embed fail LLLL"], // wizard
     ["Idk what im doing here ima be honest", "uh am I appart of the mod?"], // YAGPDB
     ["lollololollol", "normal {n}"], // YahyaPoooper
     ["I Lost my Account because idk", "This icon is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}"], // YahyaREAL
