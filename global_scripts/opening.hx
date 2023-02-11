@@ -8,13 +8,6 @@ GameOverSubstate.retrySFX = "gameOverEnd";
 GameOverSubstate.scriptName = mod + ":deathStates/defaultDeath";
 function create() {
     var path = 'openers/' + songName;
-    if (!Assets.exists(Paths.getSparrowAtlas(path))) {
-        openers = new FlxText(0,10,0, "huh, no Opener... Wierd", 16);
-        openers.updateHitbox();
-        openers.cameras = [PlayState.camHUD];
-        openers.x = (FlxG.width / 2 - FlxG.width / 2) - openers.width - 150;
-        return;
-    }
     if (CoolUtil.difficultyString().toLowerCase() == 'nitro') {
         openers = new FlxSprite(0, 10);
         openers.frames = Paths.getSparrowAtlas('openers/' + songName);

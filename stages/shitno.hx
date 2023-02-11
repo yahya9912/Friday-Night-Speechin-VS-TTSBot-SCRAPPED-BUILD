@@ -125,3 +125,7 @@ function end() {
 	explosion.alpha = 1;
 	explosion.animation.play('bruh', true);
 }
+
+function onPreDeath() {
+	PlayState.camGame.alpha = 1;
+}
