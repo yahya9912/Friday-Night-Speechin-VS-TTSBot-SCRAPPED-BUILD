@@ -180,7 +180,7 @@ var randomFonts:Array<String> = [
     "GG_SANS_NORMAL_ITALIC",
     "GG_SANS_SEMIBOLD"
 ];
-var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.17,0.17,0.35,0.17,0.55,0.17,0.17,0.45,0.27,0.17];
+var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.65,0.17,0.17,0.35,0.17,0.55,0.17,0.17,0.45,0.27,0.17];
 function pushRNGchat() {
     var rngIcon = FlxG.random.int(0,whoChats.length-1);
     var icon:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/" + whoChats[rngIcon].split(".")[0]));
@@ -188,7 +188,7 @@ function pushRNGchat() {
     icon.updateHitbox();
     
     var daText:String = "";
-    var rngBool:Bool = FlxG.random.bool(40);
+    var rngBool:Bool = FlxG.random.bool(60);
     var nothing:Int = 0;
     var rngSpecific = FlxG.random.int(0,specificCoolText[rngIcon].length-1);
     var rngNormal = FlxG.random.int(0,rngText.length-1);
@@ -626,6 +626,50 @@ function onEnd() {
             FlxG.sound.music.fadeOut(0.1, 0.2);
             addVideo("deathStuff/ronFuckingDIes",0,0);
             save.data.memesLOL[22] = ["ron"];
+        case "kirb":
+            camZoom.cancel();
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/gmodDeath'), 0.8);
+            FlxG.sound.play(Paths.sound('deathStuff/huh'), 0.5);
+            var kirb:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/kirbyYAY"));
+            kirb.antialiasing = true;
+            kirb.scrollFactor.set();
+            kirb.scale.set(2,2);
+            kirb.updateHitbox();
+            kirb.screenCenter();
+            kirb.y = barGeneral.x + barGeneral.width/2 - kirb.width;
+            kirb.x = barGeneral.y + barGeneral.height - kirb.height;
+            add(kirb);
+            shakeDatMan(kirb, 5, false);
+            // save.data.ljStuff++;
+            save.data.memesLOL[23] = ["kirb"];
+        case "hixander":
+            camZoom.cancel();
+            var zanWave:FlxSprite = new FlxSprite();
+            zanWave.frames = Paths.getSparrowAtlas("deathStuff/images/zanchad");
+            getFrames(zanWave, ["wave"], [true]);
+            zanWave.antialiasing = true;
+            zanWave.scrollFactor.set();
+            zanWave.scale.set(0.75,0.75);
+            zanWave.updateHitbox();
+            zanWave.screenCenter();
+            zanWave.y += 100;
+            add(zanWave);
+            var zanNOOO:FlxSprite = new FlxSprite(zanWave.x + 200,zanWave.y + 400).loadGraphic(Paths.image("deathStuff/images/Dead_Zander"));
+            zanNOOO.antialiasing = true;
+            zanNOOO.scrollFactor.set();
+            zanNOOO.updateHitbox();
+            new FlxTimer().start(1, function() {
+                zanWave.destroy();
+                add(zanNOOO);
+                shakeDatMan(zanNOOO, 2);
+                FlxG.sound.play(Paths.sound('deathStuff/metalPipe'), 0.1);
+                FlxG.sound.music.fadeOut(0.1, 0.2);
+                FlxG.sound.play(Paths.sound('deathStuff/gmodDeath'), 1);
+                FlxG.sound.play(Paths.sound('deathStuff/huh'), 0.7);
+            });
+            save.data.memesLOL[24] = ["kirb"];
+            save.data.zanderStuff++;
     }
     save.flush();
 }
@@ -658,7 +702,7 @@ function loopForeverRNG(func:Void->Void, time:Float) {
     });
 }
 
-function shakeDatMan(spr, values) {
+function shakeDatMan(spr, values, ?phase:Bool = true) {
     var funny = FlxG.random.bool(15);
     if (funny) remove(spr);
     spr.x += FlxG.random.float(-values, values);
@@ -666,7 +710,8 @@ function shakeDatMan(spr, values) {
     new FlxTimer().start(0.015, function() {
         shakeDatMan(spr,values);
     });
-    if (funny) insert(FlxG.random.int(2,15), spr);
+    if (funny && phase) insert(FlxG.random.int(2,15), spr);
+    else if (!phase) add(spr);
     if (!spr.isOnScreen(FlxG.camera)) spr.screenCenter();
 }
 var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, inside the {r} is a specific image but if its just {r}, random
@@ -676,6 +721,7 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     ["Drowning Drowning Sinking Sinking", "IM NOT UNDER 13!!", "Psych Engine !!", "I love indie cocks- wait what"], // ew Brandon
     ["{f}"], // foxel
     ["Hi, Im ItsLJcool", "Indie Crocs {i}", "LJ Dependency!! {lj}"], // ITSLJCOOL
+    ["Major L", "FAILURE", "Kirb Here", "Wow, that was an epic fail"], // kirby !!
     ["lollololollol", "no"], // MasterArt
     ["Now Playing: Death State by Diamantitos"], // Tempo
     ["Lebron James?!?!"], // Tiky

@@ -26,13 +26,13 @@ function create() {
 
 function deathStateMedals() {
     var daSaveFunny:Array<Dynamic> = [
-        [2, "zanderStuff"], // zanderStuff
+        [3, "zanderStuff"], // zanderStuff
         [2, "ljStuff"], // ljStuff
         [0, "diamondStuff"], // diamondStuff
         [4, "ttsStuff"], // ttsStuff
         [1, "wizardStuff"], // wizardStuff
         [1, "alexgStuff"],  // alexgStuff
-        [23, "memes"]
+        [25, "memes"]
     ];
     var arry = [
         save.data.zanderStuff,
