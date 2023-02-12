@@ -7,7 +7,6 @@ import flixel.addons.ui.FlxInputText;
 import flixel.addons.ui.FlxUIButton;
 import flixel.input.mouse.FlxMouseEventManager;
 import openfl.filters.ShaderFilter;
-import Medals;
 
 var banText:FlxText;
 var userWhoBanned:FlxText;
@@ -440,31 +439,26 @@ function addSprite(sprPath:String, scale:Float, framed:Bool) {
 function beatHit() {
     if (FlxG.random.bool(60) && !state.isEnding) pushRNGchat();
 }
-var daSaveFunny:Array<Int> = [
-    2, // zanderStuff
-    2, // ljStuff
-    0, // diamondStuff
-    4, // ttsStuff
-    1, // wizardStuff
-    1  // alexgStuff
-];
 function onEnd() {
-    trace(state.isEnding);
+    // save.data.zanderStuff = null;
     if (save.data.zanderStuff == null ||
         save.data.ljStuff == null ||
         save.data.diamondStuff == null ||
         save.data.ttsStuff == null ||
         save.data.wizardStuff == null ||
         save.data.alexgStuff == null) {
-            save.data.zanderStuff == 0;
-            save.data.ljStuff == 0;
-            save.data.diamondStuff == 0;
-            save.data.ttsStuff == 0;
-            save.data.wizardStuff == 0;
-            save.data.alexgStuff == 0;
+            for (medal in ["Zander Stop Being Dead","MR COOL !!","El Diamond Jaja","Stop Linking Stuff","Hat Of The Wizard","Alex GUH?", "Too Many Memes"]) {
+                Medals.lock(medal);
+            }
+            save.data.zanderStuff = 0;
+            save.data.ljStuff = 0;
+            save.data.diamondStuff = 0;
+            save.data.ttsStuff = 0;
+            save.data.wizardStuff = 0;
+            save.data.alexgStuff = 0;
+            save.data.memesLOL = [];
             save.flush();
         }
-    save.flush();
     if (type.text != "") save.data.prevMessage = type.text;
     FlxG.camera.follow(camFollow, "lockon", 0.1);
     camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y);
@@ -473,9 +467,11 @@ function onEnd() {
         case "mrwhite", "walter", "waldah":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/sayMyName'), 0.8);
+            save.data.memesLOL[0] = ["mrwhite", "walter", "waldah"];
         case "popcorners":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/PopCorners'), 0.8);
+            save.data.memesLOL[1] = ["popcorners"];
         case "ttsbotdead":
             var ttsDead:FlxSprite = new FlxSprite().loadGraphic(Paths.image("raaa"));
             ttsDead.scale.set(1.5,1.5);
@@ -488,10 +484,12 @@ function onEnd() {
                 ttsDead.destroy();
             });
             save.data.ttsStuff++;
+            save.data.memesLOL[2] = ["ttsbotdead"];
         case "xandah", "xander":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/ZanderTheBUNNY'), 0.8);
             save.data.zanderStuff++;
+            save.data.memesLOL[3] = ["xandah", "xander"];
         case "xanderdead":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/gmodDeath'), 0.8);
@@ -503,13 +501,12 @@ function onEnd() {
             add(zanderDead);
             shakeDatMan(zanderDead, FlxG.random.int(15,50));
             save.data.zanderStuff++;
-        case "brandon", "[504]brandon":
-            FlxG.sound.music.fadeOut(0.1, 0.2);
-            // FlxG.sound.play(Paths.sound('deathStuff/brandonSinking'), 1);
+            save.data.memesLOL[4] = ["xanderdead"];
         case "alink":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/alink'), 0.8);
             save.data.ttsStuff++;
+            save.data.memesLOL[5] = ["alink"];
         case "mrbeast":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('MR BEAST'), 0.8);
@@ -521,12 +518,14 @@ function onEnd() {
             mrBeast.updateHitbox();
             mrBeast.screenCenter();
             add(mrBeast);
+            save.data.memesLOL[6] = ["mrbeast"];
         case "/ban", "/kill":
             for (item in chats) {
                 trace(item);
                 deleteUserMessage(item);
             }
             FlxG.camera.follow(camFollow, "lockon", 0.0035);
+            save.data.memesLOL[7] = ["/ban", "/kill"];
         case ":-:", "ljhuh":
             camZoom.cancel();
             FlxG.sound.music.fadeOut(0.1, 0.2);
@@ -540,11 +539,13 @@ function onEnd() {
             add(ljHuh);
             FlxTween.tween(ljHuh, {x: FlxG.width/2 - ljHuh.width},6);
             save.data.ljStuff++;
+            save.data.memesLOL[8] = [":-:", "ljhuh"];
         case "discordping", "ping":
             loopForeverRNG(function () {
                 FlxG.sound.play(Paths.sound('scrollMenu'), 0.5);
             }, FlxG.random.float(0.015, 0.1));
             save.data.ttsStuff++;
+            save.data.memesLOL[9] = ["discordping", "ping"];
         case "myears":
             loopForeverRNG(function () {
                 var rngSFX = FileSystem.readDirectory(Paths.get_modsPath()+"/"+mod+"/sounds");
@@ -552,22 +553,27 @@ function onEnd() {
                 if (Path.extension(rngSFX[rng]) == "") return;
                 FlxG.sound.play(Paths.sound(rngSFX[rng].split(".")[0]), 0.5);
             }, FlxG.random.float(0.015, 0.1));
+            save.data.memesLOL[10] = ["myears"];
         case "missingno":
             missingNo = new CustomShader(mod + ":MISSINGNO!!");
             missingNo.data.binaryIntensity.value = [1000];
             FlxG.camera.setFilters([new ShaderFilter(missingNo)]);
             FlxG.camera.filtersEnabled = true;
             missingShader = true;
+            save.data.memesLOL[11] = ["missingno"];
         case "huh", "hur", "formeandyou":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/huh'), 0.8);
             save.data.ljStuff++;
+            save.data.memesLOL[12] = ["huh", "hur", "formeandyou"];
         case "gus", "pollos", "lospollos","gustavo":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/losPollosHermanos'), 0.8);
+            save.data.memesLOL[13] = ["gus", "pollos", "lospollos","gustavo"];
         case "whoimpostor?", "whoimpostor", "who":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/whoimpostor'), 0.8);
+            save.data.memesLOL[14] = ["whoimpostor?", "whoimpostor", "who"];
         case "wixard":
             camZoom.cancel();
             FlxG.sound.music.fadeOut(0.1, 0.2);
@@ -581,28 +587,32 @@ function onEnd() {
             wizHat.x = character.x + 50;
             add(wizHat);
             FlxTween.tween(wizHat, {y: character.y - character.height + 50}, 1.5, {ease: FlxEase.quadOut});
-            camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y - 100);
+            camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y - 75);
+            camZoom = FlxTween.tween(FlxG.camera, {zoom: 0.85}, 1.5, {ease: FlxEase.quadOut});
             save.data.wizardStuff++;
-        case "omgxander":
-            //a
-            // save.data.zanderStuff++;
+            save.data.memesLOL[15] = ["wixard"];
         case "lol", "lollololollol":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/lollololollol'), 0.8);
             save.data.ttsStuff++;
+            save.data.memesLOL[16] = ["lol", "lollololollol"];
         case "1987":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/1987'), 0.8);
+            save.data.memesLOL[17] = ["1987"];
         case "jesusringtone", 'whyalexg':
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/fuckYouAlexg'), 0.8);
             save.data.alexgStuff++;
+            save.data.memesLOL[18] = ["jesusringtone", 'whyalexg'];
         case "whopperchrome", "whopper":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/WhopperChrome'), 1);
+            save.data.memesLOL[19] = ["whopperchrome", "whopper"];
         case "pipe", "metalpipe":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/metalPipe'), 1);
+            save.data.memesLOL[20] = ["pipe", "metalpipe"];
         case "what", "crash":
             camZoom.cancel();
             FlxG.sound.music.fadeOut(0.1, 0.2);
@@ -610,10 +620,12 @@ function onEnd() {
             addVideo("deathStuff/plane1",-1280,0);
             addVideo("deathStuff/plane2",1280,0);
             camZoom = FlxTween.tween(FlxG.camera, {zoom: 0.35}, 1.5, {ease: FlxEase.quadOut});
+            save.data.memesLOL[21] = ["what", "crash"];
         case "ron":
             camZoom.cancel();
             FlxG.sound.music.fadeOut(0.1, 0.2);
             addVideo("deathStuff/ronFuckingDIes",0,0);
+            save.data.memesLOL[22] = ["ron"];
     }
     save.flush();
 }

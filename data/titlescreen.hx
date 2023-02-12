@@ -1,4 +1,5 @@
 //a
+import flixel.input.mouse.FlxMouseEventManager;
 var crafterEngineLogo:FlxSprite = null;
 var gfDancing:FlxSprite = null;
 
@@ -118,6 +119,12 @@ function create() {
     monochromeAA = new FlxSound().loadEmbedded(Paths.sound('spooky'));
     monochromeAA.stop();
     monochromeAA.volume = 0.6;
+}
+
+function createPost() {
+  FlxMouseEventManager.add(state.ngSpr, function(){}, function(){
+    if (state.ngSpr.visible || state.ngSpr.alpha >= 0.5) Medals.unlock("We Are Not The Same");
+  }, function(){});
 }
 
 var weewoo:Float = 0;
