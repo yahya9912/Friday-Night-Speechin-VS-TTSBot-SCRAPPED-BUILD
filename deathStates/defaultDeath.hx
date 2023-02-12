@@ -7,6 +7,7 @@ import flixel.addons.ui.FlxInputText;
 import flixel.addons.ui.FlxUIButton;
 import flixel.input.mouse.FlxMouseEventManager;
 import openfl.filters.ShaderFilter;
+import Medals;
 
 var banText:FlxText;
 var userWhoBanned:FlxText;
@@ -28,7 +29,7 @@ var randomDeathText:Array<String> = [
 ];
 function create() {
     remove(character);
-    var sprite:FlxSprite = new FlxSprite().makeGraphic(FlxG.width*2, FlxG.height*2, 0xFF242728);
+    var sprite:FlxSprite = new FlxSprite().makeGraphic(FlxG.width*5, FlxG.height*5, 0xFF242728);
     sprite.scrollFactor.set();
     sprite.updateHitbox();
     sprite.screenCenter();
@@ -180,7 +181,7 @@ var randomFonts:Array<String> = [
     "GG_SANS_NORMAL_ITALIC",
     "GG_SANS_SEMIBOLD"
 ];
-var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.17,0.17,0.35,0.17,0.55,0.17,0.45,0.27,0.17];
+var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.17,0.17,0.35,0.17,0.55,0.17,0.17,0.45,0.27,0.17];
 function pushRNGchat() {
     var rngIcon = FlxG.random.int(0,whoChats.length-1);
     var icon:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/" + whoChats[rngIcon].split(".")[0]));
@@ -239,7 +240,7 @@ function pushRNGchat() {
                 daText += split[0]+split[1];
             case "{r}":
                 var rand = FlxG.random.int(0,RNG.length-1);
-                sprite = addSprite(RNG[rand][0], RNG[rand][1]);
+                sprite = addSprite(RNG[rand][0], RNG[rand][1], RNG[rand][2]);
                 daText += split[0]+split[1];
             case "{}":
                 altStuff = false;
@@ -439,9 +440,32 @@ function addSprite(sprPath:String, scale:Float, framed:Bool) {
 function beatHit() {
     if (FlxG.random.bool(60) && !state.isEnding) pushRNGchat();
 }
+var daSaveFunny:Array<Int> = [
+    2, // zanderStuff
+    2, // ljStuff
+    0, // diamondStuff
+    4, // ttsStuff
+    1, // wizardStuff
+    1  // alexgStuff
+];
 function onEnd() {
     trace(state.isEnding);
-    save.data.prevMessage = type.text;
+    if (save.data.zanderStuff == null ||
+        save.data.ljStuff == null ||
+        save.data.diamondStuff == null ||
+        save.data.ttsStuff == null ||
+        save.data.wizardStuff == null ||
+        save.data.alexgStuff == null) {
+            save.data.zanderStuff == 0;
+            save.data.ljStuff == 0;
+            save.data.diamondStuff == 0;
+            save.data.ttsStuff == 0;
+            save.data.wizardStuff == 0;
+            save.data.alexgStuff == 0;
+            save.flush();
+        }
+    save.flush();
+    if (type.text != "") save.data.prevMessage = type.text;
     FlxG.camera.follow(camFollow, "lockon", 0.1);
     camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y);
     camZoom = FlxTween.tween(FlxG.camera, {zoom: 1}, 1.5, {ease: FlxEase.quadOut});
@@ -463,9 +487,11 @@ function onEnd() {
             new FlxTimer().start(0.75, function() {
                 ttsDead.destroy();
             });
+            save.data.ttsStuff++;
         case "xandah", "xander":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/ZanderTheBUNNY'), 0.8);
+            save.data.zanderStuff++;
         case "xanderdead":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/gmodDeath'), 0.8);
@@ -476,12 +502,14 @@ function onEnd() {
             if (FlxG.random.bool(1)) zanderDead.blend = 14;
             add(zanderDead);
             shakeDatMan(zanderDead, FlxG.random.int(15,50));
+            save.data.zanderStuff++;
         case "brandon", "[504]brandon":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             // FlxG.sound.play(Paths.sound('deathStuff/brandonSinking'), 1);
         case "alink":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/alink'), 0.8);
+            save.data.ttsStuff++;
         case "mrbeast":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('MR BEAST'), 0.8);
@@ -511,10 +539,12 @@ function onEnd() {
             ljHuh.x = (FlxG.width/2-FlxG.width/2) - ljHuh.width*2-100;
             add(ljHuh);
             FlxTween.tween(ljHuh, {x: FlxG.width/2 - ljHuh.width},6);
+            save.data.ljStuff++;
         case "discordping", "ping":
             loopForeverRNG(function () {
                 FlxG.sound.play(Paths.sound('scrollMenu'), 0.5);
             }, FlxG.random.float(0.015, 0.1));
+            save.data.ttsStuff++;
         case "myears":
             loopForeverRNG(function () {
                 var rngSFX = FileSystem.readDirectory(Paths.get_modsPath()+"/"+mod+"/sounds");
@@ -531,6 +561,7 @@ function onEnd() {
         case "huh", "hur", "formeandyou":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/huh'), 0.8);
+            save.data.ljStuff++;
         case "gus", "pollos", "lospollos","gustavo":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/losPollosHermanos'), 0.8);
@@ -551,21 +582,59 @@ function onEnd() {
             add(wizHat);
             FlxTween.tween(wizHat, {y: character.y - character.height + 50}, 1.5, {ease: FlxEase.quadOut});
             camFollow.setPosition(embed.getGraphicMidpoint().x, embed.getGraphicMidpoint().y - 100);
+            save.data.wizardStuff++;
         case "omgxander":
             //a
+            // save.data.zanderStuff++;
         case "lol", "lollololollol":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/lollololollol'), 0.8);
+            save.data.ttsStuff++;
         case "1987":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/1987'), 0.8);
         case "jesusringtone", 'whyalexg':
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/fuckYouAlexg'), 0.8);
+            save.data.alexgStuff++;
         case "whopperchrome", "whopper":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/WhopperChrome'), 1);
+        case "pipe", "metalpipe":
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxG.sound.play(Paths.sound('deathStuff/metalPipe'), 1);
+        case "what", "crash":
+            camZoom.cancel();
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            addVideo("deathStuff/carCrash",0,0);
+            addVideo("deathStuff/plane1",-1280,0);
+            addVideo("deathStuff/plane2",1280,0);
+            camZoom = FlxTween.tween(FlxG.camera, {zoom: 0.35}, 1.5, {ease: FlxEase.quadOut});
+        case "ron":
+            camZoom.cancel();
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            addVideo("deathStuff/ronFuckingDIes",0,0);
     }
+    save.flush();
+}
+
+function addVideo(path, xVal:Float, yVal:Float) {
+    var video = new MP4Handler();
+    var sprite = new FlxSprite(xVal,yVal);
+    video.finishCallback = function() {};
+    video.canvasWidth = 1280;
+    video.canvasHeight = 720;
+    video.fillScreen = true;
+    video.skippable = false;
+    sprite.antialiasing = EngineSettings.videoAntialiasing;
+    sprite.scrollFactor.set();
+    video.playMP4(Assets.getPath(Paths.video(path)), true, sprite, null, null, true);
+    new FlxTimer().start(2.5, function() {
+        video.onVLCComplete();
+        remove(sprite);
+        sprite.destroy();
+    });
+    add(sprite);
 }
 
 var missingNo:ShaderFilter;
@@ -585,7 +654,7 @@ function shakeDatMan(spr, values) {
     new FlxTimer().start(0.015, function() {
         shakeDatMan(spr,values);
     });
-    if (funny) insert(FlxG.random.int(2,14), spr);
+    if (funny) insert(FlxG.random.int(2,15), spr);
     if (!spr.isOnScreen(FlxG.camera)) spr.screenCenter();
 }
 var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, inside the {r} is a specific image but if its just {r}, random
@@ -601,6 +670,7 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     ["A-LINK", "Have You Bought TTS Premium Yet?"], // TTS
     ["lmao u prolly use arrow keys", "damn that was, actually no that wasn't even that close lmao",
     "ima hop in vc just to laugh at you", "embed fail LLLL"], // wizard
+    ["uhhhhh", "https://twitter.com/ThatOneIdiotXav", "uhhhhh part 2: The Return", "Imagine not FC'ing on the first try"], // Xav !!
     ["Idk what im doing here ima be honest", "uh am I appart of the mod?"], // YAGPDB
     ["lollololollol", "normal {n}"], // YahyaPoooper
     ["I Lost my Account because idk", "This icon is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}"], // YahyaREAL
@@ -608,14 +678,16 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
 ];
 
 var pingedText:Array<String> = [
-    "@{} You Lost!?!?", "Apparently @{} is terrable at FNF.", "@{1} Is too good at FNF.", "@{e} :troll:", "@{} have you found all the secrets in the death state?",
+    "@{} You Lost!?!?", "Apparently @{} is terrable at FNF.", "@{1} Is too good at FNF.",
+    "@{e} :troll:", "@{} have you found all the secrets in the death state?",
     "you know, there is secrets here @{}..."
 ];
 
 var rngText:Array<String> = [
     "Wow you lost? Loser", "I beat this song my first try!", "L + Ratio", "Why you still here? Nothing else is here",
-    "How many viewers are watching the stream bro?", "haha im the only viewer in your stream", "Sneeky Sneeky", "You are sure taking your time...",
-    "Yea we know this death state is cool, now Leave.", "A-LINK", "{r}", "@{e} where the fuck are we?", "hahah look at this random image: {r}",
-    "From: #LJ Meme Rant {m}", "If you type some random message, something might happen !!", "hint: Z isn't a hidden word you can type",
+    "How many viewers are watching the stream bro?", "haha im the only viewer in your stream", "Sneeky Sneeky", 
+    "You are sure taking your time...", "Yea we know this death state is cool, now Leave.", "A-LINK", "{r}",
+    "@{e} where the fuck are we?", "hahah look at this random image: {r}","From: #LJ Meme Rant {m}",
+    "If you type some random message, something might happen !!", "hint: Z isn't a hidden word you can type",
     "MR BEAST!! {mrB}"
 ];
