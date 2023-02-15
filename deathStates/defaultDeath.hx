@@ -24,7 +24,7 @@ var randomBanText:Array<String> = [
 // {} gets replaced by the character your playing
 var randomDeathText:Array<String> = [
     "haha L noob", "I don't like the name '{}'", "{} is under 13", "{} plays League Of Legends", "{} is friends with [504]Brandon",
-    "couldn't do 1+1"
+    "couldn't solve 1+1"
 ];
 function create() {
     remove(character);
@@ -95,7 +95,7 @@ function getCharacter() {
     else var switchThing = PlayState.SONG.player1;
     switch(switchThing.split(":")[1]) {
         case "bf", "bf-nitro", "bf-fp":
-            return "Boyfriend#1234";
+            return "Bee F.#7346";
         case "lj", "LJ":
             return "ItsLJcool#7560";
         case "tts-player", "tts", "tts-raged":
@@ -353,7 +353,7 @@ function pushRNGchat() {
 }
 
 function deleteUserMessage(uh) {
-    uh[1].text = "Original Message Was Removed";
+    uh[1].text = "Original Message Was Deleted";
     uh[1].font = Paths.font("DiscordFonts/GG_SANS_NORMAL_ITALIC");
     uh[2].destroy();
     if (uh[5] != null) {
@@ -725,20 +725,20 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     ["Im Going2killevery1startingwithU", "LJ Has too many songs in the mod. You Agree?", "Hey where is my cover?",
     "I am squidward, I am suicidal", "uwu", "wwwww", "Why do you persist?"], // alexg
     ["Got Ban'd", "Skill Issue", "Go play Osu!", "Haha, Perdio", "Jaja que puto"], // Diamontitos
-    ["Drowning Drowning Sinking Sinking", "IM NOT UNDER 13!!", "Psych Engine !!", "I love indie cocks- wait what"], // ew Brandon
+    ["Drowning Drowning Sinking Sinking", "IM UNDER 13!!", "Psych Engine !!", "I love indie cocks- wait what"], // ew Brandon
     ["{f}"], // foxel
     ["Hi, Im ItsLJcool", "Indie Crocs {i}", "LJ Dependency!! {lj}"], // ITSLJCOOL
-    ["Major L", "FAILURE", "Kirb Here", "Wow, that was an epic fail"], // kirby !!
+    ["Major L", "FAILURE", "Heyo, Kirb Here", "Wow, that was an epic fail"], // kirby !!
     ["lollololollol", "no"], // MasterArt
-    ["Now Playing: Death State by Diamantitos"], // Tempo
+    ["Now Playing: Gameover by Diamantitos"], // Tempo
     ["Lebron James?!?!"], // Tiky
     ["A-LINK", "Have You Bought TTS Premium Yet?"], // TTS
     ["lmao u prolly use arrow keys", "damn that was, actually no that wasn't even that close lmao",
     "ima hop in vc just to laugh at you", "embed fail LLLL"], // wizard
     ["uhhhhh", "https://twitter.com/ThatOneIdiotXav", "uhhhhh part 2: The Return", "Imagine not FC'ing on the first try"], // Xav !!
     ["Idk what im doing here ima be honest", "uh am I appart of the mod?"], // YAGPDB
-    ["lollololollol", "normal {n}"], // YahyaPoooper
-    ["I Lost my Account because idk", "This icon is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}"], // YahyaREAL
+    ["lollololollol", "normal {n}", "men", "LJ YOU FUCKING SHIT"], // YahyaPooper
+    ["I Lost my Account because lol", "This icon is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}"], // YahyaREAL
     ["'L'J", "ZanChad!! {zc}", "Uhh cheesed to meet you", "IM    DEAD"], // ZanChad !!
 ];
 
