@@ -34,7 +34,8 @@ function deathStateMedals() {
         [4, "ttsStuff"], // ttsStuff
         [1, "wizardStuff"], // wizardStuff
         [1, "alexgStuff"],  // alexgStuff
-        [25, "memes"]
+        [1, "brandonStuff"],  // alexgStuff
+        [28, "memes"]
     ];
     var arry = [
         save.data.zanderStuff,
@@ -43,15 +44,19 @@ function deathStateMedals() {
         save.data.ttsStuff,
         save.data.wizardStuff,
         save.data.alexgStuff,
-        save.data.diamondStuff,
+        save.data.brandonStuff,
         save.data.memesLOL
     ];
     for (i in 0...daSaveFunny.length) {
     if (daSaveFunny[i][0] == null || daSaveFunny[i][0] == 0) continue;
     if (daSaveFunny[i][1] == "memes") {
-        trace(arry[i].length-1);
-        trace(arry[i]);
-        if (arry[i].length-1 < daSaveFunny[i][0]) continue;
+        var leng:Int = 0;
+        for (item in arry[i]) {
+            trace(item);
+            if (item == null) continue;
+            leng++;
+        }
+        if (leng < daSaveFunny[i][0]) continue;
     } else {
         if (arry[i] < daSaveFunny[i][0]) continue;
     }
@@ -69,6 +74,8 @@ function deathStateMedals() {
             Medals.unlock("Hat Of The Wizard");
         case "alexgStuff":
             Medals.unlock("Alex GUH?");
+        case "brandonStuff":
+            Medals.unlock("Shut The FUCK Up Brandon");
         case "memes":
             Medals.unlock("Too Many Memes");
             var p = Paths.json('medals', 'mods/'+mod);
