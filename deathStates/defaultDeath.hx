@@ -446,7 +446,8 @@ function onEnd() {
         save.data.diamondStuff == null ||
         save.data.ttsStuff == null ||
         save.data.wizardStuff == null ||
-        save.data.alexgStuff == null) {
+        save.data.alexgStuff == null ||
+        save.data.brandonStuff == null) {
             for (medal in ["Zander Stop Being Dead","MR COOL !!","El Diamond Jaja","Stop Linking Stuff","Hat Of The Wizard","Alex GUH?", "Too Many Memes"]) {
                 Medals.lock(medal);
             }
@@ -456,6 +457,7 @@ function onEnd() {
             save.data.ttsStuff = 0;
             save.data.wizardStuff = 0;
             save.data.alexgStuff = 0;
+            save.data.brandonStuff = 0;
             save.data.memesLOL = [];
             save.flush();
         }
@@ -472,7 +474,7 @@ function onEnd() {
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/PopCorners'), 0.8);
             save.data.memesLOL[1] = ["popcorners"];
-        case "ttsbotdead":
+        case "ttsbotdead", "ttsdead":
             var ttsDead:FlxSprite = new FlxSprite().loadGraphic(Paths.image("raaa"));
             ttsDead.scale.set(1.5,1.5);
             ttsDead.updateHitbox();
@@ -484,7 +486,7 @@ function onEnd() {
                 ttsDead.destroy();
             });
             save.data.ttsStuff++;
-            save.data.memesLOL[2] = ["ttsbotdead"];
+            save.data.memesLOL[2] = ["ttsbotdead", "ttsdead"];
         case "xandah", "xander":
             FlxG.sound.music.fadeOut(0.1, 0.2);
             FlxG.sound.play(Paths.sound('deathStuff/ZanderTheBUNNY'), 0.8);
@@ -526,6 +528,7 @@ function onEnd() {
             }
             FlxG.camera.follow(camFollow, "lockon", 0.0035);
             save.data.memesLOL[7] = ["/ban", "/kill"];
+            save.data.brandonStuff++;
         case ":-:", "ljhuh":
             camZoom.cancel();
             FlxG.sound.music.fadeOut(0.1, 0.2);
@@ -677,6 +680,20 @@ function onEnd() {
             });
             save.data.diamondStuff++;
             save.data.memesLOL[25] = ["silence", "andtherewassilence"];
+        case "fard", "fart", "fartsfx":
+            FlxG.sound.play(Paths.sound('deathStuff/fard'), 1);
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            save.data.memesLOL[26] = ["fard", "fart", "fartsfx"];
+        case "aah", "ahh", "auhh":
+            var rand = FlxG.random.int(1,2);
+            FlxG.sound.play(Paths.sound('deathStuff/AAAAH'+rand), 1);
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            FlxTween.tween(character, {alpha:0}, 0.15, {ease: FlxEase.circIn, startDelay: (rand == 1) ? 0.24 : 0.41});
+            save.data.memesLOL[27] = ["aah", "ahh", "auhh"];
+        case "gun", "kitchengun":
+            FlxG.sound.play(Paths.sound('deathStuff/Kitchen Gun'), 1);
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            save.data.memesLOL[28] = ["gun", "kitchengun"];
     }
     save.flush();
 }
