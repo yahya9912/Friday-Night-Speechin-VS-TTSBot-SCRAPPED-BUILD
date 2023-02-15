@@ -668,8 +668,15 @@ function onEnd() {
                 FlxG.sound.play(Paths.sound('deathStuff/gmodDeath'), 1);
                 FlxG.sound.play(Paths.sound('deathStuff/huh'), 0.7);
             });
-            save.data.memesLOL[24] = ["kirb"];
+            save.data.memesLOL[24] = ["hixander"];
             save.data.zanderStuff++;
+        case "silence", "andtherewassilence":
+            FlxG.sound.music.fadeOut(1, 0);
+            new FlxTimer().start(1, function() {
+                FlxG.sound.volume = 0;
+            });
+            save.data.diamondStuff++;
+            save.data.memesLOL[25] = ["silence", "andtherewassilence"];
     }
     save.flush();
 }

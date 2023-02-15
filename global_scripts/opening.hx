@@ -1,6 +1,8 @@
 //a // how dare you fucking capitalize the Sacret a !!
 import GameOverSubstate;
 import sys.io.File;
+import haxe.Json;
+
 var songName = PlayState.song.song.toLowerCase();
 var openers:Dynamic;
 var tween:FlxTween;
@@ -28,7 +30,7 @@ function deathStateMedals() {
     var daSaveFunny:Array<Dynamic> = [
         [3, "zanderStuff"], // zanderStuff
         [2, "ljStuff"], // ljStuff
-        [0, "diamondStuff"], // diamondStuff
+        [1, "diamondStuff"], // diamondStuff
         [4, "ttsStuff"], // ttsStuff
         [1, "wizardStuff"], // wizardStuff
         [1, "alexgStuff"],  // alexgStuff
@@ -41,11 +43,14 @@ function deathStateMedals() {
         save.data.ttsStuff,
         save.data.wizardStuff,
         save.data.alexgStuff,
+        save.data.diamondStuff,
         save.data.memesLOL
     ];
     for (i in 0...daSaveFunny.length) {
     if (daSaveFunny[i][0] == null || daSaveFunny[i][0] == 0) continue;
     if (daSaveFunny[i][1] == "memes") {
+        trace(arry[i].length-1);
+        trace(arry[i]);
         if (arry[i].length-1 < daSaveFunny[i][0]) continue;
     } else {
         if (arry[i] < daSaveFunny[i][0]) continue;
