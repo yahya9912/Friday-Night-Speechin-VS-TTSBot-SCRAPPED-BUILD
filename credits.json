@@ -92,7 +92,7 @@
         },
         {
             "name" : "Viz",
-            "role" : "Charter for Monochrome",
+            "role" : "wait, did Viz actually chart Monochrome?",
             "icon" : "credits/viz",
             "urls" : [
                 {
@@ -129,8 +129,8 @@
             "icon" : "credits/alex",
             "urls" : [
                 {
-                    "name" : "wip lmao",
-                    "url" : ""
+                    "name" : "Youtube",
+                    "url" : "https://www.youtube.com/channel/UC2j8aQzjiv4qiwNF8qzmLNA"
                 },
                 {
                     "name" :"Twitter",
