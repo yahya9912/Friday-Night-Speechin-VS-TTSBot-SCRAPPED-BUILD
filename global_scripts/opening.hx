@@ -35,7 +35,7 @@ function deathStateMedals() {
         [1, "wizardStuff"], // wizardStuff
         [1, "alexgStuff"],  // alexgStuff
         [1, "brandonStuff"],  // alexgStuff
-        [28, "memes"]
+        [29, "memes"]
     ];
     var arry = [
         save.data.zanderStuff,
