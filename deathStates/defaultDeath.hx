@@ -694,6 +694,10 @@ function onEnd() {
             FlxG.sound.play(Paths.sound('deathStuff/Kitchen Gun'), 1);
             FlxG.sound.music.fadeOut(0.1, 0.2);
             save.data.memesLOL[28] = ["gun", "kitchengun"];
+        case "meat", "mbm", "swordcube":
+            FlxG.sound.play(Paths.sound('deathStuff/SwordBeatMania'), 1);
+            FlxG.sound.music.fadeOut(0.1, 0.2);
+            save.data.memesLOL[29] = ["meat", "mbm", "swordcube"];
     }
     save.flush();
 }
