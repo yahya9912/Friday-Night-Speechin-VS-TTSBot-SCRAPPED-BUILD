@@ -756,17 +756,19 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     ["A-LINK", "Have You Bought TTS Premium Yet?"], // TTS
     ["lmao u prolly use arrow keys", "damn that was, actually no that wasn't even that close lmao",
     "ima hop in vc just to laugh at you", "embed fail LLLL"], // wizard
+    ["womp womp womp woooooommmpp", "bro uses wasd with left hand", "brody got the android port", "LLLLLLL", "*sad trombone*"], //wocky
     ["uhhhhh", "https://twitter.com/ThatOneIdiotXav", "uhhhhh part 2: The Return", "Imagine not FC'ing on the first try"], // Xav !!
     ["Idk what im doing here ima be honest", "uh am I appart of the mod?"], // YAGPDB
     ["lollololollol", "normal {n}", "men", "LJ YOU FUCKING SHIT"], // YahyaPooper
     ["I Lost my Account because lol", "This icon is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}"], // YahyaREAL
+
     ["'L'J", "ZanChad!! {zc}", "Uhh cheesed to meet you", "IM    DEAD"], // ZanChad !!
 ];
 
 var pingedText:Array<String> = [
     "@{} You Lost!?!?", "Apparently @{} is terrable at FNF.", "@{1} Is too good at FNF.",
     "@{e} :troll:", "@{} have you found all the secrets in the death state?",
-    "you know, there is secrets here @{}..."
+    "you know, there is secrets here @{}...", "@{} L\nL\nL\nL",
 ];
 
 var rngText:Array<String> = [
@@ -775,5 +777,5 @@ var rngText:Array<String> = [
     "You are sure taking your time...", "Yea we know this death state is cool, now Leave.", "A-LINK", "{r}",
     "@{e} where the fuck are we?", "hahah look at this random image: {r}","From: #LJ Meme Rant {m}",
     "If you type some random message, something might happen !!", "hint: Z isn't a hidden word you can type",
-    "MR BEAST!! {mrB}"
+    "MR BEAST!! {mrB}", "hell nah brody is blind or sum"
 ];
