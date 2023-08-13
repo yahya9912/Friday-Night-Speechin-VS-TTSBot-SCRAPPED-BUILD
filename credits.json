@@ -28,7 +28,7 @@
         },
         {
             "name" : "Diamantitios",
-            "role" : "Director, Main Composer, team minority, and conceptual artist",
+            "role" : "Director, Main Composer, and the team minority, ¡ORGULLO MEXICANO, CABRONES!",
             "icon" : "credits/diamantitos",
             "urls" : [
                 {
@@ -124,10 +124,25 @@
             ]
         },
         {
-			"name" : "SIG7Pro",
-			"role" : "Did barely anything for this mod because he forgot about the dev server being a thing. Might put silly little secret images or something. He also added himself to the credits.json file.",
-			"icon" : "credits/blank",
-			"urls" : [
+            "name" : "Alexg",
+            "role" : "Composer of Too Slow Remix :]",
+            "icon" : "credits/alex",
+            "urls" : [
+                {
+                    "name" : "Youtube",
+                    "url" : "https://www.youtube.com/channel/UC2j8aQzjiv4qiwNF8qzmLNA"
+                },
+                {
+                    "name" :"Twitter",
+                    "url" : ""
+                }
+            ]
+        },
+        {
+    "name" : "SIG7Pro",
+    "role" : "Did barely anything for this mod because he forgot about the dev server being a thing. Might put silly little secret images or something. He also added himself to the credits.json file.",
+    "icon" : "credits/blank",
+    "urls" : [
         {
             "name" : "Pixilart",
             "url" : "https://pixilart.com/SIG7/"

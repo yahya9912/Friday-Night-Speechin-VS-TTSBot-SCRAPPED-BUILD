@@ -180,7 +180,7 @@ var randomFonts:Array<String> = [
     "GG_SANS_NORMAL_ITALIC",
     "GG_SANS_SEMIBOLD"
 ];
-var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.65,0.17,0.17,0.35,0.17,0.55,0.17,0.17,0.45,0.27,0.17];
+var scales:Array<Int> = [0.35,0.17,0.17,0.2,0.6,0.65,0.17,0.17,0.35,0.17,0.55,0.17,0.17,0.17,0.45,0.27,0.17];
 function pushRNGchat() {
     var rngIcon = FlxG.random.int(0,whoChats.length-1);
     var icon:FlxSprite = new FlxSprite().loadGraphic(Paths.image("deathStuff/icons/" + whoChats[rngIcon].split(".")[0]));
@@ -447,7 +447,8 @@ function onEnd() {
         save.data.ttsStuff == null ||
         save.data.wizardStuff == null ||
         save.data.alexgStuff == null ||
-        save.data.brandonStuff == null) {
+        save.data.brandonStuff == null ||
+        save.data.memesLOL == null) {
             for (medal in ["Zander Stop Being Dead","MR COOL !!","El Diamond Jaja","Stop Linking Stuff","Hat Of The Wizard","Alex GUH?", "Too Many Memes"]) {
                 Medals.lock(medal);
             }

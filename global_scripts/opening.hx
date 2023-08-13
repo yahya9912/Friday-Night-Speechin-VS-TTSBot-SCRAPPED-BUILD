@@ -34,7 +34,7 @@ function deathStateMedals() {
         [4, "ttsStuff"], // ttsStuff
         [1, "wizardStuff"], // wizardStuff
         [1, "alexgStuff"],  // alexgStuff
-        [1, "brandonStuff"],  // alexgStuff
+        [1, "brandonStuff"],  // brandonStuff
         [29, "memes"]
     ];
     var arry = [
@@ -49,6 +49,7 @@ function deathStateMedals() {
     ];
     for (i in 0...daSaveFunny.length) {
     if (daSaveFunny[i][0] == null || daSaveFunny[i][0] == 0) continue;
+    if (arry[i] == null) continue;
     if (daSaveFunny[i][1] == "memes") {
         var leng:Int = 0;
         for (item in arry[i]) {

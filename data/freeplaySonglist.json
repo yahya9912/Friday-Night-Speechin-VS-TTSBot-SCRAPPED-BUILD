@@ -93,6 +93,16 @@
 			"bpm": 180,
 			"name": "shit-vc",
 			"color": "#FFFFFF"
+		},
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Too Slow",
+			"char": "bf",
+			"bpm": 180,
+			"name": "too slow remix",
+			"color": "#FFFFFF"
 		}
 	]
 }
