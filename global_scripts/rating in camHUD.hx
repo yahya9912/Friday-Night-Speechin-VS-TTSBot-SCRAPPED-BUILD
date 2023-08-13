@@ -7,22 +7,21 @@ function onShowCombo(combo, lastCoolText) {
 	rating.loadGraphic(lastRating.bitmap);
 	rating.cameras = [camHUD];
 	rating.screenCenter();
-	rating.x = lastCoolText.x + 260;
+	rating.x = lastCoolText.x + 280;
 	rating.y -= 240;
 	rating.acceleration.y = 550;
 	rating.velocity.y -= FlxG.random.int(140, 175);
 	rating.velocity.x -= FlxG.random.int(0, 10);
-	rating.angle = FlxG.random.int(12, 0);
+	rating.angle = FlxG.random.int(6, -6);
 	rating.antialiasing = lastRating.antialiasing;
 
 	var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('combo'));
 	comboSpr.cameras = [camHUD];
 	comboSpr.screenCenter();
-	comboSpr.x = lastCoolText.x + 280;
-	comboSpr.y -= 190;
+	comboSpr.x = lastCoolText.x + 320;
+	comboSpr.y -= 205;
 	comboSpr.acceleration.y = 600;
 	comboSpr.velocity.y -= 150;
-	comboSpr.angle = FlxG.random.int(8, 0);
 	comboSpr.velocity.x += FlxG.random.int(1, 10);
 	add(rating);
 	if (combo >= 2)
@@ -51,8 +50,8 @@ function onShowCombo(combo, lastCoolText) {
 		var numScore:FlxSprite = new FlxSprite().loadGraphic(Paths.image('num' + Std.int(i)));
 		numScore.cameras = [camHUD];
 		numScore.screenCenter();
-		numScore.x = lastCoolText.x + (43 * daLoop) + 310;
-		numScore.y -= 100;
+		numScore.x = lastCoolText.x + (43 * daLoop) + 350;
+		numScore.y -= 140;
 
 		numScore.antialiasing = true;
 		numScore.setGraphicSize(Std.int(numScore.width * 0.425));
