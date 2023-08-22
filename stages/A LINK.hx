@@ -14,7 +14,7 @@ function create() {
 	autoCamZooming = false;
 	PlayState.isWidescreen = false;
 	stage = loadStage('A LINK');
-	EngineSettings.botplay = true;
+	// EngineSettings.botplay = true;
 }
 
 function createPost() {
@@ -40,7 +40,7 @@ function createPost() {
     hudSplitscreen.data.renderScale.value = [1,1];
     hudSplitscreen.data.renderRot.value = [0];
 
-	PlayState.camGame.setFilters([new ShaderFilter(gameSplitscreen), new ShaderFilter(trippyshader)]);
+	PlayState.camGame.setFilters([new ShaderFilter(gameSplitscreen)]);
 	PlayState.camHUD.setFilters([new ShaderFilter(hudSplitscreen)]);
 
 }
@@ -143,9 +143,6 @@ function setSplitscreenShaderData(
 			});
 			tweens.set("hudSplitRotation", twn);
 		}
-		// if (hudSplitMultScale != null) hudSplitRENDERMultScale = hudSplitMultScale;
-		// if (hudSplitOff != null) hudSplitRENDEROff = hudSplitOff;
-		// if (hudSplitRotation != null) hudSplitRENDERRotation = hudSplitRotation;
 
 }
 
@@ -173,7 +170,8 @@ function beatHit(curBeat) {
 		case 81:
 			setSplitscreenShaderData([1, 1, 2, FlxEase.backInOut]);
 		case 100:
-			setSplitscreenShaderData([15, 15, 1.5, FlxEase.quadInOut], [-9.5, 0.5, 0.5 FlxEase.quadOut], [3.14, 3, FlxEase.quadInOut], null, null, [3.14, 3, FlxEase.circInOut]);
+			setSplitscreenShaderData([15, 15, 1.5, FlxEase.quadInOut], [-9.5, 0.5, 0.5 FlxEase.quadOut], [3.14, 3, FlxEase.quadInOut], null, null, [0.4, 3, FlxEase.circInOut]);
+			// FlxTween.tween(PlayState.camHUD, {angle: 180}, 3, {ease: FlxEase.circInOut}); // DO NOT
 		case 104:
 			setSplitscreenShaderData([1, 1, 1.5, FlxEase.quadInOut], [-10, 0, 1 FlxEase.quadOut]);
 		case 136:
@@ -191,6 +189,18 @@ function beatHit(curBeat) {
 			setSplitscreenShaderData([1, 1, 3, FlxEase.backInOut]);
 		case 204:
 			setSplitscreenShaderData(null, [Math.floor(gameSplitscreen.data.renderOffset.value[0]), Math.floor(gameSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadOut]);
+		case 208:
+			setSplitscreenShaderData(null, null, null, [1.5, 1.5, 3, FlxEase.quadInOut], [0.25,-0.25, 1, FlxEase.quadIn]);
+		case 215:
+			setSplitscreenShaderData(null, null, null, [4, 4, 3.5, FlxEase.backInOut], null);
+		case 220:
+			setSplitscreenShaderData(null, null, null, [5, 3, 2, FlxEase.backInOut], null);
+		case 226:
+			setSplitscreenShaderData(null, null, null, [3, 5, 2, FlxEase.backInOut], null);
+		case 232:
+			setSplitscreenShaderData(null, null, null, [2, 2, 1.5, FlxEase.quadInOut], null);
+		case 236:
+			setSplitscreenShaderData(null, null, null, [1, 1, 1, FlxEase.quadOut], [Math.floor(hudSplitscreen.data.renderOffset.value[0]), Math.floor(hudSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadOut]);
 	}
 }
 
@@ -198,6 +208,10 @@ function doShaderUpdates(elapsed) {
 	if (curBeat > 175 && curBeat < 204) {
 		gameSplitscreen.data.renderOffset.value[0] = FlxMath.lerp(gameSplitscreen.data.renderOffset.value[0], gameSplitscreen.data.renderOffset.value[0] - 0.75, elapsed);
 		gameSplitscreen.data.renderOffset.value[1] = FlxMath.lerp(gameSplitscreen.data.renderOffset.value[1], gameSplitscreen.data.renderOffset.value[0] + 0.75, elapsed);
+	}
+	if (curBeat > 209 && curBeat < 236) {
+		hudSplitscreen.data.renderOffset.value[0] = FlxMath.lerp(hudSplitscreen.data.renderOffset.value[0], hudSplitscreen.data.renderOffset.value[0] + 0.25, elapsed);
+		hudSplitscreen.data.renderOffset.value[1] = FlxMath.lerp(hudSplitscreen.data.renderOffset.value[1], hudSplitscreen.data.renderOffset.value[1] - 0.25, elapsed);
 	}
 	
 	trippyshader.data.iTime.value = [trippyshader.data.iTime.value[0] + elapsed];
