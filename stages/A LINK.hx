@@ -26,8 +26,10 @@ function createPost() {
 	bgLinks.shader = backdrop;
 
 
-    trippyshader = new CustomShader(Paths.shader("old"));
-	trippyshader.data.iTime.value = [0.0];
+    // trippyshader = new CustomShader(Paths.shader("old"));
+	// trippyshader.data.iTime.value = [0.0];
+    stolenDXshader = new CustomShader(Paths.shader("dx but stolon"));
+	stolenDXshader.data.enable.value = [false];
 	
     gameSplitscreen = new CustomShader(Paths.shader("SplitScreen"));
     hudSplitscreen = new CustomShader(Paths.shader("SplitScreen"));
@@ -40,7 +42,7 @@ function createPost() {
     hudSplitscreen.data.renderScale.value = [1,1];
     hudSplitscreen.data.renderRot.value = [0];
 
-	PlayState.camGame.setFilters([new ShaderFilter(gameSplitscreen)]);
+	PlayState.camGame.setFilters([new ShaderFilter(gameSplitscreen), new ShaderFilter(stolenDXshader)]);
 	PlayState.camHUD.setFilters([new ShaderFilter(hudSplitscreen)]);
 
 }
@@ -170,7 +172,9 @@ function beatHit(curBeat) {
 		case 81:
 			setSplitscreenShaderData([1, 1, 2, FlxEase.backInOut]);
 		case 100:
-			setSplitscreenShaderData([15, 15, 1.5, FlxEase.quadInOut], [-9.5, 0.5, 0.5 FlxEase.quadOut], [3.14, 3, FlxEase.quadInOut], null, null, [0.4, 3, FlxEase.circInOut]);
+			setSplitscreenShaderData(
+				[15, 15, 1.5, FlxEase.quadInOut], [-9.5, 0.5, 0.5 FlxEase.quadOut], [3.14, 3, FlxEase.quadInOut],
+				null, null, [0.4, 3, FlxEase.circInOut]);
 			// FlxTween.tween(PlayState.camHUD, {angle: 180}, 3, {ease: FlxEase.circInOut}); // DO NOT
 		case 104:
 			setSplitscreenShaderData([1, 1, 1.5, FlxEase.quadInOut], [-10, 0, 1 FlxEase.quadOut]);
@@ -181,6 +185,7 @@ function beatHit(curBeat) {
 			setSplitscreenShaderData([5, 5, 2, FlxEase.circOut]);
 			gameSplitscreen.data.renderOffset.value[0] = 0;
 			gameSplitscreen.data.renderOffset.value[1] = 0;
+			stolenDXshader.data.enable.value = [true];
 		case 180:
 			setSplitscreenShaderData([8, 8, 5, FlxEase.backInOut]);
 		case 190:
@@ -188,19 +193,48 @@ function beatHit(curBeat) {
 		case 200:
 			setSplitscreenShaderData([1, 1, 3, FlxEase.backInOut]);
 		case 204:
-			setSplitscreenShaderData(null, [Math.floor(gameSplitscreen.data.renderOffset.value[0]), Math.floor(gameSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadOut]);
+			setSplitscreenShaderData(
+				null, [Math.floor(gameSplitscreen.data.renderOffset.value[0]), Math.floor(gameSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadOut]);
 		case 208:
-			setSplitscreenShaderData(null, null, null, [1.5, 1.5, 3, FlxEase.quadInOut], [0.25,-0.25, 1, FlxEase.quadIn]);
+			setSplitscreenShaderData(
+				null, null, null,
+				[1.5, 1.5, 3, FlxEase.quadInOut], [0.25,-0.25, 1, FlxEase.quadIn]);
 		case 215:
-			setSplitscreenShaderData(null, null, null, [4, 4, 3.5, FlxEase.backInOut], null);
+			setSplitscreenShaderData(
+				null, null, null,
+				[4, 4, 3.5, FlxEase.backInOut]);
 		case 220:
-			setSplitscreenShaderData(null, null, null, [5, 3, 2, FlxEase.backInOut], null);
+			setSplitscreenShaderData(
+				null, null, null,
+				[5, 3, 2, FlxEase.backInOut]);
 		case 226:
-			setSplitscreenShaderData(null, null, null, [3, 5, 2, FlxEase.backInOut], null);
+			setSplitscreenShaderData(
+				null, null, null,
+				[3, 5, 2, FlxEase.backInOut]);
 		case 232:
-			setSplitscreenShaderData(null, null, null, [2, 2, 1.5, FlxEase.quadInOut], null);
+			setSplitscreenShaderData(
+				null, null, null,
+				[2, 2, 1.5, FlxEase.quadInOut]);
 		case 236:
-			setSplitscreenShaderData(null, null, null, [1, 1, 1, FlxEase.quadOut], [Math.floor(hudSplitscreen.data.renderOffset.value[0]), Math.floor(hudSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadOut]);
+			stolenDXshader.data.enable.value = [false];
+			setSplitscreenShaderData(
+				null, null, null,
+				[1, 1, 1, FlxEase.quadOut], [Math.floor(hudSplitscreen.data.renderOffset.value[0])+1, Math.floor(hudSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadInOut]);
+		case 240, 256:
+			setSplitscreenShaderData(
+				[4, 4, 3, FlxEase.quadInOut], null, [0.35, 3, FlxEase.quadInOut],
+				[4, 4, 3, FlxEase.quadInOut], null, [0.35, 3, FlxEase.quadInOut]);
+		case 248:
+			setSplitscreenShaderData(
+				[2, 2, 3, FlxEase.quadInOut], null, [-0.35, 3, FlxEase.quadInOut],
+				[2, 2, 3, FlxEase.quadInOut], null, [-0.35, 3, FlxEase.quadInOut]);
+		case 268:
+			setSplitscreenShaderData(
+				[5, 5, 3, FlxEase.quadInOut], [Math.floor(gameSplitscreen.data.renderOffset.value[0]), Math.floor(gameSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadOut], [0.5, 2, FlxEase.quadInOut],
+				[1, 1, 3, FlxEase.quadInOut], [Math.floor(hudSplitscreen.data.renderOffset.value[0]), Math.floor(hudSplitscreen.data.renderOffset.value[1]), 1, FlxEase.quadInOut], [0, 2, FlxEase.quadInOut]);
+		case 272:
+			setSplitscreenShaderData([1, 1, 2, FlxEase.quadInOut], null, [0, 2, FlxEase.quadInOut]);
+
 	}
 }
 
@@ -213,8 +247,15 @@ function doShaderUpdates(elapsed) {
 		hudSplitscreen.data.renderOffset.value[0] = FlxMath.lerp(hudSplitscreen.data.renderOffset.value[0], hudSplitscreen.data.renderOffset.value[0] + 0.25, elapsed);
 		hudSplitscreen.data.renderOffset.value[1] = FlxMath.lerp(hudSplitscreen.data.renderOffset.value[1], hudSplitscreen.data.renderOffset.value[1] - 0.25, elapsed);
 	}
+	if (curBeat > 241 && curBeat < 268) {
+		hudSplitscreen.data.renderOffset.value[0] = FlxMath.lerp(hudSplitscreen.data.renderOffset.value[0], hudSplitscreen.data.renderOffset.value[0] - 0.25, elapsed);
+		hudSplitscreen.data.renderOffset.value[1] = FlxMath.lerp(hudSplitscreen.data.renderOffset.value[1], hudSplitscreen.data.renderOffset.value[1] - 0.25, elapsed);
+		
+		gameSplitscreen.data.renderOffset.value[0] = FlxMath.lerp(gameSplitscreen.data.renderOffset.value[0], gameSplitscreen.data.renderOffset.value[0] - 0.25, elapsed);
+		gameSplitscreen.data.renderOffset.value[1] = FlxMath.lerp(gameSplitscreen.data.renderOffset.value[1], gameSplitscreen.data.renderOffset.value[1] - 0.25, elapsed);
+	}
 	
-	trippyshader.data.iTime.value = [trippyshader.data.iTime.value[0] + elapsed];
+	// trippyshader.data.iTime.value = [trippyshader.data.iTime.value[0] + elapsed];
     backdrop.data.iTime.value = [backdrop.data.iTime.value[0] + elapsed];
 
 }
