@@ -1,6 +1,10 @@
 {
     "followLerp": 0.07,
     "defaultCamZoom": 0.85,
+    "dadOffset": [
+        345,
+        -231
+    ],
     "sprites": [
         {
             "pos": [
@@ -10,8 +14,8 @@
             "src": "stages/A LINK/New/BG",
             "shader": "",
             "beatTween": {
-                "ease": "linear",
                 "x": 0,
+                "ease": "linear",
                 "y": 0
             },
             "alpha": 1,
@@ -33,8 +37,8 @@
             "src": "stages/A LINK/A_link_New_New",
             "shader": "",
             "beatTween": {
-                "x": 0,
                 "ease": "linear",
+                "x": 0,
                 "y": 0
             },
             "alpha": 1,
@@ -55,11 +59,7 @@
             ],
             "src": "",
             "shader": "",
-            "beatTween": {
-                "x": 0,
-                "y": 0,
-                "ease": "linear"
-            },
+            "beatTween": null,
             "alpha": 1,
             "scrollFactor": [
                 1,
@@ -74,7 +74,7 @@
         {
             "pos": [
                 965,
-                215
+                245
             ],
             "src": "",
             "shader": "",
@@ -88,30 +88,7 @@
             "name": "Boyfriend",
             "animation": null,
             "type": "BF",
-            "scale": 2.3
-        },
-        {
-            "pos": [
-                -1786,
-                -359
-            ],
-            "src": "stages/A LINK/cta",
-            "shader": null,
-            "beatTween": {
-                "ease": "linear",
-                "x": 0,
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "cta",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 1.8
+            "scale": 1
         },
         {
             "pos": [
@@ -120,7 +97,11 @@
             ],
             "src": "",
             "shader": "",
-            "beatTween": null,
+            "beatTween": {
+                "x": 0,
+                "y": 0,
+                "ease": "linear"
+            },
             "alpha": 1,
             "scrollFactor": [
                 0.95,
@@ -134,60 +115,10 @@
         },
         {
             "pos": [
-                -197,
-                -164
+                -1786,
+                -359
             ],
-            "src": "stages/A LINK/New/Flosh",
-            "shader": null,
-            "beatTween": {
-                "ease": "smootherStepOut",
-                "x": 0,
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                0,
-                0
-            ],
-            "antialiasing": true,
-            "name": "Flosh",
-            "animation": {
-                "type": "OnBeatForce",
-                "fps": 24,
-                "name": "Flosh"
-            },
-            "type": "SparrowAtlas",
-            "scale": 1
-        },
-        {
-            "pos": [
-                -1790,
-                -1430
-            ],
-            "src": "stages/A LINK/sonadow/d32ae2e-7e2896a5-22cc-416b-b3e8-21761cd2b430",
-            "shader": null,
-            "beatTween": {
-                "x": 0,
-                "ease": "linear",
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1.1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "d32ae2e-7e2896a5-22cc-416b-b3e8-21761cd2b430",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 2.2
-        },
-        {
-            "pos": [
-                675,
-                -1845
-            ],
-            "src": "stages/A LINK/sonadow/images",
+            "src": "stages/A LINK/cta",
             "shader": null,
             "beatTween": {
                 "x": 0,
@@ -200,157 +131,15 @@
                 1
             ],
             "antialiasing": true,
-            "name": "A Links",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 1
-        },
-        {
-            "pos": [
-                -190,
-                -1460
-            ],
-            "src": "stages/A LINK/sonadow/d74anod-526525c4-904f-484b-a9f7-e15fdfa1c5ef",
-            "shader": null,
-            "beatTween": {
-                "x": 0,
-                "ease": "linear",
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "d74anod-526525c4-904f-484b-a9f7-e15fdfa1c5ef",
+            "name": "cta",
             "animation": null,
             "type": "Bitmap",
             "scale": 1.8
-        },
-        {
-            "pos": [
-                1520,
-                -1490
-            ],
-            "src": "stages/A LINK/sonadow/images",
-            "shader": null,
-            "beatTween": {
-                "x": 0,
-                "ease": "linear",
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": false,
-            "name": "images",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 5
-        },
-        {
-            "pos": [
-                -1699,
-                992
-            ],
-            "src": "stages/A LINK/sonadow/image2s",
-            "shader": null,
-            "beatTween": {
-                "ease": "linear",
-                "x": 0,
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "image2s",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 4.7
-        },
-        {
-            "pos": [
-                -507,
-                1120
-            ],
-            "src": "stages/A LINK/sonadow/dcxz29b-3b3ef6e6-5b47-4a67-bf75-1b3235f780d7",
-            "shader": null,
-            "beatTween": {
-                "ease": "linear",
-                "x": 0,
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "dcxz29b-3b3ef6e6-5b47-4a67-bf75-1b3235f780d7",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 1.2
-        },
-        {
-            "pos": [
-                1913,
-                1187
-            ],
-            "src": "stages/A LINK/sonadow/images2",
-            "shader": null,
-            "beatTween": {
-                "ease": "linear",
-                "x": 0,
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "images2",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 5.6
-        },
-        {
-            "pos": [
-                2020,
-                -260
-            ],
-            "src": "stages/A LINK/sonadow/index",
-            "shader": null,
-            "beatTween": {
-                "ease": "linear",
-                "x": 0,
-                "y": 0
-            },
-            "alpha": 1,
-            "scrollFactor": [
-                1,
-                1
-            ],
-            "antialiasing": true,
-            "name": "index",
-            "animation": null,
-            "type": "Bitmap",
-            "scale": 6.3
         }
     ],
     "gfOffset": [
         -1509,
         148
-    ],
-    "dadOffset": [
-        345,
-        -231
     ],
     "bfOffset": [
         195,

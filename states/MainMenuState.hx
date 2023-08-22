@@ -33,13 +33,13 @@ var menuItems:Array<Array<Dynamic>> = [];
 var obsIsOpen:Bool = false;
 function create() {
     CoolUtil.playMenuMusic();
-    var elProcess = new Process("tasklist", []);
-    var output = elProcess.stdout.readAll().toString().toLowerCase();
-    // I would NEVER Steal from an FNF mod that is not spoken of, ESPECIALLY BOB AND BOSIP...
-    var blockedShit:Array<String> = ['obs64.exe', 'obs32.exe', 'streamlabs obs.exe', 'streamlabs obs32.exe'];
-    for (item in blockedShit) if (StringTools.contains(output, item)) obsIsOpen = true;
-    if (output == "winedevice.exe") theSystem = "Linux";
-    elProcess.close();
+    // var elProcess = new Process("tasklist", []);
+    // var output = elProcess.stdout.readAll().toString().toLowerCase();
+    // // I would NEVER Steal from an FNF mod that is not spoken of, ESPECIALLY BOB AND BOSIP...
+    // var blockedShit:Array<String> = ['obs64.exe', 'obs32.exe', 'streamlabs obs.exe', 'streamlabs obs32.exe'];
+    // for (item in blockedShit) if (StringTools.contains(output, item)) obsIsOpen = true;
+    // if (output == "winedevice.exe") theSystem = "Linux";
+    // elProcess.close();
 
     // if (FileSystem.exists(FileSystem.absolutePath("Z://home//"+ homeDir.split("\\")[2] +"//.bashrc"))) theSystem = "Linux";
 	backdropShader = new CustomShader(Paths.shader("BackdropShader", mod));
