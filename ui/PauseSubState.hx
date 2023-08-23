@@ -146,7 +146,7 @@ function update() {
 
     if (FlxG.mouse.justMoved) moused = true;
 
-    state.levelInfo.x = 0 - 40;
+    state.levelInfo.x = 0;
     state.levelInfo.y = FlxG.height - state.levelInfo.height;
     state.levelDifficulty.setPosition(state.levelInfo.x + state.levelInfo.width + 20, state.levelInfo.y);
     state.blueballAmount.setPosition(state.levelDifficulty.x + state.levelDifficulty.width + 20, state.levelInfo.y);
