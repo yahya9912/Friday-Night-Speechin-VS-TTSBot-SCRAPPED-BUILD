@@ -76,7 +76,7 @@
             ]
         },
         {
-            "name" : "Car",
+            "name" : "Soffee cup",
             "role" : "Original Composer of 'Speechin' and'Hello' ",
             "icon" : "credits/car",
             "urls" : [
@@ -119,21 +119,6 @@
             "urls" : [
                 {
                     "name" : "the credits are wip please don't touch it thank you",
-                    "url" : ""
-                }
-            ]
-        },
-        {
-            "name" : "Alexg",
-            "role" : "Composer of Too Slow Remix :]",
-            "icon" : "credits/alex",
-            "urls" : [
-                {
-                    "name" : "Youtube",
-                    "url" : "https://www.youtube.com/channel/UC2j8aQzjiv4qiwNF8qzmLNA"
-                },
-                {
-                    "name" :"Twitter",
                     "url" : ""
                 }
             ]
