@@ -17,7 +17,22 @@ function create() {
 	// EngineSettings.botplay = true;
 }
 
+var cpuNotes:Array<Note> = [];
 function createPost() {
+
+	for (i in 0...PlayState.SONG.keyNumber) {
+		var playerStrum = PlayState.playerStrums.members[i];
+		var cpuStrum = PlayState.cpuStrums.members[i];
+		cpuStrum.cameras = [PlayState.camGame];
+		cpuStrum.x -= 50;
+		cpuStrum.x += 125*i;
+		if (i > 1) cpuStrum.x += 450;
+		cpuStrum.y -= 550;
+		cpuStrum.visible = false;
+
+		playerStrum.x = Std.int(PlayState.current.guiSize.x / 2) + ((i - (PlayState.SONG.keyNumber / 2)) * Note.swagWidth);
+		
+	}
     backdrop = new CustomShader(Paths.shader("BackdropShader"));
     backdrop.data.iTime.value = [0.0];
     backdrop.data.offset.value = [0, -1.5];
@@ -44,6 +59,12 @@ function createPost() {
 
 	PlayState.camGame.setFilters([new ShaderFilter(gameSplitscreen), new ShaderFilter(stolenDXshader)]);
 	PlayState.camHUD.setFilters([new ShaderFilter(hudSplitscreen)]);
+
+	for (note in PlayState.unspawnNotes) {
+		if (note.mustPress) continue;
+		note.cameras = [PlayState.camGame];
+		note.scale.set(note.scale.x + 0.1, note.scale.y + 0.1);
+	}
 
 }
 
@@ -147,6 +168,7 @@ function setSplitscreenShaderData(
 		}
 
 }
+
 
 var bumpALINKS:Bool = false;
 function update(elapsed) {
