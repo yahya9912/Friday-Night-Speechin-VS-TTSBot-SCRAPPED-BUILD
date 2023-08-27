@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fucking shit.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="19" y="19" width="205" height="138"/>
+	<SubTexture name="down0001" x="19" y="19" width="205" height="138"/>
+	<SubTexture name="down0002" x="229" y="19" width="205" height="138"/>
+	<SubTexture name="down0003" x="229" y="19" width="205" height="138"/>
+	<SubTexture name="idle0000" x="439" y="19" width="196" height="131"/>
+	<SubTexture name="left0000" x="640" y="19" width="227" height="202"/>
+	<SubTexture name="left0001" x="640" y="19" width="227" height="202"/>
+	<SubTexture name="left0002" x="872" y="19" width="227" height="202"/>
+	<SubTexture name="left0003" x="872" y="19" width="227" height="202"/>
+	<SubTexture name="right0000" x="19" y="226" width="197" height="181"/>
+	<SubTexture name="right0001" x="19" y="226" width="197" height="181"/>
+	<SubTexture name="right0002" x="221" y="226" width="197" height="181"/>
+	<SubTexture name="right0003" x="221" y="226" width="197" height="181"/>
+	<SubTexture name="up0000" x="423" y="226" width="209" height="210"/>
+	<SubTexture name="up0001" x="423" y="226" width="209" height="210"/>
+	<SubTexture name="up0002" x="637" y="226" width="209" height="210"/>
+	<SubTexture name="up0003" x="637" y="226" width="209" height="210"/>
+</TextureAtlas>

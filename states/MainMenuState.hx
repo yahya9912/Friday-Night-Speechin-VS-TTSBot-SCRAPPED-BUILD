@@ -260,7 +260,7 @@ function onEnter() {
                 switch(curSel) {
                     case 0: FlxG.switchState(new StoryMenuState());
                     case 1: FlxG.switchState(new FreeplayState());
-                    case 2: FlxG.switchState(new MedalState());
+                    case 2: FlxG.switchState(new MedalsState());
                     case 3: FlxG.switchState(new CreditsState());
                     case 4: FlxG.switchState(new options.screens.OptionMain());
                 }

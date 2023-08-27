@@ -95,6 +95,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "speechin-nitro"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "suplantando"
 		}
 	]
 }
