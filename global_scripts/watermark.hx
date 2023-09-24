@@ -1,6 +1,6 @@
 //a
 function createPost(){
-    var watermark = new FlxText(PlayState.scoreTxt.x + 468, PlayState.scoreTxt.y + -120, 0, "!!DEV BUILD DO NOT SHARE!!");
+    var watermark = new FlxText(PlayState.scoreTxt.x + 568, PlayState.scoreTxt.y + -620, 0, "DEV BUILD");
     watermark.setFormat(Paths.font("vcr.ttf"), 24);
   //  watermark.alignment = 'CENTER';
     watermark.scrollFactor.set();

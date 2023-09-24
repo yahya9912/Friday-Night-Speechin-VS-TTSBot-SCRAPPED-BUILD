@@ -13,7 +13,7 @@
 		"x": 0,
 		"y": 0
 	},
-	"healthbarColor": "#31B0D1",
+	"healthbarColor": "#28CA76",
 	"flipX": true,
 	"anims": [
 		{
@@ -27,15 +27,6 @@
 		},
 		{
 			"indices": null,
-			"x": -8,
-			"y": -400,
-			"anim": "BF NOTE DOWN",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": -43,
 			"y": -332,
 			"anim": "RIT MISS",
@@ -45,11 +36,11 @@
 		},
 		{
 			"indices": null,
-			"x": -44,
-			"y": -310,
-			"anim": "BF NOTE UP",
+			"x": -8,
+			"y": -400,
+			"anim": "BF NOTE DOWN",
 			"loop": false,
-			"name": "singUP",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -63,11 +54,29 @@
 		},
 		{
 			"indices": null,
+			"x": -44,
+			"y": -310,
+			"anim": "BF NOTE UP",
+			"loop": false,
+			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
 			"x": -20,
 			"y": -347,
 			"anim": "BF hit",
 			"loop": false,
 			"name": "hit",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 24,
+			"y": 56,
+			"anim": "BF Dead confirm",
+			"loop": false,
+			"name": "deathConfirm",
 			"framerate": 24
 		},
 		{
@@ -90,11 +99,11 @@
 		},
 		{
 			"indices": null,
-			"x": 24,
-			"y": 56,
-			"anim": "BF Dead confirm",
+			"x": -16,
+			"y": -379,
+			"anim": "DON MISS",
 			"loop": false,
-			"name": "deathConfirm",
+			"name": "singDOWNmiss",
 			"framerate": 24
 		},
 		{
@@ -108,11 +117,11 @@
 		},
 		{
 			"indices": null,
-			"x": -16,
-			"y": -379,
-			"anim": "DON MISS",
+			"x": -47,
+			"y": -340,
+			"anim": "U MISS",
 			"loop": false,
-			"name": "singDOWNmiss",
+			"name": "singUPmiss",
 			"framerate": 24
 		},
 		{
@@ -122,15 +131,6 @@
 			"anim": "BF NOTE LEFT",
 			"loop": false,
 			"name": "singLEFT",
-			"framerate": 24
-		},
-		{
-			"indices": null,
-			"x": -47,
-			"y": -340,
-			"anim": "U MISS",
-			"loop": false,
-			"name": "singUPmiss",
 			"framerate": 24
 		}
 	],
