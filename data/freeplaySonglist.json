@@ -103,6 +103,16 @@
 			"bpm": 180,
 			"name": "too slow remix",
 			"color": "#FFFFFF"
+		},
+		{
+			"displayName": null,
+			"difficulties": [
+				"Hard"
+			],
+			"char": "tts-bot",
+			"color": "#787373",
+			"name": "Sole Reason",
+			"bpm": 150
 		}
-]
+	]
 }
