@@ -1,7 +1,8 @@
 # Friday Night Speechin' DEV BUILD
 
 **FOR DEV 1.0 Press Code and Download as Zip, or clone to your mods folder!**
-Actually dont use this, Just do code and download as zip. Dev 1.0 is pretty outdated
+
+Actually dont use the tags, Just do code and download as zip. the tags are pretty outdated
 
 A mod made by Yahya, hPhantom  and Diamantitos.
 --
