@@ -2,74 +2,79 @@
 <TextureAtlas imagePath="spritesheet.png">
 	<!-- Created with Adobe Animate version 21.0.3.38773 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="LJDownPose instance 10000" x="19" y="19" width="243" height="175" frameX="0" frameY="-1" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10001" x="19" y="19" width="243" height="175" frameX="0" frameY="-1" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10002" x="267" y="19" width="244" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10003" x="267" y="19" width="244" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10004" x="516" y="19" width="243" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10005" x="516" y="19" width="243" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10006" x="267" y="19" width="244" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10007" x="267" y="19" width="244" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10008" x="516" y="19" width="243" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10009" x="516" y="19" width="243" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10010" x="267" y="19" width="244" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10011" x="267" y="19" width="244" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10012" x="516" y="19" width="243" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJDownPose instance 10013" x="516" y="19" width="243" height="178" frameX="-1" frameY="0" frameWidth="245" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10000" x="764" y="19" width="270" height="176" frameX="-1" frameY="-2" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10001" x="764" y="19" width="270" height="176" frameX="-1" frameY="-2" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10002" x="1039" y="19" width="270" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10003" x="1039" y="19" width="270" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10004" x="1314" y="19" width="268" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10005" x="1314" y="19" width="268" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10006" x="1587" y="19" width="267" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10007" x="1587" y="19" width="267" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10008" x="19" y="202" width="267" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10009" x="19" y="202" width="267" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10010" x="291" y="202" width="266" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10011" x="291" y="202" width="266" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10012" x="19" y="202" width="267" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJIdle instance 10013" x="19" y="202" width="267" height="178" frameX="0" frameY="0" frameWidth="271" frameHeight="178"/>
-	<SubTexture name="LJLeftPose instance 10000" x="562" y="202" width="222" height="194" frameX="0" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10001" x="562" y="202" width="222" height="194" frameX="0" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10002" x="789" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10003" x="789" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10004" x="1014" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10005" x="1014" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10006" x="789" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10007" x="789" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10008" x="1014" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10009" x="1014" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10010" x="789" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10011" x="789" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10012" x="1014" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJLeftPose instance 10013" x="1014" y="202" width="220" height="195" frameX="-3" frameY="0" frameWidth="223" frameHeight="195"/>
-	<SubTexture name="LJRightPose instance 10000" x="1239" y="202" width="245" height="197" frameX="-1" frameY="0" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10001" x="1239" y="202" width="245" height="197" frameX="-1" frameY="0" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10002" x="1489" y="202" width="245" height="196" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10003" x="1489" y="202" width="245" height="196" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10004" x="1739" y="202" width="245" height="197" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10005" x="1739" y="202" width="245" height="197" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10006" x="1489" y="202" width="245" height="196" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10007" x="1489" y="202" width="245" height="196" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10008" x="1739" y="202" width="245" height="197" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10009" x="1739" y="202" width="245" height="197" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10010" x="1489" y="202" width="245" height="196" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10011" x="1489" y="202" width="245" height="196" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10012" x="1739" y="202" width="245" height="197" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJRightPose instance 10013" x="1739" y="202" width="245" height="197" frameX="0" frameY="-1" frameWidth="246" frameHeight="198"/>
-	<SubTexture name="LJUpPose instance 10000" x="19" y="404" width="217" height="218" frameX="-2" frameY="0" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10001" x="19" y="404" width="217" height="218" frameX="-2" frameY="0" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10002" x="241" y="404" width="218" height="217" frameX="-1" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10003" x="241" y="404" width="218" height="217" frameX="-1" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10004" x="464" y="404" width="219" height="217" frameX="0" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10005" x="464" y="404" width="219" height="217" frameX="0" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10006" x="241" y="404" width="218" height="217" frameX="-1" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10007" x="241" y="404" width="218" height="217" frameX="-1" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10008" x="464" y="404" width="219" height="217" frameX="0" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10009" x="464" y="404" width="219" height="217" frameX="0" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10010" x="241" y="404" width="218" height="217" frameX="-1" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10011" x="241" y="404" width="218" height="217" frameX="-1" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10012" x="464" y="404" width="219" height="217" frameX="0" frameY="-1" frameWidth="219" frameHeight="218"/>
-	<SubTexture name="LJUpPose instance 10013" x="464" y="404" width="219" height="217" frameX="0" frameY="-1" frameWidth="219" frameHeight="218"/>
+	<SubTexture name="down0000" x="19" y="19" width="667" height="393" frameX="0" frameY="-3" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0001" x="19" y="19" width="667" height="393" frameX="0" frameY="-3" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0002" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0003" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0004" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0005" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0006" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0007" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0008" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0009" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0010" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0011" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="down0012" x="691" y="19" width="639" height="382" frameX="-3" frameY="0" frameWidth="667" frameHeight="396"/>
+	<SubTexture name="idle0000" x="1335" y="19" width="555" height="387" frameX="-3" frameY="-9" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0001" x="1335" y="19" width="555" height="387" frameX="-3" frameY="-9" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0002" x="19" y="417" width="566" height="386" frameX="0" frameY="-5" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0003" x="19" y="417" width="566" height="386" frameX="0" frameY="-5" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0004" x="590" y="417" width="566" height="385" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0005" x="590" y="417" width="566" height="385" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0006" x="1161" y="417" width="553" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0007" x="1161" y="417" width="553" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0008" x="1719" y="417" width="538" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0009" x="1719" y="417" width="538" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0010" x="19" y="808" width="538" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0011" x="19" y="808" width="538" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0012" x="19" y="808" width="538" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="idle0013" x="19" y="808" width="538" height="383" frameX="-1" frameY="0" frameWidth="567" frameHeight="396"/>
+	<SubTexture name="left0000" x="562" y="808" width="579" height="424" frameX="0" frameY="0" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0001" x="562" y="808" width="579" height="424" frameX="0" frameY="0" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0002" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0003" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0004" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0005" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0006" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0007" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0008" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0009" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0010" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="left0011" x="1146" y="808" width="575" height="415" frameX="-13" frameY="-5" frameWidth="588" frameHeight="424"/>
+	<SubTexture name="right0000" x="1726" y="808" width="575" height="401" frameX="-10" frameY="0" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0001" x="1726" y="808" width="575" height="401" frameX="-10" frameY="0" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0002" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0003" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0004" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0005" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0006" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0007" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0008" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0009" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0010" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0011" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0012" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0013" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0014" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0015" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0016" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0017" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0018" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="right0019" x="19" y="1237" width="557" height="393" frameX="0" frameY="-3" frameWidth="585" frameHeight="401"/>
+	<SubTexture name="up0000" x="581" y="1237" width="695" height="532" frameX="0" frameY="0" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0001" x="581" y="1237" width="695" height="532" frameX="0" frameY="0" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0002" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0003" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0004" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0005" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0006" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0007" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0008" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0009" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0010" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0011" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0012" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0013" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0014" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
+	<SubTexture name="up0015" x="1281" y="1237" width="714" height="488" frameX="-7" frameY="-41" frameWidth="721" frameHeight="532"/>
 </TextureAtlas>
