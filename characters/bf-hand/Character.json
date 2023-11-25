@@ -6,7 +6,7 @@
 		"#FE8F92"
 	],
 	"camOffset": {
-		"x": -290,
+		"x": -420,
 		"y": -10
 	},
 	"globalOffset": {
@@ -27,15 +27,6 @@
 		},
 		{
 			"indices": null,
-			"x": 304,
-			"y": -245,
-			"anim": "down",
-			"loop": false,
-			"name": "singDOWN",
-			"framerate": 24
-		},
-		{
-			"indices": null,
 			"x": 77,
 			"y": -131,
 			"anim": "right",
@@ -45,11 +36,11 @@
 		},
 		{
 			"indices": null,
-			"x": 279,
-			"y": -3,
-			"anim": "up",
+			"x": 304,
+			"y": -245,
+			"anim": "down",
 			"loop": false,
-			"name": "singUP",
+			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
@@ -59,6 +50,15 @@
 			"anim": "left",
 			"loop": false,
 			"name": "singLEFT",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 279,
+			"y": -3,
+			"anim": "up",
+			"loop": false,
+			"name": "singUP",
 			"framerate": 24
 		}
 	],
