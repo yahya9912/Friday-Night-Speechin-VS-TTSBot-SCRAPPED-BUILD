@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="eyes-on-you.png">
-	<!-- Created with Adobe Animate version 21.0.3.38773 -->
-	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="eyes0000" x="19" y="19" width="896" height="90" frameX="0" frameY="0" frameWidth="900" frameHeight="95"/>
 	<SubTexture name="eyes0001" x="19" y="19" width="896" height="90" frameX="-4" frameY="-2" frameWidth="900" frameHeight="95"/>
 	<SubTexture name="eyes0002" x="19" y="19" width="896" height="90" frameX="-1" frameY="0" frameWidth="900" frameHeight="95"/>
