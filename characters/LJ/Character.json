@@ -6,66 +6,66 @@
 		"#00DE00"
 	],
 	"camOffset": {
-		"x": 95,
-		"y": -89
+		"x": 48,
+		"y": -189
 	},
 	"globalOffset": {
 		"x": 10,
 		"y": 480
 	},
-	"healthbarColor": "#00FF00",
+	"healthbarColor": "#00C600",
 	"flipX": false,
 	"anims": [
 		{
 			"indices": null,
-			"x": -79,
-			"y": -58,
-			"anim": "LJIdle instance ",
-			"loop": false,
+			"x": 4,
+			"y": 101,
+			"anim": "idle",
+			"loop": true,
 			"name": "idle",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -112,
-			"y": -59,
-			"anim": "LJDownPose instance ",
+			"x": 2,
+			"y": 91,
+			"anim": "down",
 			"loop": false,
 			"name": "singDOWN",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -101,
-			"y": -48,
-			"anim": "LJRightPose instance ",
+			"x": -45,
+			"y": 103,
+			"anim": "right",
 			"loop": false,
 			"name": "singRIGHT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -90,
-			"y": -37,
-			"anim": "LJUpPose instance ",
+			"x": 24,
+			"y": 105,
+			"anim": "left",
 			"loop": false,
-			"name": "singUP",
+			"name": "singLEFT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -71,
-			"y": -63,
-			"anim": "LJLeftPose instance ",
+			"x": 68,
+			"y": 215,
+			"anim": "up",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singUP",
 			"framerate": 24
 		}
 	],
 	"danceSteps": [
 		"idle"
 	],
-	"antialiasing": true,
+	"antialiasing": false,
 	"healthIconSteps": [
 		[
 			20,
@@ -76,5 +76,5 @@
 			1
 		]
 	],
-	"scale": 2
+	"scale": 1
 }

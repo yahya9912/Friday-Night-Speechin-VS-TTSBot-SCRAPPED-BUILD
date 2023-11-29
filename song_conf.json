@@ -109,6 +109,13 @@
 			"end_cutscene": null,
 			"cutscene": null,
 			"name": "sole reason"
+		},
+		{
+			"scripts": [],
+			"difficulties": [],
+			"end_cutscene": null,
+			"cutscene": null,
+			"name": "eyes-on-you"
 		}
 	]
 }

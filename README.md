@@ -1,12 +1,14 @@
-# Friday Night Speechin' DEV BUILD
+# Friday Night Speechin': VS TTS Bots DEVELOPER BUILD
 
 **FOR DEV 1.0 Press Code and Download as Zip, or clone to your mods folder!**
 
 Actually dont use the tags, Just do code and download as zip. the tags are pretty outdated
 
 A mod made by Yahya, hPhantom  and Diamantitos.
---
-Original idea from:
+
+Text to Speech Bot made by Gnome
+---
+Original idea:
 
 ![image](https://user-images.githubusercontent.com/97072056/197304373-00c87ada-a77c-4bef-8358-afc76883f999.png)
 
