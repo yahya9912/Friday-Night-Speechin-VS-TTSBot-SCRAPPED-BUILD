@@ -135,11 +135,11 @@ function newChangeSel(bruh:Int = 0) {
 var keys = FlxG.keys;
 function update() {
 
-    if (keys.justPressed.S || keys.justPressed.DOWN) {
+    if (keys.justPressed.A || keys.justPressed.LEFT) {
         moused = false;
         newChangeSel(-1);
     }
-    if (keys.justPressed.W || keys.justPressed.UP) {
+    if (keys.justPressed.D || keys.justPressed.RIGHT) {
         moused = false;
         newChangeSel(1);
     }
