@@ -6,8 +6,8 @@
 		"#000305"
 	],
 	"camOffset": {
-		"x": 40,
-		"y": 230
+		"x": -70,
+		"y": 330
 	},
 	"globalOffset": {
 		"x": 0,
@@ -18,8 +18,8 @@
 	"anims": [
 		{
 			"indices": null,
-			"x": 25,
-			"y": -306,
+			"x": 7,
+			"y": -249,
 			"anim": "tts idle",
 			"loop": true,
 			"name": "idle",
@@ -27,17 +27,17 @@
 		},
 		{
 			"indices": null,
-			"x": -22,
-			"y": -295,
-			"anim": "tts right",
-			"loop": true,
-			"name": "singRIGHT",
+			"x": 255,
+			"y": -186,
+			"anim": "tts wtf",
+			"loop": false,
+			"name": "wtf",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": -4,
-			"y": -364,
+			"x": -1,
+			"y": -285,
 			"anim": "tts down",
 			"loop": false,
 			"name": "singDOWN",
@@ -45,20 +45,29 @@
 		},
 		{
 			"indices": null,
-			"x": 405,
-			"y": -115,
-			"anim": "tts left",
+			"x": -80,
+			"y": -260,
+			"anim": "tts right",
 			"loop": false,
-			"name": "singLEFT",
+			"name": "singRIGHT",
 			"framerate": 24
 		},
 		{
 			"indices": null,
-			"x": 59,
-			"y": 147,
+			"x": 56,
+			"y": -44,
 			"anim": "tts up",
 			"loop": false,
 			"name": "singUP",
+			"framerate": 24
+		},
+		{
+			"indices": null,
+			"x": 85,
+			"y": -120,
+			"anim": "tts left",
+			"loop": false,
+			"name": "singLEFT",
 			"framerate": 24
 		}
 	],
