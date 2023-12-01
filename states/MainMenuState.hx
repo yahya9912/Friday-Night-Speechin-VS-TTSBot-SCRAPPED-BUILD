@@ -150,6 +150,7 @@ function create() {
         coolText.push("Oh your Recording Software is on... hehehehehe");
         coolText.push("CLIP THAT CHAT, OMG CLIP THAT!!");
         coolText.push(".............. hi, u recording me?");
+        coolText.push("ok guys this youtuber's IP Adress is 947.24.1.752!"); // imagine if the numbers randomize
     }
 
     new FlxTimer().start(FlxG.random.int(3,5), function(tmr) {
