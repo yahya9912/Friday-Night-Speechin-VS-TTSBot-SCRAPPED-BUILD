@@ -120,7 +120,7 @@ function create() {
     }
     switch(theSystem.toLowerCase()) {
         case "linux", "mac": coolText.push("Hey you should go play Nonsense V2- oh wait, sorry you can't even boot the game!! haha");
-        default: coolText.push("Oh cool you can play the Nonsense V2 mod since your on " + theSystem + "!");
+        default: coolText.push("Oh cool you can play the Nonsense V2 mod since your on " + theSystem + "!"); //you're* 🤓
     }
     for (i in 0...5) if (FlxG.random.bool(30)) coolText.push("Hey do you happen to have " + bruh(homeDir+"\\Downloads", [], 2) + " On your System? No? oke");
     for (mod in FileSystem.readDirectory(Paths.get_modsPath())) {
@@ -203,6 +203,7 @@ function create() {
                 texts.push("Turn off your Recording Software");
                 texts.push("Bro stop leaking our DM's on YouTube");
                 texts.push("hello utubr");
+                texts.push("sticky my beloved");
             }
             switch(Sys.args()[0]) {
                 case "penis": texts.push("Did you enable Penis Mode??"); texts.push("Did you enable Penis Mode??");
@@ -356,9 +357,9 @@ function update(elapsed:Float) {
 
 var coolText:Array<String> = [
     "|  A Link  |",
-    "Hey, how is the " + theSystem + " system working out for you?",
+    "Hey, how is the " + theSystem + " Operating System working out for you?",
     "In the Death State, any words with 'Z' are replaced with 'X' due to YCE being a bitch",
-    "Hi, Im ItsLJcool", "DO NOT PLAY FRIDAY NIGHT FUNKIN: VS TTS AT 3:00 AM !!!"
+    "Hi, Im ItsLJcool!", "DO NOT PLAY FRIDAY NIGHT SPEECHIN': VS TTS AT 3:00 AM !!!"
 ];
 var theCoolText:FlxTypedGroup<FlxText>;
 function pushInfoToBar(?forceText:String) {
