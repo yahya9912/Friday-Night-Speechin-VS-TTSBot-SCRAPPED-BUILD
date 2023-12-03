@@ -3,19 +3,19 @@ import("openfl.filters.ShaderFilter");
 //var bg:FlxSprite = null;
 
 var camShader:CustomShader;
-var camShader2:CustomShader;
+//var camShader2:CustomShader;
 
 
 
 function create() {
     camShader = new CustomShader(Paths.shader("fart"));
-    camShader2 = new CustomShader(Paths.shader("bloom"));
+    //camShader2 = new CustomShader(Paths.shader("idk anymore"));
 
-    PlayState.camHUD.setFilters([new ShaderFilter(camShader2)]);
-    PlayState.camHUD.filtersEnabled = false;
+    //PlayState.camHUD.setFilters([new ShaderFilter(camShader2)]);
+    //PlayState.camHUD.filtersEnabled = false;
 
     FlxG.camera.setFilters([new ShaderFilter(camShader)]);
-    FlxG.camera.filtersEnabled = false;
+    //FlxG.camera.filtersEnabled = false;
 
  //saving these for later teehee -yahya   
     
