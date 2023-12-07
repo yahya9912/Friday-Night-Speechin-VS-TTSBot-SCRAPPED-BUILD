@@ -2,6 +2,10 @@
 import flixel.FlxCamera;
 import flixel.input.mouse.FlxMouseEventManager;
 import CoolUtil;
+//
+//area = new FlxSound().loadEmbedded(Paths.sound('liveareapause'));
+//area.stop();
+//var area:FlxSound;
 
 var canSel:Bool = false;
 var bg:FlxSprite;
@@ -20,6 +24,11 @@ function preCreate() {
 
 var paused:FlxText;
 var descPaused:FlxText;
+/*
+var VitaSongs:Array<Strings> = [
+    "living-areas"
+];
+*/
 var funnySongs:Array<Strings> = [
     "stuck-a-lot", "hello", "shit-vc"
 ];
@@ -29,7 +38,8 @@ var funnyRNGtext:Array<Array<String>> = [
     "User Paused At An LJ Moment"],
     ["Hi, Im ItsLJcool", "User Has Paused The Game... Pussy", "User Got Ratio'd On Twitter", "I Don't Know What Im Doing Anymore",
      "var paused:Bool = false;\nfunction onEnter() {\n      paused = true;\n}\n", "User Paused At An LJ Moment"],
-    ["This channel smells like shit", "Fun Fact: There Is A Secret Song Somewhere in the pause menu\nDon't Tell the devs this\n-LJ\n"]
+    ["This channel smells like shit", "Fun Fact: There Is A Secret Song Somewhere in the pause menu\nDon't Tell the devs this\n-LJ\n"], 
+    ["User has returned to the LiveArea."]
 ];
 
 var daMenu:Array<String> = [
@@ -77,6 +87,13 @@ function createPost() {
         descPaused.y = paused.y + paused.height;
     }
 
+/*    for (i in 0...VitaSongs.length) {
+        if (VitaSongs[i] != PlayState.song.song.toLowerCase()) continue;
+        if (!FlxG.random.bool(85)) continue; 
+        area.play(true, 0);
+
+    }
+*/
     for (i in 0...daMenu.length) {
         var bgItem:FlxSprite = new FlxSprite().loadGraphic(Paths.image("pauseMenu/"+daMenu[i]));
         bgItem.updateHitbox();

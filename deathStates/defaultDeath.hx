@@ -19,12 +19,12 @@ var randomBanText:Array<String> = [
     "hocus pocus, {} got ponocus", "{} leaked Indie Cross", "{} was not cheezed to be met", "{} was selling Meth", 
     "{} Saw Zander's code", "{} Got Ratio'd", "Achivement Unlocked: Get Banned By {1}",
     "{} forgot to use Case Switches", "Imagine Dying To {1}, Couldn't be me", "{} Ran Out Of Nitro", "{} used Kade Engine 1.5.2",
-    "{} Forgor to share their Screen", 
+    "{} Forgor to share their Screen", "{} was scratching their itchy areas.",
 ];
 // {} gets replaced by the character your playing
 var randomDeathText:Array<String> = [
     "haha L noob", "I don't like the name '{}'", "{} is under 13", "{} plays League Of Legends", "{} is friends with [504]Brandon",
-    "couldn't solve 1+1"
+    "couldn't solve 1+1", "{} couldn't afford the LBPU Curator role"
 ];
 function create() {
     remove(character);
@@ -94,7 +94,7 @@ function getCharacter() {
     if (altStuff) var switchThing = PlayState.SONG.player2;
     else var switchThing = PlayState.SONG.player1;
     switch(switchThing.split(":")[1]) {
-        case "bf", "bf-nitro", "bf-fp":
+        case "bf", "bf-tts", "bf-nitro", "bf-hand":
             return "Bee F.#7346";
         case "lj", "LJ":
             return "ItsLJcool#7560";

@@ -1,137 +1,127 @@
 {
 	"songs": [
 		{
+			"difficulties": [
+				"Hard",
+				"Nitro"
+			],
 			"displayName": "Speechin'",
-			"difficulties": [
-				"Hard",
-				"Nitro"
-			],
 			"char": "TTS Bot",
-			"color": "#0BA9FE",
+			"bpm": 145,
 			"name": "speechin",
-			"bpm": 145
+			"color": "#0BA9FE"
 		},
 		{
-			"displayName": "Hello",
 			"difficulties": [
 				"Hard",
 				"Nitro"
 			],
+			"displayName": "Hello",
 			"char": "LJ",
-			"color": "#146B01",
+			"bpm": 160,
 			"name": "hello",
-			"bpm": 160
+			"color": "#146B01"
 		},
 		{
-			"displayName": "Voiced Raged",
 			"difficulties": [
 				"Hard"
 			],
+			"displayName": "Voiced Raged",
 			"char": "BF angi",
-			"color": "#2A2F47",
+			"bpm": 150,
 			"name": "Voiced Raged",
-			"bpm": 150
+			"color": "#2A2F47"
 		},
 		{
-			"displayName": "A LINK",
 			"difficulties": [
 				"a-link"
 			],
+			"displayName": "A LINK",
 			"char": "tts-3d",
-			"color": "#120939",
+			"bpm": 145,
 			"name": "a-link",
-			"bpm": 145
+			"color": "#120939"
 		},
 		{
-			"displayName": "Stuck A Lot",
 			"difficulties": [
 				"Normal"
 			],
+			"displayName": "Stuck A Lot",
 			"char": "LJ",
-			"color": "#0E3800",
+			"bpm": 110,
 			"name": "stuck-a-lot",
-			"bpm": 110
+			"color": "#0E3800"
 		},
 		{
+			"displayName": "VC",
 			"difficulties": [
 				"Hard",
 				"Nitro"
 			],
-			"displayName": "VC",
 			"char": "TTS Bot",
-			"bpm": 180,
+			"color": "#31323A",
 			"name": "vc",
-			"color": "#31323A"
-		},
-		{
-			"difficulties": [
-				"Hard"
-			],
-			"displayName": "Monochrome",
-			"char": "monotits",
-			"bpm": 160,
-			"name": "Monochrome",
-			"color": "#030202"
-		},
-		{
-			"difficulties": [
-				"Hard"
-			],
-			"displayName": "can someone buy me a vita pwease :33333",
-			"char": "yahya",
-			"bpm": 117,
-			"name": "poker-night",
-			"color": "#FFFFFF"
-		},
-		{
-			"difficulties": [
-				"Hard"
-			],
-			"displayName": "Shit-VC",
-			"char": "bf",
-			"bpm": 180,
-			"name": "shit-vc",
-			"color": "#FFFFFF"
-		},
-		{
-			"difficulties": [
-				"Hard"
-			],
-			"displayName": "Too Slow",
-			"char": "bf",
-			"bpm": 180,
-			"name": "too slow remix",
-			"color": "#FFFFFF"
-		},
-		{
-			"displayName": null,
-			"difficulties": [
-				"Hard"
-			],
-			"char": "tts-bot",
-			"color": "#787373",
-			"name": "Sole Reason",
-			"bpm": 150
-		},
-		{
-			"displayName": "EYES ON YOU",
-			"difficulties": [
-				"Hard"
-			],
-			"char": "eyedale",
-			"color": "#000000",
-			"name": "eyes-on-you",
 			"bpm": 180
 		},
 		{
-			"bpm": 170,
+			"displayName": "Monochrome",
 			"difficulties": [
 				"Hard"
 			],
-			"displayName": "dis should be a secret song from the mainmenu but i cant code lmao",
-			"char": "vita",
-			"name": "living-areas",
-			"color": "#0168C6"
+			"char": "monotits",
+			"color": "#030202",
+			"name": "Monochrome",
+			"bpm": 160
+		},
+		{
+			"displayName": "can someone buy me a vita pwease :33333",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "yahya",
+			"color": "#FFFFFF",
+			"name": "poker-night",
+			"bpm": 117
+		},
+		{
+			"displayName": "Shit-VC",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "bf",
+			"color": "#FFFFFF",
+			"name": "shit-vc",
+			"bpm": 180
+		},
+		{
+			"displayName": "Too Slow",
+			"difficulties": [
+				"Hard"
+			],
+			"char": "bf",
+			"color": "#FFFFFF",
+			"name": "too slow remix",
+			"bpm": 180
+		},
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": null,
+			"char": "tts-bot",
+			"bpm": 150,
+			"name": "Sole Reason",
+			"color": "#787373"
+		},
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "EYES ON YOU",
+			"char": "eyedalehim",
+			"bpm": 180,
+			"name": "eyes-on-you",
+			"color": "#000000"
 		}
 	]
 }

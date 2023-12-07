@@ -357,9 +357,9 @@ function update(elapsed:Float) {
 }
 
 var coolText:Array<String> = [
-    "|  A Link  |",
+    "A Link",
     "Hey, how is the " + theSystem + " Operating System working out for you?",
-    "In the Death State, any words with 'Z' are replaced with 'X' due to YCE being a bitch",
+    "In the Death State, any words with the letter 'Z' are replaced with an 'X' due to YCE being a bitch",
     "Hi, Im ItsLJcool!", "DO NOT PLAY FRIDAY NIGHT SPEECHIN': VS TTS AT 3:00 AM !!!"
 ];
 var theCoolText:FlxTypedGroup<FlxText>;
