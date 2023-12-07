@@ -1,10 +1,10 @@
 # Friday Night Speechin': VS TTS Bots DEVELOPER BUILD
 
-**FOR DEV 1.0 Press Code and Download as Zip, or clone to your mods folder!**
+**FOR DEV 1.0 Press Code and Download as a Zipped file, or clone to your mods folder!**
 
-Actually dont use the tags, Just do code and download as zip. the tags are pretty outdated
+Actually don't use the tags, Just do code and download as zip. the tags are pretty outdated
 
-A mod made by Yahya, hPhantom  and Diamantitos.
+A mod made by Yahya, hPhantom,  and Diamantitos.
 
 Text to Speech Bot made by Gnome
 ---
@@ -117,3 +117,4 @@ Original idea:
 
 
 yahya smells like doodoo
+no i dont
