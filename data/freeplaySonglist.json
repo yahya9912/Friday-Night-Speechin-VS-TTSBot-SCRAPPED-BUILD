@@ -94,16 +94,6 @@
 			"bpm": 180
 		},
 		{
-			"displayName": "Too Slow",
-			"difficulties": [
-				"Hard"
-			],
-			"char": "bf",
-			"color": "#FFFFFF",
-			"name": "too slow remix",
-			"bpm": 180
-		},
-		{
 			"difficulties": [
 				"Hard"
 			],
