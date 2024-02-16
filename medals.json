@@ -1,1 +1,111 @@
-{"medals":[{"name":"Alex GUH?","desc":"Seen All AlexG hidden things in the Game Over","img":{"src":"deathstuff/icons/alexguh","anim":"","fps":24}},{"name":"El manzanas azul!!!","desc":"Seen All Diamantitos' Hidden Stuff In Game Over","img":{"src":"deathstuff/icons/diamondtitos","anim":"","fps":24}},{"name":"Shut The FUCK Up Brandon","desc":"Seen All Brandon Stuff In Game Over","img":{"src":"deathstuff/icons/ew brandon wtf","anim":"","fps":24}},{"name":"MR COOL !!","desc":"Seen All ItsLJcool's Stuff In Game Over","img":{"src":"deathstuff/icons/itsljcool","anim":"","fps":24}},{"name":"No Nitro 4 U","desc":"Seen All MasterArt's Stuff In Game Over","img":{"src":"deathstuff/icons/masterart","anim":"","fps":24}},{"name":"Stop Linking Stuff","desc":"Seen All TTS Bot's Stuff In Game Over","img":{"src":"deathstuff/icons/ttshitbot","anim":"","fps":24}},{"name":"Hat Of The Wizard","desc":"Apply Wizard's Hat In Game Over","img":{"src":"medals/mantishat","anim":"","fps":24}},{"name":"Zander Stop Being Dead","desc":"Seen All Zander's Stuff In Game Over","img":{"src":"deathstuff/icons/zanchad","anim":"","fps":24}},{"name":"We Are Not The Same!","desc":"Click On The Vs Hecker Logo In Title State","img":{"src":"newgrounds_logo","anim":"","fps":24}},{"name":"Too Many Memes","desc":"???","img":{"src":"splashes","anim":"","fps":24}},{"name":"NO MORE LINKS!!!!!","desc":"You have beaten the Link. and saved the Codename Engine Server. Good Job! :]","img":{"src":"medals/alink","anim":"","fps":24}},{"img":{"src":"medals/living","fps":24,"anim":""},"desc":"Find a Live in your Area. not sure what that means but it's on one of our menus!","name":"Three thousand Vitals!"},{"img":{"fps":24,"src":"mrbeats","anim":""},"desc":". . .","name":"Blink Time!"}]}
+{"medals":[
+    {
+    "name":"Alex GUH?",
+    "desc":"Seen All AlexG hidden things in the Game Over",
+    "img":
+    {
+    "src":"deathstuff/icons/alexguh",
+    "anim":"",
+    "fps":24}
+    },
+
+        {"name":"El manzanas azul!!!",
+        "desc":"Seen All Diamantitos' Hidden Stuff In Game Over",
+        "img":
+        {"src":"deathstuff/icons/diamondtitos",
+        "anim":"",
+        "fps":24
+    }
+    },
+        
+        {"name":"Your babysitter is back!",
+        "desc":"Seen All Brandon Stuff In Game Over",
+        "img":{"src":"deathstuff/icons/ew brandon wtf",
+        "anim":"","fps":24}
+    },
+        
+        {"name":"MR COOL !!",
+        "desc":"Seen All ItsLJcool's Stuff In Game Over",
+        "img":{
+            "src":"deathstuff/icons/itsljcool",
+            "anim":"",
+            "fps":24
+        }
+    },
+
+        {"name":"No Nitro 4 U",
+         "desc":"Seen All MasterArt's Stuff In Game Over",
+        "img":{
+            "src":"deathstuff/icons/masterart",
+            "anim":"",
+            "fps":24
+        }
+    },
+                
+        {"name":"Stop Linking Stuff",
+        "desc":"Seen All TTS Bot's Stuff In Game Over",
+        "img":
+        {
+        "src":"deathstuff/icons/ttshitbot",
+        "anim":"","fps":24}
+    },
+        
+        {"name":"Hat Of The Wizard",
+        "desc":"Apply Wizard's Hat In Game Over",
+        "img":
+        {
+        "src":"medals/mantishat",
+        "anim":"",
+        "fps":24
+    }
+        },
+
+        {"name":"The Bunny Himself",
+        "desc":"Seen All Zander's Stuff In Game Over",
+        "img":
+        {
+        "src":"deathstuff/icons/zanchad","anim":"","fps":24
+        }
+        },
+
+        {"name":"We Are Not The Same!",
+        "desc":"Click On The Vs Hecker Logo In Title State",
+        "img":
+        {
+            "src":"newgrounds_logo",
+            "anim":"","fps":24
+            }
+            },
+            {"name":"Too Many Memes",
+            "desc":"???",
+            "img":
+            {
+                "src":"splashes",
+                "anim":"",
+                "fps":24}
+                },
+                {"name":"NO MORE LINKS!!!!!",
+                "desc":"You have beaten the Link. and saved the Codename Engine Server. Good Job! :]",
+                "img":
+                {
+                    "src":"medals/alink",
+                    "anim":"","fps":24
+                    }
+                    },
+                    {"img":
+                    {"src":"medals/living",
+                    "fps":24,
+                    "anim":""
+                    },
+                    "desc":"Find a Live in your Area. not sure what that means but it's on one of our menus!",
+                    "name":"Three thousand Vitals!"},
+                    {"img":
+                    {"fps":24,
+                    "src":"mrbeats",
+                    "anim":""
+                },
+                    "desc":". . .",
+                    "name":"Blink Time!"
+        }
+    ]
+}
