@@ -449,7 +449,7 @@ function onEnd() {
         save.data.alexgStuff == null ||
         save.data.brandonStuff == null ||
         save.data.memesLOL == null) {
-            for (medal in ["Zander Stop Being Dead","MR COOL !!","El Diamond Jaja","Stop Linking Stuff","Hat Of The Wizard","Alex GUH?", "Too Many Memes"]) {
+            for (medal in ["The Bunny Himself","MR COOL !!","El Diamond Jaja","Stop Linking Stuff","Hat Of The Wizard","Alex GUH?", "Too Many Memes"]) {
                 Medals.lock(medal);
             }
             save.data.zanderStuff = 0;
@@ -746,8 +746,8 @@ function shakeDatMan(spr, values, ?phase:Bool = true) {
 var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, inside the {r} is a specific image but if its just {r}, random
     ["Im Going2killevery1startingwithU", "LJ Has too many songs in the mod. You Agree?", "Hey where is my cover?",
     "I am squidward, I am suicidal", "uwu", "wwwww", "Why do you persist?"], // alexg
-    ["Got Ban'd", "Skill Issue", "Go play Osu!", "Haha, Perdio", "Jaja que puto"], // Diamontitos
-    ["Drowning Drowning Sinking Sinking", "IM UNDER 13!!", "Psych Engine !!", "I love indie cocks- wait what"], // ew Brandon
+    ["Got Ban'd", "Skill Issue", "Go play Osu!", "Haha, Perdio", "Jaja que puto", "XD"], // Diamantitos
+    ["Drowning Drowning Sinking Sinking", "IM UNDER 13!!", "Psych Engine !!", "I love indie cocks- wait what"],  ["petetion to kill fart tits NOW!!"] // ew Brandon
     ["{f}"], // foxel
     ["Hi, Im ItsLJcool", "Indie Crocs {i}", "LJ Dependency!! {lj}"], // ITSLJCOOL
     ["Major L", "FAILURE", "Heyo, Kirb Here", "Wow, that was an epic fail"], // kirby !!
@@ -761,13 +761,13 @@ var specificCoolText:Array<Array<String>> = [ // {} is the image to be placed, i
     ["uhhhhh", "https://twitter.com/ThatOneIdiotXav", "uhhhhh part 2: The Return", "Imagine not FC'ing on the first try"], // Xav !!
     ["Idk what im doing here ima be honest", "uh am I appart of the mod?"], // YAGPDB
     ["lollololollol", "normal {n}", "men", "LJ YOU FUCKING SHIT"], // YahyaPooper
-    ["I Lost my Account because lol", "This icon is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}"], // YahyaREAL
+    ["I Lost my Account because lol", "This pfp is from Rocket Morgage Co-Founder: Yahya", "lollololollol", "normal {n}", "I NEED MY ACCOUNT BACK"], // YahyaREAL
 
     ["'L'J", "ZanChad!! {zc}", "Uhh cheesed to meet you", "IM    DEAD"], // ZanChad !!
 ];
 
 var pingedText:Array<String> = [
-    "@{} You Lost!?!?", "Apparently @{} is terrable at FNF.", "@{1} Is too good at FNF.",
+    "@{} You Lost!?!?", "Apparently @{} is terrible at FNF.", "@{1} Is too good at FNF.",
     "@{e} :troll:", "@{} have you found all the secrets in the death state?",
     "you know, there is secrets here @{}...", "@{} L\nL\nL\nL",
 ];
@@ -778,5 +778,5 @@ var rngText:Array<String> = [
     "You are sure taking your time...", "Yea we know this death state is cool, now Leave.", "A-LINK", "{r}",
     "@{e} where the fuck are we?", "hahah look at this random image: {r}","From: #LJ Meme Rant {m}",
     "If you type some random message, something might happen !!", "hint: Z isn't a hidden word you can type",
-    "MR BEAST!! {mrB}", "hell nah brody is blind or sum"
+    "MR BEAST!! {mrB}", "hell nah brody is blind or sum", "Ain't no way yall still in vc"
 ];
